@@ -5,4 +5,10 @@ format: html
 
 # Data Collection
 
-The recod data I collected 
+## Record Data
+
+The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean
+
+## Text Data 
+
+There are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page.
