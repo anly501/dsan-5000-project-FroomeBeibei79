@@ -1,5 +1,8 @@
 ---
-title: "Untitled"
+title: "Data Gathering"
 format: html
 ---
 
+# Data Collection
+
+The recod data I collected 
