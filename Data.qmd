@@ -17,16 +17,10 @@ Basically, driver behavior it's people driving cars. As an intuitive result, I w
 
 ### Age
 
-Age is a good source for driver behavior analysis, as studies are showing that 
+[Age](https://www.fhwa.dot.gov/policyinformation/statistics/2021/) is a good source for driver behavior analysis, as studies are showing that 
 
-### Profession
-
-Student, racer, lawyer, doctor, etc
-
-### Income
-
-High income, medium income and low income
-
+### Gender
+There's a research focus on how [gender](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813513) affect driving,
 
 ## Vehicle Side
 

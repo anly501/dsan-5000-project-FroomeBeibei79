@@ -186,13 +186,118 @@
     "href": "Data.html#driver-side",
     "title": "Data Section",
     "section": "Driver Side",
-    "text": "Driver Side\n\nAge\nAge is a good source for driver behavior analysis, as studies are showing that\n\n\nProfession\nStudent, racer, lawyer, doctor, etc\n\n\nIncome\nHigh income, medium income and low income"
+    "text": "Driver Side\n\nAge\nAge is a good source for driver behavior analysis, as studies are showing that\n\n\nProfession\nStudent, racer, lawyer, doctor, etc"
   },
   {
     "objectID": "Data.html#vehicle-side",
     "href": "Data.html#vehicle-side",
     "title": "Data Section",
     "section": "Vehicle Side",
-    "text": "Vehicle Side\n\nAcceleration\n\n\nBraking\n\n\nSpeed\n\n\nCornering\n\n\nPhone Usage"
+    "text": "Vehicle Side\n\nAcceleration\nThis one can be measureed in either G Force detector or the usage of throttle pedal\n\n\nBraking\nThis one can be measureed in either G Force detector or the usage of break pedal\n\n\nSpeed\nThis one can be measured with speedometer\n\n\nCornering\nThis one can be measured with G Force detector\n\n\nPhone Usage\nThis one can be used of a specfic device connected to the phone via bluetooth"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/index.html",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/index.html",
+    "title": "DSAN-5100: Introduction",
+    "section": "",
+    "text": "See the following link for more information about the author: about me\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nHIGHLY RECOMMENDED\n\nIt is highly recommended that you build your website using .ipynb files and NOT .qmdfiles\nFunctionally the two formats are basically identical, i.e. they are just Markdown + Code\nHowever there is ONE MAJOR DIFFERENCE, i.e. .ipynb stores the code outputs in the meta-data of the file\n\nThis means you ONLY HAVE TO RUN THE CODE ONCE with .ipynb\n.qmd will run the code every time you build the website, which can be very slow\n\nThere are caching options for .qmd, however, they are “messier” that just using .ipynb\n\nNote: .qmd is fine if there is no code, in which case it is basically just a Markdown file\n\nConverting between the two\n\nYou can switch between the two formats using\nquarto convert clustering.qmd this will output a .ipynb version called clustering.ipynb\nquarto convert eda.ipynb this will output a .qmd version called eda.qmd\n\nYOU CAN RUN R CODE IN VSC WITH .ipynb, see the following link\n\nhttps://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/\n\nIt is possible, but NOT RECOMMENDED, to mix Python and R code in the same file\n\nIMPORTANT ASIDE\n\nA .ipynb file is simply a JSON file with a specialized structural format\nYou can see this by running more eda/eda.ipynb from the command line\nWhich will output the following;\n\n\nTIP FOR MAC USERS\n\ncommand+control+shift+4 is very useful on a mac.\n\nIt takes a screenshot and saves it to the clip-board\n\nThe following VSC extension allows you to paste images from the clip-board with alt+command+v.\n\ntab is your best friend when using the command line, since it does auto-completion\nopen ./path_to_file will open any file or directory from the command line"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html#quick-look-at-the-data",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html#basic-visualization",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/clustering/clustering.html",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/clustering/clustering.html",
+    "title": "Clustering",
+    "section": "",
+    "text": "Build out your website tab for “clustering”"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html",
+    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html",
+    "title": "Markdown Cheat Sheet",
+    "section": "",
+    "text": "Thanks for visiting The Markdown Guide!\nThis Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic syntax and extended syntax.\n\n\nThese are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements."
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#basic-syntax",
+    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#basic-syntax",
+    "title": "Markdown Cheat Sheet",
+    "section": "",
+    "text": "These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements."
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#h2",
+    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#h2",
+    "title": "Markdown Cheat Sheet",
+    "section": "H2",
+    "text": "H2\n\nH3\n\n\nBold\nbold text\n\n\nItalic\nitalicized text\n\n\nBlockquote\n\nblockquote\n\n\n\nOrdered List\n\nFirst item\nSecond item\nThird item\n\n\n\nUnordered List\n\nFirst item\nSecond item\nThird item\n\n\n\nCode\ncode\n\n\nHorizontal Rule\n\n\n\nLink\nMarkdown Guide\n\n\nImage\nIMAGE ON YOUR COMPUTER (RELATIVE PATH)\n\n\n\nalt text\n\n\nIMAGE FROM ONLINE\n\n\n\nalt text"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#extended-syntax",
+    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#extended-syntax",
+    "title": "Markdown Cheat Sheet",
+    "section": "Extended Syntax",
+    "text": "Extended Syntax\nThese elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.\n\nTable\n\n\n\nSyntax\nDescription\n\n\n\n\nHeader\nTitle\n\n\nParagraph\nText\n\n\n\n\n\nFenced Code Block\n{\n  \"firstName\": \"John\",\n  \"lastName\": \"Smith\",\n  \"age\": 25\n}\n\n\nFootnote\nHere’s a sentence with a footnote. 1\n\n\nHeading ID\n\n\nMy Great Heading\n\n\nDefinition List\n\nterm\n\ndefinition\n\n\n\n\nStrikethrough\nThe world is flat.\n\n\nTask List\n\nWrite the press release\nUpdate the website\nContact the media\n\n\n\nEmoji\nThat is so funny! :joy:\n(See also Copying and Pasting Emoji)\n\n\nHighlight\nI need to highlight these ==very important words==.\n\n\nSubscript\nH2O\n\n\nSuperscript\nX2"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#footnotes",
+    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#footnotes",
+    "title": "Markdown Cheat Sheet",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is the footnote.↩︎"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html#quick-look-at-the-data",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html#basic-visualization",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/index.html",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/index.html",
+    "title": "DSAN-5000: Introduction",
+    "section": "",
+    "text": "See the following link for more information about the author: about me\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nHIGHLY RECOMMENDED\n\nIt is highly recommended that you build your website using .ipynb files and NOT .qmdfiles\nFunctionally the two formats are basically identical, i.e. they are just Markdown + Code\nHowever there is ONE MAJOR DIFFERENCE, i.e. .ipynb stores the code outputs in the meta-data of the file\n\nThis means you ONLY HAVE TO RUN THE CODE ONCE with .ipynb\n.qmd will run the code every time you build the website, which can be very slow\n\nThere are caching options for .qmd, however, they are “messier” that just using .ipynb\n\nNote: .qmd is fine if there is no code, in which case it is basically just a Markdown file\n\nConverting between the two\n\nYou can switch between the two formats using\nquarto convert clustering.qmd this will output a .ipynb version called clustering.ipynb\nquarto convert eda.ipynb this will output a .qmd version called eda.qmd\n\nYOU CAN RUN R CODE IN VSC WITH .ipynb, see the following link\n\nhttps://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/\n\nIt is possible, but NOT RECOMMENDED, to mix Python and R code in the same file\n\nIMPORTANT ASIDE\n\nA .ipynb file is simply a JSON file with a specialized structural format\nYou can see this by running more eda/eda.ipynb from the command line\nWhich will output the following;\n\n\nTIP FOR MAC USERS\n\ncommand+control+shift+4 is very useful on a mac.\n\nIt takes a screenshot and saves it to the clip-board\n\nThe following VSC extension allows you to paste images from the clip-board with alt+command+v.\n\ntab is your best friend when using the command line, since it does auto-completion\nopen ./path_to_file will open any file or directory from the command line"
+  },
+  {
+    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/clustering/clustering.html",
+    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/clustering/clustering.html",
+    "title": "Clustering",
+    "section": "",
+    "text": "Build out your website tab for “clustering”"
   }
 ]
