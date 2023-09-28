@@ -1,0 +1,51 @@
+---
+title: "Data Section"
+format: html
+---
+
+
+This is a link to data in GitHub [Click here](https://github.com/anly501/dsan-5000-project-FroomeBeibei79/tree/main/data)
+
+
+# Data 
+
+What kind of data is helpful in terms of driver behavior analysis? 
+
+Basically, driver behavior it's people driving cars. As an intuitive result, I will need to know how the drivers interact with their vehicles. So, we can start from two sides: the driver side and the vehicle side.
+
+## Driver Side
+
+### Age
+
+Age is a good source for driver behavior analysis, as studies are showing that 
+
+### Profession
+
+Student, racer, lawyer, doctor, etc
+
+### Income
+
+High income, medium income and low income
+
+
+## Vehicle Side
+
+### Acceleration
+
+This one can be measureed in either G Force detector or the usage of throttle pedal
+
+### Braking
+
+This one can be measureed in either G Force detector or the usage of break pedal
+
+### Speed
+
+This one can be measured with speedometer
+
+### Cornering
+
+This one can be measured with G Force detector
+
+### Phone Usage
+
+This one can be used of a specfic device connected to the phone via bluetooth
