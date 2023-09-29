@@ -1,185 +1,24 @@
 [
   {
+    "objectID": "Data Cleaning.html",
+    "href": "Data Cleaning.html",
+    "title": "Data Cleaning Code",
+    "section": "",
+    "text": "This is code section"
+  },
+  {
+    "objectID": "Data Cleaning.html#gender",
+    "href": "Data Cleaning.html#gender",
+    "title": "Data Cleaning Code",
+    "section": "Gender",
+    "text": "Gender\nBelow is the progress to clean the gender dataset\n\nlibrary(readxl)\nlibrary(tidyverse)\ngender &lt;- read_excel(\"data/dl220.xls\")\ngender &lt;- gender[-(1:2),]\ncolnames(gender) &lt;- gender[1,]\ngender &lt;- gender[-1,]\ngender &lt;- gender[1:(nrow(gender) -4),]\ncolnames(gender)[1] &lt;- \"Year\"\ngender &lt;- gender[-1,]\ncolnames1 &lt;- paste0(colnames(gender), unlist(gender[1,]))\ncolnames(gender) &lt;- colnames1\ngender &lt;- gender[-1,]\n\nnames &lt;- which(duplicated(colnames(gender)))\nfor (col_index in names){\n  colnames(gender)[col_index] &lt;- paste0(colnames(gender)[col_index], \"_\", col_index)\n}"
+  },
+  {
     "objectID": "Data.html",
     "href": "Data.html",
     "title": "Data Section",
     "section": "",
     "text": "This is a link to data in GitHub Click here"
-  },
-  {
-    "objectID": "Introduction.html",
-    "href": "Introduction.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "Written by Xingrui Huo Froome\nGU ID: xh231\n\n\nAs I moved to a new place for grad school, my car moved with me and so does the car insurance. However, as I requested for the new quote, I found out that the price went higher than expected. So I changed my insurance company and during the conversation with the new insurance company. I found out that there is one discount that can be added to my policy if I agree to let the insurance company to send me a device and put it in my vehicle to record my daily drive data.\nI found that very interesting because the insurance staff told me that as I driving, the device will record data and send it back to the insurance company. As to every end of policy, I will receive discount based on my driving records.\nI start to become interested about this little device. How does it record the data? What kind of data does it record? What kind of result can it get based on the data it records? I feel like that I can do the same thing, collect the same data, and do some similar analysis on myself. So I can do driver behavior analysis on myself. Of course, the most important thing in here is, how to do driver behavior analysis?\nBelow are two academic sources and some questions to start with:\n\n\n\n(Kaplan et al. 2015)\nThis is a link to source\n\n\nDriver drowsiness and distraction are two main reasons for traffic accidents and the related financial losses. Therefore, researchers have been working for more than a decade on designing driver inattention monitoring systems. As a result, several detection techniques for the detection of both drowsiness and distraction have been proposed in the literature. Some of these techniques were successfully adopted and implemented by the leading car companies. This paper discusses and provides a comprehensive insight into the well-established techniques for driver inattention monitoring and introduces the use of most recent and futuristic solutions exploiting mobile technologies such as smartphones and wearable devices. Then, a proposal is made for the active of such systems into car-to-car communication to support vehicular ad hoc network’s (VANET’s) primary aim of safe driving. We call this approach the dissemination of driver behavior via C2C communication. Throughout this paper, the most remarkable studies of the last five years were examined thoroughly in order to reveal the recent driver monitoring techniques and demonstrate the basic pros and cons. In addition, the studies were categorized into two groups: driver drowsiness and distraction. Then, research on the driver drowsiness was further divided into two main subgroups based on the exploitation of either visual features or nonvisual features. A comprehensive compilation, including used features, classification methods, accuracy rates, system parameters, and environmental details, was represented as tables to highlight the (dis)advantages and/or limitations of the aforementioned categories. A similar approach was also taken for the methods used for the detection of driver distraction.\n\n\n\nthe literature review highlighted the need for combining techniques, the importance of alerting mechanisms, and the potential of C2C communication for improving driver safety. Despite limitations, ongoing advancements indicate a promising future for driver monitoring and assistance systems.\n\n\n\n\n(Chan et al. 2019)\nThis is a link to source\n\n\nHuman factors are the primary catalyst for traffic accidents. Among different factors, fatigue, distraction, drunkenness, and/or recklessness are the most common types of abnormal driving behavior that leads to an accident. With technological advances, modern smartphones have the capabilities for driving behavior analysis. There has not yet been a comprehensive review on methodologies utilizing only a smartphone for drowsiness detection and abnormal driver behavior detection. In this paper, different methodologies proposed by different authors are discussed. It includes the sensing schemes, detection algorithms, and their corresponding accuracy and limitations. Challenges and possible solutions such as integration of the smartphone behavior classification system with the concept of context-aware, mobile crowdsensing, and active steering control are analyzed. The issue of model training and updating on the smartphone and cloud environment is also included.\n\n\n\nThe paper discusses the use of smartphone data as a valuable resource for analyzing driver behavior. It reviews various methodologies proposed by different authors for detecting abnormal driving patterns. While smartphone-based systems offer advantages over telematics boxes, there are significant challenges to consider for accurate driver behavior classification.\nKey challenges include the impact of varying light conditions on vision-based methodologies and the need to eliminate noise and external factors in sensor-based approaches, such as road conditions and vehicle components. Future research should address these issues. Additionally, eliminating the requirement for mounting the smartphone in a fixed position would enhance flexibility and convenience for drivers.\nThe paper also explores potential solutions, such as integrating smartphone-based driver behavior analysis with context-awareness, crowdsensing, and steering control, as well as mobile or cloud-based algorithm training and updates. While these solutions may not be perfect, they have the potential to address some of the challenges, suggesting that there is room for further improvement in smartphone-based behavior analysis systems.\n\n\n\n\n\n\n\nHow can we accurately measure and quantify aggressive driving behavior using telematics data?\nWhat are the most effective strategies for detecting and reducing instances of distracted driving?\nCan machine learning algorithms predict the likelihood of a driver engaging in risky behaviors based on historical data?\nHow does driver behavior vary across different age groups, genders, and experience levels, and what implications does this have for road safety?\nHow can data analytics be used to design targeted driver training programs that address specific behavioral issues?\n\n\n\n\n\nHow do external factors like road conditions and traffic congestion influence driver behavior, and how can this information be used to improve road safety?\nHow do weather conditions, such as rain, snow, and fog, affect road safety, and what strategies can be employed to mitigate their impact?\nHow can data science be used to analyze the effectiveness of road safety policies, such as seat belt laws and speed limits, in reducing accidents?\nWhat role does human psychology play in road safety, and how can behavioral insights be used to design safer road systems?\n\n\n\n\n\nHow does driver behavior impact fuel efficiency, and how can eco-driving habits be promoted to reduce emissions and fuel consumption?\nHow can driver behavior analysis be used to optimize traffic flow and reduce congestion in urban areas?\nHow can driver behavior data be anonymized and protected to ensure privacy while still extracting valuable insights for road safety?"
-  },
-  {
-    "objectID": "Introduction.html#research-background",
-    "href": "Introduction.html#research-background",
-    "title": "Introduction",
-    "section": "",
-    "text": "As I moved to a new place for grad school, my car moved with me and so does the car insurance. However, as I requested for the new quote, I found out that the price went higher than expected. So I changed my insurance company and during the conversation with the new insurance company. I found out that there is one discount that can be added to my policy if I agree to let the insurance company to send me a device and put it in my vehicle to record my daily drive data.\nI found that very interesting because the insurance staff told me that as I driving, the device will record data and send it back to the insurance company. As to every end of policy, I will receive discount based on my driving records.\nI start to become interested about this little device. How does it record the data? What kind of data does it record? What kind of result can it get based on the data it records? I feel like that I can do the same thing, collect the same data, and do some similar analysis on myself. So I can do driver behavior analysis on myself. Of course, the most important thing in here is, how to do driver behavior analysis?\nBelow are two academic sources and some questions to start with:"
-  },
-  {
-    "objectID": "Introduction.html#driver-behavior-analysis-for-safe-driving-a-survey",
-    "href": "Introduction.html#driver-behavior-analysis-for-safe-driving-a-survey",
-    "title": "Introduction",
-    "section": "",
-    "text": "(Kaplan et al. 2015)\nThis is a link to source\n\n\nDriver drowsiness and distraction are two main reasons for traffic accidents and the related financial losses. Therefore, researchers have been working for more than a decade on designing driver inattention monitoring systems. As a result, several detection techniques for the detection of both drowsiness and distraction have been proposed in the literature. Some of these techniques were successfully adopted and implemented by the leading car companies. This paper discusses and provides a comprehensive insight into the well-established techniques for driver inattention monitoring and introduces the use of most recent and futuristic solutions exploiting mobile technologies such as smartphones and wearable devices. Then, a proposal is made for the active of such systems into car-to-car communication to support vehicular ad hoc network’s (VANET’s) primary aim of safe driving. We call this approach the dissemination of driver behavior via C2C communication. Throughout this paper, the most remarkable studies of the last five years were examined thoroughly in order to reveal the recent driver monitoring techniques and demonstrate the basic pros and cons. In addition, the studies were categorized into two groups: driver drowsiness and distraction. Then, research on the driver drowsiness was further divided into two main subgroups based on the exploitation of either visual features or nonvisual features. A comprehensive compilation, including used features, classification methods, accuracy rates, system parameters, and environmental details, was represented as tables to highlight the (dis)advantages and/or limitations of the aforementioned categories. A similar approach was also taken for the methods used for the detection of driver distraction.\n\n\n\nthe literature review highlighted the need for combining techniques, the importance of alerting mechanisms, and the potential of C2C communication for improving driver safety. Despite limitations, ongoing advancements indicate a promising future for driver monitoring and assistance systems."
-  },
-  {
-    "objectID": "Introduction.html#a-comprehensive-review-of-driver-behavior-analysis-utilizing-smartphones",
-    "href": "Introduction.html#a-comprehensive-review-of-driver-behavior-analysis-utilizing-smartphones",
-    "title": "Introduction",
-    "section": "",
-    "text": "(Chan et al. 2019)\nThis is a link to source\n\n\nHuman factors are the primary catalyst for traffic accidents. Among different factors, fatigue, distraction, drunkenness, and/or recklessness are the most common types of abnormal driving behavior that leads to an accident. With technological advances, modern smartphones have the capabilities for driving behavior analysis. There has not yet been a comprehensive review on methodologies utilizing only a smartphone for drowsiness detection and abnormal driver behavior detection. In this paper, different methodologies proposed by different authors are discussed. It includes the sensing schemes, detection algorithms, and their corresponding accuracy and limitations. Challenges and possible solutions such as integration of the smartphone behavior classification system with the concept of context-aware, mobile crowdsensing, and active steering control are analyzed. The issue of model training and updating on the smartphone and cloud environment is also included.\n\n\n\nThe paper discusses the use of smartphone data as a valuable resource for analyzing driver behavior. It reviews various methodologies proposed by different authors for detecting abnormal driving patterns. While smartphone-based systems offer advantages over telematics boxes, there are significant challenges to consider for accurate driver behavior classification.\nKey challenges include the impact of varying light conditions on vision-based methodologies and the need to eliminate noise and external factors in sensor-based approaches, such as road conditions and vehicle components. Future research should address these issues. Additionally, eliminating the requirement for mounting the smartphone in a fixed position would enhance flexibility and convenience for drivers.\nThe paper also explores potential solutions, such as integrating smartphone-based driver behavior analysis with context-awareness, crowdsensing, and steering control, as well as mobile or cloud-based algorithm training and updates. While these solutions may not be perfect, they have the potential to address some of the challenges, suggesting that there is room for further improvement in smartphone-based behavior analysis systems."
-  },
-  {
-    "objectID": "Introduction.html#questions",
-    "href": "Introduction.html#questions",
-    "title": "Introduction",
-    "section": "",
-    "text": "How can we accurately measure and quantify aggressive driving behavior using telematics data?\nWhat are the most effective strategies for detecting and reducing instances of distracted driving?\nCan machine learning algorithms predict the likelihood of a driver engaging in risky behaviors based on historical data?\nHow does driver behavior vary across different age groups, genders, and experience levels, and what implications does this have for road safety?\nHow can data analytics be used to design targeted driver training programs that address specific behavioral issues?\n\n\n\n\n\nHow do external factors like road conditions and traffic congestion influence driver behavior, and how can this information be used to improve road safety?\nHow do weather conditions, such as rain, snow, and fog, affect road safety, and what strategies can be employed to mitigate their impact?\nHow can data science be used to analyze the effectiveness of road safety policies, such as seat belt laws and speed limits, in reducing accidents?\nWhat role does human psychology play in road safety, and how can behavioral insights be used to design safer road systems?\n\n\n\n\n\nHow does driver behavior impact fuel efficiency, and how can eco-driving habits be promoted to reduce emissions and fuel consumption?\nHow can driver behavior analysis be used to optimize traffic flow and reduce congestion in urban areas?\nHow can driver behavior data be anonymized and protected to ensure privacy while still extracting valuable insights for road safety?"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "about.html#it-will-show-some-detailed-information-regrading-different-manufactures",
-    "href": "about.html#it-will-show-some-detailed-information-regrading-different-manufactures",
-    "title": "About",
-    "section": "it will show some detailed information regrading different manufactures",
-    "text": "it will show some detailed information regrading different manufactures\n\nMore will coming soon…\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate some sample data\nx = np.linspace(0, 2 * np.pi, 100)  # Create an array of values from 0 to 2*pi\ny = np.sin(x)  # Compute the sine of each value\n\n# Create a plot\nplt.figure(figsize=(8, 4))  # Set the figure size\nplt.plot(x, y, label='sin(x)', color='blue', linestyle='-', linewidth=2)  # Create the plot\n\n# Add labels and a legend\nplt.xlabel('x')  # X-axis label\nplt.ylabel('y')  # Y-axis label\nplt.title('Sine Function')  # Title of the plot\nplt.legend()\n\n# Show the plot\nplt.grid(True)  # Add grid lines\nplt.show()"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Hi! My name is Xingrui Huo, with GU net ID: xh231\nThis is a webpage that introduces me.\n\n\n\n\nGeorgetown University, Master of Science, Data Science & Analytics\nGeoorgwetown is an excellent unviersity that sits in Georgetown, Washington, D.C.\n\n\n\nI spent my undergraduate life at Rutgers, the State University of New Jersey. RU Rah Rah!\n\n\n\nBefore my undergrad, I stayed back in China for 18 years, born and raised up in the same place."
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "About Me",
-    "section": "",
-    "text": "Georgetown University, Master of Science, Data Science & Analytics\nGeoorgwetown is an excellent unviersity that sits in Georgetown, Washington, D.C.\n\n\n\nI spent my undergraduate life at Rutgers, the State University of New Jersey. RU Rah Rah!\n\n\n\nBefore my undergrad, I stayed back in China for 18 years, born and raised up in the same place."
-  },
-  {
-    "objectID": "index.html#sports",
-    "href": "index.html#sports",
-    "title": "About Me",
-    "section": "Sports",
-    "text": "Sports\nI love to bike, and watch Formula 1 during the weekend. Sometimes I also play the simulator on PC just to have fun, and experience the Formula 1 in a more intuitive way"
-  },
-  {
-    "objectID": "index.html#things-in-life",
-    "href": "index.html#things-in-life",
-    "title": "About Me",
-    "section": "Things in Life",
-    "text": "Things in Life\nI like cars, A LOT. I love everything from the design of the car, the engine, transmission of the car, to the difference on configration of the car due to the different law and environmental requirments in different countries. I also have a very strong interest on analyzing anything data-related to the car. I have done a project before, which focuses on analyzing lap time driven by myself in game F1 22. Now I have switched tracks to collect data from real-world, and to see if the data can inspire me in some ways!"
-  },
-  {
-    "objectID": "index.html#foods",
-    "href": "index.html#foods",
-    "title": "About Me",
-    "section": "Foods!",
-    "text": "Foods!\nI love trying new foods in every places around the world. I also very much engaged with trying to re-make the same food at home. Ramen, steak, burrito, everything! Below are something I have tried to cook at home, and it was very good at the end!\n\n\n\nRamen\nDumpling\nZongzi\n\n\n\nPizza\nBarbecue\nSteak"
-  },
-  {
-    "objectID": "index.html#this-is-a-hilarious-quote-from-jeremy-clarkson",
-    "href": "index.html#this-is-a-hilarious-quote-from-jeremy-clarkson",
-    "title": "About Me",
-    "section": "This is a hilarious quote from Jeremy Clarkson",
-    "text": "This is a hilarious quote from Jeremy Clarkson\n\nSpeed has never killed anyone, suddenly becoming stationary… That’s what gets you – Jeremy Clarkson\n\n\nSome Requirements\nThis is an inline math equation:  \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).\nThe area of a circle with radius (r) is given by the formula:\n\\[\n[A = \\pi r^2]\n\\]\nWhere:\n\n(A) is the area of the circle.\n(pi) is approximately 3.14159.\n(r) is the radius of the circle.\n\n\n\n\n\ngraph LR;\n  A[A4, A5] --&gt; B(S4, S5);\n  B --&gt; C(RS4, RS5);\n\n\n\n\n\n\nThis approach enables you to use the same bibliography with different citation styles without having to change anything about your document or the bibliography itself apart from the bibliography style when your paper is finally compiled for print. [@fenn_managing_2006]"
-  },
-  {
-    "objectID": "index.html#footnotes",
-    "href": "index.html#footnotes",
-    "title": "About Me",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nOne same engine have slightly different models based on differnt vehicles, country law’s requirments, and marketing needs↩︎"
-  },
-  {
-    "objectID": "Code.html",
-    "href": "Code.html",
-    "title": "Code Section",
-    "section": "",
-    "text": "Link to my GitHubMy GitHub\nThis is a link to formula 1 Formula 1"
-  },
-  {
-    "objectID": "Code.html#first-is-links-section",
-    "href": "Code.html#first-is-links-section",
-    "title": "Code Section",
-    "section": "",
-    "text": "Link to my GitHubMy GitHub\nThis is a link to formula 1 Formula 1"
-  },
-  {
-    "objectID": "slides/slides.html#germany-vehicles",
-    "href": "slides/slides.html#germany-vehicles",
-    "title": "Intro to Cars",
-    "section": "Germany Vehicles",
-    "text": "Germany Vehicles\n\nAudi\nBMW\nMercedes-Benz\nPorsche"
-  },
-  {
-    "objectID": "slides/slides.html#america-vehicles",
-    "href": "slides/slides.html#america-vehicles",
-    "title": "Intro to Cars",
-    "section": "America Vehicles",
-    "text": "America Vehicles\n\nFord\nLincoln\nJeep\nCorvette\nDodge"
-  },
-  {
-    "objectID": "slides/slides.html#asia-vehicles",
-    "href": "slides/slides.html#asia-vehicles",
-    "title": "Intro to Cars",
-    "section": "Asia Vehicles",
-    "text": "Asia Vehicles\n\nHonda\nToyota\nXpeng\nNIO"
-  },
-  {
-    "objectID": "slides/slides.html#europe-cars---audi-a-series",
-    "href": "slides/slides.html#europe-cars---audi-a-series",
-    "title": "Intro to Cars",
-    "section": "Europe Cars - Audi A Series",
-    "text": "Europe Cars - Audi A Series\n\n\nA1\nA3\nA4\nA5\nA6\nA7\nA8"
-  },
-  {
-    "objectID": "slides/slides.html#audi-a4",
-    "href": "slides/slides.html#audi-a4",
-    "title": "Intro to Cars",
-    "section": "Audi A4",
-    "text": "Audi A4\n\nAudi A4"
-  },
-  {
-    "objectID": "slides/slides.html#audi-a8",
-    "href": "slides/slides.html#audi-a8",
-    "title": "Intro to Cars",
-    "section": "AUdi A8",
-    "text": "AUdi A8\n\nAudi A8"
-  },
-  {
-    "objectID": "slides/slides.html#a-citation",
-    "href": "slides/slides.html#a-citation",
-    "title": "Intro to Cars",
-    "section": "A Citation",
-    "text": "A Citation\nThis approach enables you to use the same bibliography with different citation styles without having to change anything about your document or the bibliography itself apart from the bibliography style when your paper is finally compiled for print. (Fenn 2006)"
-  },
-  {
-    "objectID": "slides/slides.html#a-plot",
-    "href": "slides/slides.html#a-plot",
-    "title": "Intro to Cars",
-    "section": "A Plot",
-    "text": "A Plot\n\n\n\n\n\n\n\nFenn, Jürgen. 2006. “Managing Citations and Your Bibliography with BibTEX.” The PracTEX Journal. http://svn.tug.org/pracjourn/2006-4/fenn/fenn.pdf."
-  },
-  {
-    "objectID": "Code.html#driver-side",
-    "href": "Code.html#driver-side",
-    "title": "Code Section",
-    "section": "",
-    "text": "Age is a good source to do driver behavior analysis as\n\n\n\nStudent, racer, lawyer, doctor, etc\n\n\n\nHigh income, medium income and low income"
   },
   {
     "objectID": "Data.html#driver-side",
@@ -196,136 +35,66 @@
     "text": "Vehicle Side\n\nAcceleration\nThis one can be measureed in either G Force detector or the usage of throttle pedal\n\n\nBraking\nThis one can be measureed in either G Force detector or the usage of break pedal\n\n\nSpeed\nThis one can be measured with speedometer\n\n\nCornering\nThis one can be measured with G Force detector\n\n\nPhone Usage\nThis one can be used of a specfic device connected to the phone via bluetooth"
   },
   {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/index.html",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/index.html",
-    "title": "DSAN-5100: Introduction",
+    "objectID": "slides/slides.html",
+    "href": "slides/slides.html",
+    "title": "Intro to Cars",
     "section": "",
-    "text": "See the following link for more information about the author: about me\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nHIGHLY RECOMMENDED\n\nIt is highly recommended that you build your website using .ipynb files and NOT .qmdfiles\nFunctionally the two formats are basically identical, i.e. they are just Markdown + Code\nHowever there is ONE MAJOR DIFFERENCE, i.e. .ipynb stores the code outputs in the meta-data of the file\n\nThis means you ONLY HAVE TO RUN THE CODE ONCE with .ipynb\n.qmd will run the code every time you build the website, which can be very slow\n\nThere are caching options for .qmd, however, they are “messier” that just using .ipynb\n\nNote: .qmd is fine if there is no code, in which case it is basically just a Markdown file\n\nConverting between the two\n\nYou can switch between the two formats using\nquarto convert clustering.qmd this will output a .ipynb version called clustering.ipynb\nquarto convert eda.ipynb this will output a .qmd version called eda.qmd\n\nYOU CAN RUN R CODE IN VSC WITH .ipynb, see the following link\n\nhttps://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/\n\nIt is possible, but NOT RECOMMENDED, to mix Python and R code in the same file\n\nIMPORTANT ASIDE\n\nA .ipynb file is simply a JSON file with a specialized structural format\nYou can see this by running more eda/eda.ipynb from the command line\nWhich will output the following;\n\n\nTIP FOR MAC USERS\n\ncommand+control+shift+4 is very useful on a mac.\n\nIt takes a screenshot and saves it to the clip-board\n\nThe following VSC extension allows you to paste images from the clip-board with alt+command+v.\n\ntab is your best friend when using the command line, since it does auto-completion\nopen ./path_to_file will open any file or directory from the command line"
+    "text": "Audi\nBMW\nMercedes-Benz\nPorsche\n\n\n\n\n\nFord\nLincoln\nJeep\nCorvette\nDodge\n\n\n\n\n\nHonda\nToyota\nXpeng\nNIO\n\n\n\n\n\n\nA1\nA3\nA4\nA5\nA6\nA7\nA8\n\n\n\n\n\n\n\n\nAudi A4\n\n\n\n\n\n\n\n\nAudi A8\n\n\n\n\n\nThis approach enables you to use the same bibliography with different citation styles without having to change anything about your document or the bibliography itself apart from the bibliography style when your paper is finally compiled for print. (Fenn 2006)\n\n\n\n\necho = False\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate some data\nx = np.linspace(0, 2 * np.pi, 100)\ny = np.sin(x)\n\n# Create a plot\nplt.figure(figsize=(8, 4))\nplt.plot(x, y, label='Sine Wave')\nplt.xlabel('x')\nplt.ylabel('sin(x)')\nplt.legend()\nplt.title('Sine Wave Plot')\nplt.grid(True)\nplt.show()"
   },
   {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html",
-    "title": "Data Exploration",
+    "objectID": "slides/slides.html#germany-vehicles",
+    "href": "slides/slides.html#germany-vehicles",
+    "title": "Intro to Cars",
     "section": "",
-    "text": "Build out your website tab for exploratory data analysis"
+    "text": "Audi\nBMW\nMercedes-Benz\nPorsche"
   },
   {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html#quick-look-at-the-data",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html#quick-look-at-the-data",
-    "title": "Data Exploration",
-    "section": "Quick look at the data",
-    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
-  },
-  {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html#basic-visualization",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/eda/eda.html#basic-visualization",
-    "title": "Data Exploration",
-    "section": "Basic visualization",
-    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
-  },
-  {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/clustering/clustering.html",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/clustering/clustering.html",
-    "title": "Clustering",
+    "objectID": "slides/slides.html#america-vehicles",
+    "href": "slides/slides.html#america-vehicles",
+    "title": "Intro to Cars",
     "section": "",
-    "text": "Build out your website tab for “clustering”"
+    "text": "Ford\nLincoln\nJeep\nCorvette\nDodge"
   },
   {
-    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html",
-    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html",
-    "title": "Markdown Cheat Sheet",
+    "objectID": "slides/slides.html#asia-vehicles",
+    "href": "slides/slides.html#asia-vehicles",
+    "title": "Intro to Cars",
     "section": "",
-    "text": "Thanks for visiting The Markdown Guide!\nThis Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic syntax and extended syntax.\n\n\nThese are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements."
+    "text": "Honda\nToyota\nXpeng\nNIO"
   },
   {
-    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#basic-syntax",
-    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#basic-syntax",
-    "title": "Markdown Cheat Sheet",
+    "objectID": "slides/slides.html#europe-cars---audi-a-series",
+    "href": "slides/slides.html#europe-cars---audi-a-series",
+    "title": "Intro to Cars",
     "section": "",
-    "text": "These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements."
+    "text": "A1\nA3\nA4\nA5\nA6\nA7\nA8"
   },
   {
-    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#h2",
-    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#h2",
-    "title": "Markdown Cheat Sheet",
-    "section": "H2",
-    "text": "H2\n\nH3\n\n\nBold\nbold text\n\n\nItalic\nitalicized text\n\n\nBlockquote\n\nblockquote\n\n\n\nOrdered List\n\nFirst item\nSecond item\nThird item\n\n\n\nUnordered List\n\nFirst item\nSecond item\nThird item\n\n\n\nCode\ncode\n\n\nHorizontal Rule\n\n\n\nLink\nMarkdown Guide\n\n\nImage\nIMAGE ON YOUR COMPUTER (RELATIVE PATH)\n\n\n\nalt text\n\n\nIMAGE FROM ONLINE\n\n\n\nalt text"
-  },
-  {
-    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#extended-syntax",
-    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#extended-syntax",
-    "title": "Markdown Cheat Sheet",
-    "section": "Extended Syntax",
-    "text": "Extended Syntax\nThese elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.\n\nTable\n\n\n\nSyntax\nDescription\n\n\n\n\nHeader\nTitle\n\n\nParagraph\nText\n\n\n\n\n\nFenced Code Block\n{\n  \"firstName\": \"John\",\n  \"lastName\": \"Smith\",\n  \"age\": 25\n}\n\n\nFootnote\nHere’s a sentence with a footnote. 1\n\n\nHeading ID\n\n\nMy Great Heading\n\n\nDefinition List\n\nterm\n\ndefinition\n\n\n\n\nStrikethrough\nThe world is flat.\n\n\nTask List\n\nWrite the press release\nUpdate the website\nContact the media\n\n\n\nEmoji\nThat is so funny! :joy:\n(See also Copying and Pasting Emoji)\n\n\nHighlight\nI need to highlight these ==very important words==.\n\n\nSubscript\nH2O\n\n\nSuperscript\nX2"
-  },
-  {
-    "objectID": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#footnotes",
-    "href": "dsan-5000-project-FroomeBeibei79/extra/non-quarto-website-example/pages/markdown-cheatsheet/cheatsheet.html#footnotes",
-    "title": "Markdown Cheat Sheet",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThis is the footnote.↩︎"
-  },
-  {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html",
-    "title": "Data Exploration",
+    "objectID": "slides/slides.html#audi-a4",
+    "href": "slides/slides.html#audi-a4",
+    "title": "Intro to Cars",
     "section": "",
-    "text": "Build out your website tab for exploratory data analysis"
+    "text": "Audi A4"
   },
   {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html#quick-look-at-the-data",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html#quick-look-at-the-data",
-    "title": "Data Exploration",
-    "section": "Quick look at the data",
-    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
-  },
-  {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html#basic-visualization",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/eda/eda.html#basic-visualization",
-    "title": "Data Exploration",
-    "section": "Basic visualization",
-    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
-  },
-  {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/index.html",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5000-website/index.html",
-    "title": "DSAN-5000: Introduction",
+    "objectID": "slides/slides.html#audi-a8",
+    "href": "slides/slides.html#audi-a8",
+    "title": "Intro to Cars",
     "section": "",
-    "text": "See the following link for more information about the author: about me\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nHIGHLY RECOMMENDED\n\nIt is highly recommended that you build your website using .ipynb files and NOT .qmdfiles\nFunctionally the two formats are basically identical, i.e. they are just Markdown + Code\nHowever there is ONE MAJOR DIFFERENCE, i.e. .ipynb stores the code outputs in the meta-data of the file\n\nThis means you ONLY HAVE TO RUN THE CODE ONCE with .ipynb\n.qmd will run the code every time you build the website, which can be very slow\n\nThere are caching options for .qmd, however, they are “messier” that just using .ipynb\n\nNote: .qmd is fine if there is no code, in which case it is basically just a Markdown file\n\nConverting between the two\n\nYou can switch between the two formats using\nquarto convert clustering.qmd this will output a .ipynb version called clustering.ipynb\nquarto convert eda.ipynb this will output a .qmd version called eda.qmd\n\nYOU CAN RUN R CODE IN VSC WITH .ipynb, see the following link\n\nhttps://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/\n\nIt is possible, but NOT RECOMMENDED, to mix Python and R code in the same file\n\nIMPORTANT ASIDE\n\nA .ipynb file is simply a JSON file with a specialized structural format\nYou can see this by running more eda/eda.ipynb from the command line\nWhich will output the following;\n\n\nTIP FOR MAC USERS\n\ncommand+control+shift+4 is very useful on a mac.\n\nIt takes a screenshot and saves it to the clip-board\n\nThe following VSC extension allows you to paste images from the clip-board with alt+command+v.\n\ntab is your best friend when using the command line, since it does auto-completion\nopen ./path_to_file will open any file or directory from the command line"
+    "text": "Audi A8"
   },
   {
-    "objectID": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/clustering/clustering.html",
-    "href": "dsan-5000-project-FroomeBeibei79/dsan-website/5100-website/clustering/clustering.html",
-    "title": "Clustering",
+    "objectID": "slides/slides.html#a-citation",
+    "href": "slides/slides.html#a-citation",
+    "title": "Intro to Cars",
     "section": "",
-    "text": "Build out your website tab for “clustering”"
+    "text": "This approach enables you to use the same bibliography with different citation styles without having to change anything about your document or the bibliography itself apart from the bibliography style when your paper is finally compiled for print. (Fenn 2006)"
   },
   {
-    "objectID": "Data Gathering.html",
-    "href": "Data Gathering.html",
-    "title": "Data Gathering",
+    "objectID": "slides/slides.html#a-plot",
+    "href": "slides/slides.html#a-plot",
+    "title": "Intro to Cars",
     "section": "",
-    "text": "The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean\n\n\nNow the raw data looks like this,  It’s quite messy on the top. So, I will need to clean the column names to make it tidy.\nAfter cleaning process, the data now looks like this, \nNote this is not enough, I still need to further tidy the column names to make it better\n\n\n\n\nThere are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page."
-  },
-  {
-    "objectID": "Data Gathering.html#record-data",
-    "href": "Data Gathering.html#record-data",
-    "title": "Data Gathering",
-    "section": "",
-    "text": "The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean\n\n\nNow the raw data looks like this,  It’s quite messy on the top. So, I will need to clean the column names to make it tidy.\nAfter cleaning process, the data now looks like this, \nNote this is not enough, I still need to further tidy the column names to make it better"
-  },
-  {
-    "objectID": "Data Gathering.html#text-data",
-    "href": "Data Gathering.html#text-data",
-    "title": "Data Gathering",
-    "section": "",
-    "text": "There are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page."
-  },
-  {
-    "objectID": "record data cleaning.html",
-    "href": "record data cleaning.html",
-    "title": "record data cleaning",
-    "section": "",
-    "text": "Step 1: read the data\n\nlibrary(readxl)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.3     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\ngender &lt;- read_excel(\"data/dl220.xls\")\n\nNew names:\n• `` -&gt; `...2`\n• `` -&gt; `...3`\n• `` -&gt; `...4`\n• `` -&gt; `...5`\n• `` -&gt; `...6`\n• `` -&gt; `...7`\n• `` -&gt; `...8`\n• `` -&gt; `...9`\n• `` -&gt; `...10`\n• `` -&gt; `...11`\n• `` -&gt; `...12`\n• `` -&gt; `...13`\n• `` -&gt; `...14`\n• `` -&gt; `...15`\n• `` -&gt; `...16`\n• `` -&gt; `...17`\n• `` -&gt; `...18`\n• `` -&gt; `...19`\n• `` -&gt; `...20`\n• `` -&gt; `...21`\n• `` -&gt; `...22`\n• `` -&gt; `...23`\n• `` -&gt; `...24`\n• `` -&gt; `...25`\n• `` -&gt; `...26`\n• `` -&gt; `...27`\n• `` -&gt; `...28`\n• `` -&gt; `...29`\n• `` -&gt; `...30`\n• `` -&gt; `...31`\n• `` -&gt; `...32`\n• `` -&gt; `...33`\n• `` -&gt; `...34`\n• `` -&gt; `...35`\n• `` -&gt; `...36`\n• `` -&gt; `...37`\n• `` -&gt; `...38`\n• `` -&gt; `...39`\n• `` -&gt; `...40`\n• `` -&gt; `...41`\n• `` -&gt; `...42`\n• `` -&gt; `...43`\n• `` -&gt; `...44`\n• `` -&gt; `...45`\n• `` -&gt; `...46`\n• `` -&gt; `...47`\n• `` -&gt; `...48`\n• `` -&gt; `...49`\n• `` -&gt; `...50`\n• `` -&gt; `...51`\n• `` -&gt; `...52`\n• `` -&gt; `...53`\n• `` -&gt; `...54`\n• `` -&gt; `...55`\n• `` -&gt; `...56`\n• `` -&gt; `...57`\n• `` -&gt; `...58`\n• `` -&gt; `...59`\n• `` -&gt; `...60`\n• `` -&gt; `...61`\n• `` -&gt; `...62`\n• `` -&gt; `...63`\n• `` -&gt; `...64`\n• `` -&gt; `...65`\n• `` -&gt; `...66`\n• `` -&gt; `...67`\n• `` -&gt; `...68`\n• `` -&gt; `...69`\n• `` -&gt; `...70`\n• `` -&gt; `...71`\n• `` -&gt; `...72`\n• `` -&gt; `...73`\n• `` -&gt; `...74`\n• `` -&gt; `...75`\n• `` -&gt; `...76`\n• `` -&gt; `...77`\n• `` -&gt; `...78`\n• `` -&gt; `...79`\n\ngender &lt;- gender[-(1:2),]\ncolnames(gender) &lt;- gender[1,]\ngender &lt;- gender[-1,]\ngender &lt;- gender[1:(nrow(gender) -4),]\ncolnames(gender)[1] &lt;- \"Year\"\ngender &lt;- gender[-1,]\ncolnames1 &lt;- paste0(colnames(gender), unlist(gender[1,]))\ncolnames(gender) &lt;- colnames1\ngender &lt;- gender[-1,]\n\nnames &lt;- which(duplicated(colnames(gender)))\nfor (col_index in names){\n  colnames(gender)[col_index] &lt;- paste0(colnames(gender)[col_index], \"_\", col_index)\n}\n\ngender1 &lt;- t(gender)\ncolnames(gender1) &lt;- gender1[1,]\ngender1 &lt;- gender1[-1,]"
+    "text": "echo = False\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate some data\nx = np.linspace(0, 2 * np.pi, 100)\ny = np.sin(x)\n\n# Create a plot\nplt.figure(figsize=(8, 4))\nplt.plot(x, y, label='Sine Wave')\nplt.xlabel('x')\nplt.ylabel('sin(x)')\nplt.legend()\nplt.title('Sine Wave Plot')\nplt.grid(True)\nplt.show()"
   }
 ]

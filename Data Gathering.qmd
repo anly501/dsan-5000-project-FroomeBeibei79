@@ -22,3 +22,6 @@ Note this is not enough, I still need to further tidy the column names to make i
 ## Text Data 
 
 There are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page.
+![Raw Text Data](images/Raw%20text%20data.jpg)
+
+So right now I will need to sort the text out, like find out the publisher of the paper, the title, the description, etc.

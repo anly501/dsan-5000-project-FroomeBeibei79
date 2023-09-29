@@ -1,5 +1,5 @@
 ---
-title: "Data Cleaning Process Code"
+title: "Data Cleaning Code"
 format: html
 ---
 
@@ -12,7 +12,7 @@ This is code section
 ## Gender
 
 Below is the progress to clean the gender dataset
-```{r}
+```{r, echo = TRUE, message = FALSE}
 library(readxl)
 library(tidyverse)
 gender <- read_excel("data/dl220.xls")
@@ -36,7 +36,11 @@ for (col_index in names){
 
 
 # Text Data
-```{python}
+
+First I use NewsAPI to get text data from NewsAPI on different key words in terms of driver behavior analysis
+
+The key words I used are: driving behavior, distracted driving, driver risk assessment, driver profilling
+```{python, echo= TRUE, message=FALSE, results = "hide"}
 import requests
 import json
 import re

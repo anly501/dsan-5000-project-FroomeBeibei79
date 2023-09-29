@@ -1,6 +1,6 @@
 {
     "status": "ok",
-    "totalResults": 194,
+    "totalResults": 193,
     "articles": [
         {
             "source": {
@@ -170,19 +170,6 @@
             "urlToImage": "https://developer-blogs.nvidia.com/wp-content/uploads/2023/09/cuda-driver-symbol-server-featured-1.jpg",
             "publishedAt": "2023-09-07T19:10:23Z",
             "content": "NVIDIA has already made available a GPU driver binary symbols server for Windows. Now, NVIDIA is making available a repository of CUDA Toolkit symbols for...\nNVIDIA has already made available a GPU d\u2026 [+4143 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "The Punch"
-            },
-            "author": "Dennis Naku",
-            "title": "Six arrested for allegedly stealing Rivers Church property",
-            "description": "Six private security personnel attached to a new generation church in Port Harcourt have been arrested for allegedly stealing and attempting to sell property of the religious body. The church security personnel were intercepted by a vigilante group when they \u2026",
-            "url": "https://punchng.com/six-arrested-for-allegedly-stealing-rivers-church-property/",
-            "urlToImage": "https://cdn.punchng.com/wp-content/uploads/2021/05/31105206/a1.jpg",
-            "publishedAt": "2023-08-27T23:40:39Z",
-            "content": "Six private security personnel attached to a new generation church in Port Harcourt have been arrested for allegedly stealing and attempting to sell property of the religious body.\r\nThe church securi\u2026 [+2105 chars]"
         },
         {
             "source": {
@@ -1301,6 +1288,19 @@
             "urlToImage": "https://ml.globenewswire.com/Resource/Download/f76f43b1-2795-46d0-981c-832a61a179b5",
             "publishedAt": "2023-09-18T08:47:00Z",
             "content": "Pune, Sept. 18, 2023 (GLOBE NEWSWIRE) -- Global Telecom Expense Management (TEM) Market [2023-2029] Research Report Analysis and Outlook Insights |\u00a0Latest Updated Report\u00a0|\u00a0110 Pages Report\u00a0| The Tele\u2026 [+14254 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "GlobeNewswire"
+            },
+            "author": "Market Reports World",
+            "title": "IoT Security Software Market 2023 is Booming Worldwide, Global Size-Share, Sales, Revenue, New Product Innovation,Competitor Ecosystem and Analysis till 2029",
+            "description": "global IoT Security Software market was valued at US$ 18460 million in 2022 and is anticipated to reach US$ 53330 million by 2029, witnessing a CAGR of 19.3% during the forecast period 2023-2029 global IoT Security Software market was valued at US$ 18460 mill\u2026",
+            "url": "https://www.globenewswire.com/news-release/2023/09/25/2748515/0/en/IoT-Security-Software-Market-2023-is-Booming-Worldwide-Global-Size-Share-Sales-Revenue-New-Product-Innovation-Competitor-Ecosystem-and-Analysis-till-2029.html",
+            "urlToImage": "https://ml.globenewswire.com/Resource/Download/f76f43b1-2795-46d0-981c-832a61a179b5",
+            "publishedAt": "2023-09-25T11:05:00Z",
+            "content": "Pune, Sept. 25, 2023 (GLOBE NEWSWIRE) -- Global IoT Security Software Market [2023-2029] Research Report Analysis and Outlook Insights |\u00a0Latest Updated Report\u00a0|\u00a0103 Pages Report\u00a0| The IoT Security So\u2026 [+13973 chars]"
         }
     ]
 }
