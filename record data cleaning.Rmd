@@ -24,8 +24,5 @@ for (col_index in names){
   colnames(gender)[col_index] <- paste0(colnames(gender)[col_index], "_", col_index)
 }
 
-gender1 <- t(gender)
-colnames(gender1) <- gender1[1,]
-gender1 <- gender1[-1,]
 ```
 

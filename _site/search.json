@@ -186,7 +186,7 @@
     "href": "Data.html#driver-side",
     "title": "Data Section",
     "section": "Driver Side",
-    "text": "Driver Side\n\nAge\nAge is a good source for driver behavior analysis, as studies are showing that\n\n\nGender\nThere’s a research focus on how gender affect driving,\nNow the raw data looks like this,"
+    "text": "Driver Side\n\nAge\nAge is a good source for driver behavior analysis, as studies are showing that\n\n\nGender\nThere’s a research focus on how gender affect driving,"
   },
   {
     "objectID": "Data.html#vehicle-side",
@@ -305,14 +305,14 @@
     "href": "Data Gathering.html",
     "title": "Data Gathering",
     "section": "",
-    "text": "The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean\n\n\nNow the raw data looks like this,  It’s quite messy on the top. So\n\n\n\n\nThere are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page."
+    "text": "The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean\n\n\nNow the raw data looks like this,  It’s quite messy on the top. So, I will need to clean the column names to make it tidy.\nAfter cleaning process, the data now looks like this, \nNote this is not enough, I still need to further tidy the column names to make it better\n\n\n\n\nThere are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page."
   },
   {
     "objectID": "Data Gathering.html#record-data",
     "href": "Data Gathering.html#record-data",
     "title": "Data Gathering",
     "section": "",
-    "text": "The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean\n\n\nNow the raw data looks like this,  It’s quite messy on the top. So"
+    "text": "The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean\n\n\nNow the raw data looks like this,  It’s quite messy on the top. So, I will need to clean the column names to make it tidy.\nAfter cleaning process, the data now looks like this, \nNote this is not enough, I still need to further tidy the column names to make it better"
   },
   {
     "objectID": "Data Gathering.html#text-data",
