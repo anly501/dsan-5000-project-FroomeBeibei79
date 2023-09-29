@@ -1,0 +1,1306 @@
+{
+    "status": "ok",
+    "totalResults": 1828,
+    "articles": [
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "Tim Stevens",
+            "title": "Mercedes take the wheel: Testing Drive Pilot L3 autonomy in traffic",
+            "description": "The day is finally here: There's a self-driving car available for purchase in the US. Or, at least, there will be within the next few months. Mercedes-Benz is bringing its Drive Pilot-equipped cars to California and Nevada, and, when they're deployed, you'll \u2026",
+            "url": "https://www.engadget.com/mercedes-take-the-wheel-testing-drive-pilot-l3-autonomy-in-traffic-140038217.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/u3GKeJoz7FRdYMPnnYkiJA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://s.yimg.com/os/creatr-uploaded-images/2023-09/b7c2c970-5d35-11ee-97fb-9bc395ea5b81",
+            "publishedAt": "2023-09-27T14:00:38Z",
+            "content": "The day is finally here: There's a self-driving car available for purchase in the US. Or, at least, there will be within the next few months. Mercedes-Benz is bringing its Drive Pilot-equipped cars t\u2026 [+1019 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Mack DeGeurin",
+            "title": "Musk Reportedly Wants to Fold Neuralink and Tesla Into One Big Weird AI Company",
+            "description": "Anyone who\u2019s spent time observing the erratic, often contradictory behavior of billionaire Elon Musk in recent years could be forgiven for believing he\u2019s lost a sense of direction. That tale of chaotic mismanagement and petty personal vendettas, however, isn\u2019\u2026",
+            "url": "https://gizmodo.com/elon-musk-merge-twitter-tesla-xai-project-1850808696",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1902b1dc94e046a018accee339d23af9.jpg",
+            "publishedAt": "2023-09-06T19:02:41Z",
+            "content": "Anyone whos spent time observing the erratic, often contradictory behavior of billionaire Elon Musk in recent years could be forgiven for believing hes lost a sense of direction. That tale of chaotic\u2026 [+4510 chars]"
+        },
+        {
+            "source": {
+                "id": "ars-technica",
+                "name": "Ars Technica"
+            },
+            "author": "Timothy B. Lee",
+            "title": "Are self-driving cars already safer than human drivers?",
+            "description": "I learned a lot by reading dozens of Waymo and Cruise crash reports.",
+            "url": "https://arstechnica.com/cars/2023/09/are-self-driving-cars-already-safer-than-human-drivers/",
+            "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2023/08/self-driving-hud-analysis-760x380.jpg",
+            "publishedAt": "2023-09-01T11:30:21Z",
+            "content": "1 with \r\nAugust was an eventful month for driverless taxis in San Francisco. On August 10, the California Public Utilities Commission voted to allow Googles Waymo and GMs Cruise to begin charging cus\u2026 [+21726 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Iona Brannon",
+            "title": "The CEO of a construction-tech startup that reports a 12% drop in injuries on sites using its wearable smart badges says 5G is the future of IoT tech",
+            "description": "The tech startup Kwant makes smart badges that detect danger and risky behavior on construction sites. The CEO wants to reduce injuries.",
+            "url": "https://www.businessinsider.com/kwant-ceo-5g-future-iot-tech-construction-2023-9",
+            "urlToImage": "https://i.insider.com/65086510f05aa00019be3743?width=1200&format=jpeg",
+            "publishedAt": "2023-09-19T16:35:10Z",
+            "content": "Kwant's smart badge and construction workers wearing the badges.Kwant\r\n<ul>\n<li>Kwant is a tech startup focused on reducing risk and danger on construction sites.</li>\n<li>The company developed weara\u2026 [+5807 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Pete Syme",
+            "title": "Elon Musk, who is known for pushing boundaries, will reportedly escape a fine for using his phone while driving a Tesla",
+            "description": "Elon Musk was test-driving an unreleased version of Tesla's FSD software and livestreamed the 45-minute demo on X.",
+            "url": "https://www.businessinsider.com/elon-musk-avoids-fine-for-using-phone-while-driving-tesla-2023-8",
+            "urlToImage": "https://i.insider.com/64edbd1a8f9177001939baa5?width=1200&format=jpeg",
+            "publishedAt": "2023-08-29T11:13:31Z",
+            "content": "Elon Musk.Britta Pedersen-Pool/Getty Images\r\n<ul><li>Elon Musk livestreamed himself testing an unreleased version of Tesla's Full Self Driving software on Friday.</li><li>Using a phone while driving \u2026 [+2890 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hackaday"
+            },
+            "author": "Dan Maloney",
+            "title": "Teaching a Mini-Tesla to Steer Itself",
+            "description": "At the risk of stating the obvious, even when you\u2019ve got unlimited resources and access to the best engineering minds, self-driving cars are hard. Building a multi-ton guided missile that \u2026read more",
+            "url": "https://hackaday.com/2023/09/02/teaching-a-mini-tesla-to-steer-itself/",
+            "urlToImage": "https://hackaday.com/wp-content/uploads/2023/08/teskart.png",
+            "publishedAt": "2023-09-02T11:00:51Z",
+            "content": "At the risk of stating the obvious, even when you\u2019ve got unlimited resources and access to the best engineering minds, self-driving cars are hard. Building a multi-ton guided missile that can handle \u2026 [+1746 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Harvard Business Review"
+            },
+            "author": "Ashley Reichheld, John Peto, Cory Ritthaler",
+            "title": "Research: Consumers\u2019 Sustainability Demands Are Rising",
+            "description": "Three factors are driving us toward a major shift in consumption patterns where consumers will consider sustainability as a baseline requirement for purchase: 1) Trust drives behavior and, ultimately, business outcomes; 2) Sustainability promotes trust, parti\u2026",
+            "url": "https://hbr.org/2023/09/research-consumers-sustainability-demands-are-rising",
+            "urlToImage": "https://hbr.org/resources/images/article_assets/2023/09/Sep23_18_1272506577.jpg",
+            "publishedAt": "2023-09-18T12:05:14Z",
+            "content": "We\u2019re on the brink of a major shift in consumption patterns, where brands that make good on their promises to people and the planet will have the advantage.\r\n\"&gt;\r\nFor most consumers, sustainability\u2026 [+7512 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Lloyd Lee",
+            "title": "Cassidy Hutchinson said she was tempted to run away moments before her bombshell testimony at the Jan. 6 hearing",
+            "description": "Cassidy Hutchinson, the ex-White House aide who recently published her memoir \"Enough,\" said in an interview with CBS News that she almost backed out of testifying before the Jan. 6 committee.",
+            "url": "https://www.businessinsider.com/cassidy-hutchinson-back-out-bombshell-testimony-jan-6-hearing-enough-2023-9",
+            "urlToImage": "https://i.insider.com/6510a56ce2c0220019ef344a?width=1200&format=jpeg",
+            "publishedAt": "2023-09-24T21:52:56Z",
+            "content": "Cassidy Hutchinson, a former aide to White House Chief of Staff Mark Meadows, is seen as the House Jan. 6 select committee holds a public hearing on Capitol Hill on June 28, 2022.Jabin Botsford/The W\u2026 [+1722 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Boing Boing"
+            },
+            "author": "Mark Frauenfelder",
+            "title": "Video: Seattle cop laughs about fellow cop running over and killing a 23-year-old student at crosswalk",
+            "description": "A body cam recorded a Seattle police officer laughing and joking about a 23-year-old student who was killed at a crosswalk when a fellow officer hit her with his patrol car while driving 74 miles per hour in a 25 miles per hour zone. \u2014 Read the rest",
+            "url": "https://boingboing.net/2023/09/13/video-seattle-cop-laughs-about-fellow-cop-running-over-and-killing-a-23-year-old-student-at-crosswalk.html",
+            "urlToImage": "https://i0.wp.com/boingboing.net/wp-content/uploads/2023/09/auderer.jpg?fit=1200%2C674&ssl=1",
+            "publishedAt": "2023-09-13T16:06:29Z",
+            "content": "A body cam recorded a Seattle police officer laughing and joking about a 23-year-old student who was killed at a crosswalk when a fellow officer hit her with his patrol car while driving 74 miles per\u2026 [+2818 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Slashdot.org"
+            },
+            "author": "EditorDavid",
+            "title": "'Uber Was Supposed to Help Traffic. It Didn't. Robotaxis Will Be Even Worse.'",
+            "description": "Saturday the San Francisco Chronicle published a joint opinion piece from MIT professor Carlo Ratti (who directs an MIT digital lab exploring the collection of digital data about urban life) and John Rossant (founder of the collaborative data-sharing platform\u2026",
+            "url": "https://tech.slashdot.org/story/23/09/17/2317226/uber-was-supposed-to-help-traffic-it-didnt-robotaxis-will-be-even-worse",
+            "urlToImage": "https://a.fsdn.com/sd/topics/transportation_64.png",
+            "publishedAt": "2023-09-17T23:20:00Z",
+            "content": "Saturday the San Francisco Chronicle published a joint opinion piece from MIT professor Carlo Ratti (who directs an MIT digital lab exploring the collection of digital data about urban life) and John\u2026 [+3363 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yanko Design"
+            },
+            "author": "Gaurav Sood",
+            "title": "DIYers Electric Mini Tesla employs Logitech webcams and machine learning to navigate semi-autonomously",
+            "description": "DIYers Electric Mini Tesla employs Logitech webcams and machine learning to navigate semi-autonomouslyMaterializing the idea of safe, self-driving cars is not an easy feat unless you\u2019re Elon Musk. However, if you want to try your hand at...",
+            "url": "https://www.yankodesign.com/2023/09/11/diyers-electric-mini-tesla-employs-logitech-webcams-and-machine-learning-to-navigate-semi-autonomously/",
+            "urlToImage": "https://www.yankodesign.com/images/design_news/2023/09/diyers-electric-mini-tesla-uses-logitech-webcams-and-machine-learning-to-navigate-semi-autonomously/Self-Driving-Mini-Tesla-DIY-2.jpg",
+            "publishedAt": "2023-09-11T22:30:14Z",
+            "content": "Materializing the idea of safe, self-driving cars is not an easy feat unless youre Elon Musk. However, if you want to try your hand at building one, starting small is the next big leap. Thats exactly\u2026 [+1950 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Grace Eliza Goodwin",
+            "title": "India's moon lander is the first to study the lunar south pole region up close. Here are 5 scientific discoveries it's already made.",
+            "description": "India's Vikram lander and Pragyan rover have already discovered evidence of moonquakes and the presence of sulfur near the south pole.",
+            "url": "https://www.businessinsider.com/india-vikram-lunar-lander-moon-discoveries-2023-9",
+            "urlToImage": "https://i.insider.com/6501db5e1afe8f0019e99bd0?width=1200&format=jpeg",
+            "publishedAt": "2023-09-13T17:35:22Z",
+            "content": "The lunar rover that recently landed near the moon's south pole is about as big as a medium-sized dog.Indian Space Research Organization\r\n<ul>\n<li>In August, India became the first country to success\u2026 [+2995 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Lifehacker.com"
+            },
+            "author": "Ross Johnson",
+            "title": "21 of the Best Action Movies on Netflix Right Now",
+            "description": "Looking for a fast-moving car chase? Aerial acrobatics? How about a bit of fisticuffs? Or a tiger eating a dude? Look no further: Netflix has your numberRead more...",
+            "url": "https://lifehacker.com/the-best-action-movies-on-netflix-right-now-1850856583",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/10a2cbefdb7f8d8100070df99182762e.jpg",
+            "publishedAt": "2023-09-22T15:00:00Z",
+            "content": "Looking for a fast-moving car chase? Aerial acrobatics? How about a bit of fisticuffs? Or a tiger eating a dude? Look no further: Netflix has your number\r\nThere are movies here that are high-minded t\u2026 [+13645 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Chipsandcheese.com"
+            },
+            "author": "clamchowder",
+            "title": "Intel\u2019s Ponte Vecchio: Chiplets Gone Crazy",
+            "description": "Intel is a newcomer to the world of discrete graphics cards, and the company\u2019s Xe architecture is driving its effort to establish itself alongside AMD and Nvidia. We\u2019ve seen Xe variants\u2026",
+            "url": "https://chipsandcheese.com/2023/09/23/intels-ponte-vecchio-chiplets-gone-crazy/",
+            "urlToImage": "https://i0.wp.com/chipsandcheese.com/wp-content/uploads/2023/07/hotchips_pvc_chiplets.png?fit=955%2C535&ssl=1",
+            "publishedAt": "2023-09-25T07:39:03Z",
+            "content": "Intel is a newcomer to the world of discrete graphics cards, and the company\u2019s Xe architecture is driving its effort to establish itself alongside AMD and Nvidia. We\u2019ve seen Xe variants serve in inte\u2026 [+24658 chars]"
+        },
+        {
+            "source": {
+                "id": "time",
+                "name": "Time"
+            },
+            "author": "Justin Worland",
+            "title": "What Companies Can Learn About Climate Action From a Study on Plastic Take-Out Cutlery",
+            "description": "Researchers tried a simple fix to the pervasive problem of wasted plastic cutlery. The findings show how companies can promote better habits.",
+            "url": "https://time.com/6311741/how-companies-can-support-climate-friendly-habits/",
+            "urlToImage": "https://api.time.com/wp-content/uploads/2023/09/plastic-cutlery-climate.jpg?quality=85",
+            "publishedAt": "2023-09-07T19:02:46Z",
+            "content": "(To get this story in your inbox, subscribe to the TIME CO2 Leadership Report newsletter here.)\r\nWhenever I order food for delivery, I play a little game to guess how many sets of cutlery the restaur\u2026 [+4313 chars]"
+        },
+        {
+            "source": {
+                "id": "espn",
+                "name": "ESPN"
+            },
+            "author": "Tim McManus",
+            "title": "Inside the Philadelphia Eagles' decision to draft Jalen Carter",
+            "description": "The Eagles knew selecting Carter out of Georgia came with risk, but they also believed he could be a generational talent.",
+            "url": "https://www.espn.com/nfl/story/_/id/38317184/philadelphia-eagles-2023-draft-decision-jalen-carter",
+            "urlToImage": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0902%2Fr1219113_1296x729_16%2D9.jpg",
+            "publishedAt": "2023-09-04T11:35:41Z",
+            "content": "PHILADELPHIA -- The Eagles' decision to green-light the selection of Georgia defensive end Jalen Carter in the 2023 draft came down to one final meeting between chairman/CEO Jeffrey Lurie, his son, J\u2026 [+14086 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Autoblog"
+            },
+            "author": "Jonathon Ramsey",
+            "title": "Drunk driver calls 911 to report wrong-way driver, not realizing it's him",
+            "description": "Filed under:\n Weird Car News\n Continue reading Drunk driver calls 911 to report wrong-way driver, not realizing it's him\nDrunk driver calls 911 to report wrong-way driver, not realizing it's him originally appeared on Autoblog on Wed, 6 Sep 2023 09:15:00 EDT.\u2026",
+            "url": "https://www.autoblog.com/2023/09/06/drunk-wrong-way-driver-police-video/",
+            "urlToImage": "https://o.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1062x597/format/jpg/quality/100/https://s.aolcdn.com/os/ab/_cms/2023/09/06071338/drunk_driver_wrong_way_911.png",
+            "publishedAt": "2023-09-06T13:15:00Z",
+            "content": "We've all seen videos of someone calling for police to report what they consider is egregious behavior, then when the police show up, the police arrest the caller. As caught by Fox 10 Phoenix, recent\u2026 [+2141 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cheezburger.com"
+            },
+            "author": "BenWeiss, BenWeiss",
+            "title": "'This is MY stall!': Karen tries to kick someone out of a public bathroom stall, starts shaking the stall and making a scene",
+            "description": "Some Karens may run their homes, and others may run businesses, but no Karen owns the public bathroom of a local mall. Somehow, this entitled lady seemed to think otherwise despite the current occupant of said public bathroom stall.\u00a0\r\nThis Redditor was doing \u2026",
+            "url": "https://cheezburger.com/22375941/this-is-my-stall-karen-tries-to-kick-someone-out-of-a-public-bathroom-stall-starts-shaking-the-stall",
+            "urlToImage": "https://i.chzbgr.com/thumb1200/22375941/h5F3E5931/tries-to-kick-someone-out-of-a-public-bathroom-stall-starts-shaking-the-stall-and-making-a-scene",
+            "publishedAt": "2023-09-27T18:00:00Z",
+            "content": "Some Karens may run their homes, and others may run businesses, but no Karen owns the public bathroom of a local mall. Somehow, this entitled lady seemed to think otherwise despite the current occupa\u2026 [+821 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Autoblog"
+            },
+            "author": "Yahoo Finance",
+            "title": "Lamborghini Lanzador Concept \u2014 what it's like to drive an extreme EV vision of the future",
+            "description": "Filed under:\n Green,Lamborghini,Quick Spins,Concept Cars,Electric,Performance\n Continue reading Lamborghini Lanzador Concept \u2014 what it's like to drive an extreme EV vision of the future\nLamborghini Lanzador Concept \u2014 what it's like to drive an extreme EV visi\u2026",
+            "url": "https://www.autoblog.com/2023/09/06/lamborghini-lanzador-concept-what-its-like-to-drive-an-extreme-ev-vision-of-the-future/",
+            "urlToImage": "https://o.aolcdn.com/images/dims3/GLOB/crop/2400x1350+0+0/resize/800x450!/format/jpg/quality/85/https://s.aolcdn.com/os/ab/_cms/2023/09/06120112/JL_MCW23_56437.jpg",
+            "publishedAt": "2023-09-06T16:17:00Z",
+            "content": "MONTEREY, Calif. Its not every day that an automaker gives you the chance to drive a priceless, one-of-one concept car on regular roads. Its not every day that the car is Lamborghinis Lanzador concep\u2026 [+7504 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "ReadWrite"
+            },
+            "author": "Brad Anderson",
+            "title": "Countering The Risk of Daily Work-Life Through Safety Culture Commitment",
+            "description": "If we take a look at statistics, the number of occupational injuries has reduced over the past 50 years. Although [\u2026]\nThe post Countering The Risk of Daily Work-Life Through Safety Culture Commitment appeared first on ReadWrite.",
+            "url": "https://readwrite.com/countering-the-risk-of-daily-work-life-through-safety-culture-commitment/",
+            "urlToImage": "https://readwrite.com/wp-content/uploads/2023/09/men-climbing-a-ladder-safety-culture.jpeg",
+            "publishedAt": "2023-09-05T18:43:30Z",
+            "content": "If we take a look at statistics, the number of occupational injuries has reduced over the past 50 years. Although this may sound encouraging, there are still 6000 deaths every day due to workplace ac\u2026 [+6204 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Kotaku"
+            },
+            "author": "Kenneth Shepard",
+            "title": "Every Change In Cyberpunk 2077's Massive 2.0 Update",
+            "description": "Cyberpunk 2077\u2019s big 2.0 update is out today and it fundamentally changes large swaths of the original game. We\u2019ve been playing it a bit as part of our Phantom Liberty coverage and had a broad sense of the changes, but CD Projekt Red has finally released exte\u2026",
+            "url": "https://kotaku.com/cyberpunk-2077-update-2-0-patch-notes-skills-cyberware-1850861309",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3e1b520f4e8c62c0e31c273a512fd821.jpg",
+            "publishedAt": "2023-09-21T16:49:23Z",
+            "content": "Cyberpunk 2077s big 2.0 update is out today and it fundamentally changes large swaths of the original game. Weve been playing it a bit as part of our Phantom Liberty coverage and had a broad sense of\u2026 [+16131 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Phys.Org"
+            },
+            "author": "Science X",
+            "title": "The first climate strikes had an influence on Swiss residents, study finds",
+            "description": "A study by EPFL researchers found that Greta Thunberg's Fridays for Future climate strikes have influenced the environmental behavior of Swiss residents.",
+            "url": "https://phys.org/news/2023-09-climate-swiss-residents.html",
+            "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2023/climate-protest-5.jpg",
+            "publishedAt": "2023-09-08T16:37:04Z",
+            "content": "A study by EPFL researchers found that Greta Thunberg's Fridays for Future climate strikes have influenced the environmental behavior of Swiss residents.\r\nClimate activist Greta Thunberg made the hea\u2026 [+4375 chars]"
+        },
+        {
+            "source": {
+                "id": "abc-news",
+                "name": "ABC News"
+            },
+            "author": "ANGELA CHARLTON Associated Press",
+            "title": "French activists protest racism and police brutality while officers are on guard for key events",
+            "description": "Activists from community groups, far-left parties and unions have held marches around France against racism and police brutality",
+            "url": "https://abcnews.go.com/International/wireStory/french-activists-protest-racism-police-brutality-officers-guard-103434535",
+            "urlToImage": "https://s.abcnews.com/images/US/abc_news_default_2000x2000_update_16x9_992.jpg",
+            "publishedAt": "2023-09-23T16:31:27Z",
+            "content": "PARIS -- Families, community groups and far-left activists marched in cities around France on Saturday to decry racism and police brutality, putting authorities on edge at a time when French police a\u2026 [+3492 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Susan Antilla",
+            "title": "Warren Buffett dumps stock, regulators open probes as claims of abuse and fraud mount against a top Globe Life agency",
+            "description": "After an Insider investigation, three more women have come forward claiming sexual assault or coercion at Arias. The agency also received a surprise visit from regulators.",
+            "url": "https://www.businessinsider.com/globe-life-arias-under-investigation-after-allegations-of-fraud-sexual-abuse-2023-8",
+            "urlToImage": "https://i.insider.com/64e7a01c52bc2d001991878a?width=1200&format=jpeg",
+            "publishedAt": "2023-08-31T10:00:01Z",
+            "content": "Abeni Mayfield filed a federal complaint saying she was sexually assaulted by an Arias Agencies colleague at a work event.Rosem Morton for Insider\r\nAfter an Insider investigation, three more women ha\u2026 [+20473 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MarketWatch"
+            },
+            "author": "Sean Tucker",
+            "title": "Kelley Blue Book: \u2018Dirtier to build but cleaner to drive\u2019: This is how many miles you need to drive an EV to reduce its carbon footprint, study finds",
+            "description": "Would switching to an electric vehicle reduce your environmental impact? The answer, a new study says, depends on how much you drive.",
+            "url": "https://www.marketwatch.com/story/dirtier-to-build-but-cleaner-to-drive-this-is-how-many-miles-you-need-to-drive-an-ev-to-reduce-its-carbon-footprint-study-finds-6900efe0",
+            "urlToImage": "https://images.mktw.net/im-366531/social",
+            "publishedAt": "2023-09-06T09:01:00Z",
+            "content": "Would switching to an electric vehicle reduce your environmental impact? The answer, a new study says, depends on how much you drive.If youre somebody who drives a fair amount, then you are likely we\u2026 [+3133 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hubspot.com"
+            },
+            "author": "Stephen Moseley",
+            "title": "Why Customer Connection Matters",
+            "description": "At INBOUND 2023, HubSpot CEO Yamini Rangan introduced changes to the customer journey driven by the recent surge of AI technology.",
+            "url": "https://blog.hubspot.com/marketing/why-customer-connection-matters#article",
+            "urlToImage": "https://blog.hubspot.com/hubfs/Featured%20Image%20Template%20Backgrounds_AC%20Copy%20%281%29.png#keepProtocol",
+            "publishedAt": "2023-09-06T15:30:00Z",
+            "content": "At INBOUND 2023, HubSpot CEO Yamini Rangan introduced changes to the customer journey driven by the recent surge of AI technology.\r\nWhere people spend their time, how they buy, how they share informa\u2026 [+6000 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Harvard Business Review"
+            },
+            "author": "Yossi Sheffi",
+            "title": "The UAW and Other Unions Must Focus More on AI and Automation in Their Negotiations",
+            "description": "In its negotiations with the Big 3 car companies, the United Auto Workers\u2019 priority is maximizing pay increases for its members. The UAW and many other trade unions should be equally concerned about the impact of AI and automation on jobs and how to prepare t\u2026",
+            "url": "https://hbr.org/2023/09/the-uaw-and-other-unions-must-focus-more-on-ai-and-automation-in-their-negotiations",
+            "urlToImage": "https://hbr.org/resources/images/article_assets/2023/09/Sep23_15_N_FDXbXwQmc_h4elZPxUXLU_aQYgUYwnCsM_JUJzjthZnYU_1570020988.jpg",
+            "publishedAt": "2023-09-15T12:05:51Z",
+            "content": "Preparing workers for a changing workplace is as important as pay.\r\n\"&gt;\r\nThe advance of AI and automation technologies in the workplace requires new approaches to labor relations. Yet efforts by su\u2026 [+7109 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Riaz Raihan, Forbes Councils Member, \n Riaz Raihan, Forbes Councils Member\n https://www.forbes.com/sites/forbestechcouncil/people/riazraihan/",
+            "title": "Embrace AI To Reshape CX: Driving Cost-Effective Customer Experiences",
+            "description": "Remember that no one is an AI expert today; there is still much we don\u2019t know.",
+            "url": "https://www.forbes.com/sites/forbestechcouncil/2023/09/13/embrace-ai-to-reshape-cx-driving-cost-effective-customer-experiences/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/63a077ac584d9964d48cea81/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-13T12:30:00Z",
+            "content": "Riaz Raihan is President at Alida.\r\ngetty\r\nOur customers tell us that exceptional customer experiences (CX) are paramount today. Smaller organizations, however, often need more resources to deliver o\u2026 [+7027 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Harvard Business Review"
+            },
+            "author": "Kaihan Krippendorff, Claudio Garcia",
+            "title": "Is Organizational Hierarchy Getting in the Way of Innovation?",
+            "description": "Technological advances and increasingly sophisticated ways of gathering and analyzing data are changing both the kinds of products and services companies can offer and are increasing competitive pressures. To meet the moment, this article argues that organiza\u2026",
+            "url": "https://hbr.org/2023/09/is-organizational-hierarchy-getting-in-the-way-of-innovation",
+            "urlToImage": "https://hbr.org/resources/images/article_assets/2023/09/Sep23_12_organizational-hierarchy.jpg",
+            "publishedAt": "2023-09-12T12:05:20Z",
+            "content": "What a new organizational model might look like \u2014 and how to decide if your company is ready for it.\r\n\"&gt;\r\nAn RV rolling through a parking lot in Louisville, Kentucky, does not normally turn heads.\u2026 [+22207 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "ReadWrite"
+            },
+            "author": "Micheal Chukwube",
+            "title": "SRE and DevOps: The Perfect Partnership",
+            "description": "In the world of software development and operations, Site Reliability Engineering (SRE) and DevOps have emerged as dynamic allies, forming [\u2026]\nThe post SRE and DevOps: The Perfect Partnership appeared first on ReadWrite.",
+            "url": "https://readwrite.com/sre-and-devops-the-perfect-partnership/",
+            "urlToImage": "https://readwrite.com/wp-content/uploads/2023/08/krakenimages-376KN_ISplE-unsplash.jpg",
+            "publishedAt": "2023-09-05T20:00:10Z",
+            "content": "In the world of software development and operations, Site Reliability Engineering (SRE) and DevOps have emerged as dynamic allies, forming an unbeatable alliance for building and maintaining robust, \u2026 [+8914 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cracked.com"
+            },
+            "author": "Matt Solomon",
+            "title": "The Most Fifth-Grade-Appropriate \u2018SNL\u2019 Sketches",
+            "description": "A teacher asked the \u2018Saturday Night Live\u2019 subreddit for suggestions, and her fellow Redditors didn\u2019t disappoint \u2014 and couldn\u2019t have been more wholesome about it",
+            "url": "https://www.cracked.com/article_39512_the-most-fifth-grade-appropriate-snl-sketches.html",
+            "urlToImage": "https://s3.crackedcdn.com/phpimages/article/8/5/9/924859.jpg",
+            "publishedAt": "2023-09-16T15:30:00Z",
+            "content": "Why couldnt we have had Redditor lizziefreeze for a teacher back when we were in middle school? If my kids have been exceptionally great, I will randomly share a cool song that theyd otherwise probab\u2026 [+2297 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fast Company"
+            },
+            "author": "Talib Visram",
+            "title": "The future of U.S. train travel is here\u2014and it\u2019s not on Amtrak",
+            "description": "Brightline is already running routes in Florida and will soon break ground on a high-speed line from Las Vegas to LA. It could finally be the boon rail advocates have been hoping for.\n\nIt\u2019s the basic attention to detail that stands out on a Brightline train: \u2026",
+            "url": "https://www.fastcompany.com/90946713/brightline-train-travel-high-speed-rail",
+            "urlToImage": "https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2023/08/02-90946713-brightline-train-service.jpg",
+            "publishedAt": "2023-09-05T04:45:00Z",
+            "content": "It\u2019s thebasic attention to detail that stands out on a Brightline train: the legroom and plush leather seats; the designated places to store bikes, rest phones, and hang jackets; the free Wi-Fi and c\u2026 [+11929 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Autoblog"
+            },
+            "author": "Stephen Williams",
+            "title": "Safer in the air or on the road? It's a long-standing debate",
+            "description": "Filed under:\n Government/Legal,Read This,Safety\n Continue reading Safer in the air or on the road? It's a long-standing debate\nSafer in the air or on the road? It's a long-standing debate originally appeared on Autoblog on Mon, 28 Aug 2023 16:00:00 EDT. Pleas\u2026",
+            "url": "https://www.autoblog.com/2023/08/28/air-travel-driving-road-safety-more-dangerous-solutions/",
+            "urlToImage": "https://o.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1062x597/format/jpg/quality/100/http://s.aolcdn.com/commerce/blogcdn/autos.aol.com/media/import/3-cars-colliding-collision-320nm-051310.jpg",
+            "publishedAt": "2023-08-28T20:00:00Z",
+            "content": "When a commercial jetliner goes down, the dramatic and frightening scenes in the media of the accident almost invariably lead to this public reaction: why cant air travel be more safe?\r\nBut have a lo\u2026 [+2883 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Noupe.com"
+            },
+            "author": "Charlie Fletcher",
+            "title": "The Power of Social Media Marketing in Driving Positive Customer Experiences",
+            "description": "Social media isn\u2019t a passing fad if its popularity is any indicator. Today, 61% of the world\u2019s population uses social sites, and the average person bounces between seven platforms per month.\u00a0 This popularity presents plenty of opportunities for marketers. You\u2026",
+            "url": "https://www.noupe.com/business-online/the-power-of-social-media-marketing-in-driving-positive-customer-experiences.html",
+            "urlToImage": "https://www.noupe.com/wp-content/uploads/2023/09/hans-vivek-Ex8y5KfgBNI-unsplash.jpg",
+            "publishedAt": "2023-09-07T08:52:30Z",
+            "content": "Social media isnt a passing fad if its popularity is any indicator. Today, 61% of the worlds population uses social sites, and the average person bounces between seven platforms per month.\u00a0\r\nThis pop\u2026 [+6442 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Maiya Focht",
+            "title": "The 10 most common nightmares and what they could mean, from fights and illness to anxiety and failure",
+            "description": "Some nightmare subjects that are very common include failure, accidents, or being chased. Here are the possible meanings behind these themes.",
+            "url": "https://www.businessinsider.com/most-common-nightmares-meanings-explained-2023-8",
+            "urlToImage": "https://i.insider.com/64ecbaaeecb92e0019253c56?width=1200&format=jpeg",
+            "publishedAt": "2023-09-05T14:05:37Z",
+            "content": "Daniel Kaluuya experiences hypnotic induced nightmares as Chris in \"Get Out.\"Universal Pictures\r\n<ul>\n<li>Despite all having unique lives and brains, many people have similar nightmares.</li>\n<li>Som\u2026 [+9811 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Melissa Cristina M\u00e1rquez, Contributor, \n Melissa Cristina M\u00e1rquez, Contributor\n https://www.forbes.com/sites/melissacristinamarquez/",
+            "title": "Great Hammerhead Sharks' Hidden Lunar Calendar",
+            "description": "Scientific discovery links the lunar cycles to great hammerhead shark behavior, attracting them to specific sites.",
+            "url": "https://www.forbes.com/sites/melissacristinamarquez/2023/09/04/great-hammerhead-sharks-hidden-lunar-calendar/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/60ef069e4ccd579767201fb6/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-05T03:57:48Z",
+            "content": "Have you ever wondered why spotting a magnificent great hammerhead shark seems more likely during a full moon? Researchers in the Central Pacific Ocean have unraveled the pivotal role played by the l\u2026 [+5656 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Atlantic"
+            },
+            "author": "Yair Rosenberg",
+            "title": "Why Is Elon Musk Blaming Jews for Anti-Semitism?",
+            "description": "The conceit that Jews cause themselves to be persecuted is as old as anti-Jewish bigotry itself.",
+            "url": "https://www.theatlantic.com/ideas/archive/2023/09/musk-antisemitism-anti-defamation-league-twitter/675235/?utm_source=feed",
+            "urlToImage": null,
+            "publishedAt": "2023-09-06T14:55:17Z",
+            "content": "For most people, Labor Day weekend was a time for rest and relaxation with friends and family. But for Elon Musk and countless users on Twitter, it was an opportunity to denounce a Jewish organizatio\u2026 [+6822 chars]"
+        },
+        {
+            "source": {
+                "id": "vice-news",
+                "name": "Vice News"
+            },
+            "author": "Becky Ferreira, Jordan Pearson",
+            "title": "A Mysterious Light In Space Keeps Switching On and Off. Now, We Know Why.",
+            "description": "A dozen of the world\u2019s best telescopes were enlisted to explain the behavior of an object that has puzzled scientists for more than a decade.",
+            "url": "https://www.vice.com/en/article/jg5dw8/a-mysterious-light-in-space-keeps-switching-on-and-off-now-we-know-why",
+            "urlToImage": "https://video-images.vice.com/articles/64f0caf4fdc13638a888cd0e/lede/1693502420144-your-paragraph-text-5.jpeg?image-resize-opts=Y3JvcD0xeHc6MXhoO2NlbnRlcixjZW50ZXImcmVzaXplPTEyMDA6KiZyZXNpemU9MTIwMDoq",
+            "publishedAt": "2023-08-31T17:21:10Z",
+            "content": "Scientists have discovered the mysterious reason that a radiant object in our galaxy keeps switching on and off between high and low energy modes, meaning that it cycles between brighter and darker p\u2026 [+5438 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Psychology Today"
+            },
+            "author": "Gia Marson, Ed.D., and Danielle Keenan-Miller, Ph.D.",
+            "title": "I Think Therefore I Eat: 5 Mindsets for Healthier Eating",
+            "description": "Our thoughts have a powerful effect on our behavior, and these five mindsets can support healthier, more relaxed eating.",
+            "url": "https://www.psychologytoday.com/intl/blog/the-binge-eating-prevention-plan/202309/i-think-therefore-i-eat-5-mindsets-for-healthier",
+            "urlToImage": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2023-09/girl-846357_1280.jpg?itok=lrP9KhIX",
+            "publishedAt": "2023-09-13T12:05:35Z",
+            "content": "By Gia Marson, EdD\r\nChoosing to eat in a healthier manner, without the restrictions of dieting, involves an important shift in mindset. Dietary thinking is often associated with rigidity, self-blame,\u2026 [+6634 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Vince Molinaro, Forbes Councils Member, \n Vince Molinaro, Forbes Councils Member\n https://www.forbes.com/sites/forbesbusinesscouncil/people/vincemolinaro/",
+            "title": "The Most Important Hire A CEO Will Make: The CHRO",
+            "description": "The CHRO is not just an HR executive but a strategic partner to the CEO, responsible for shaping the organization's culture, nurturing talent and driving overall success.",
+            "url": "https://www.forbes.com/sites/forbesbusinesscouncil/2023/08/28/the-most-important-hire-a-ceo-will-make-the-chro/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/634d5c23b5b9e8d53dc9a295/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-08-28T14:15:00Z",
+            "content": "Dr. Vince Molinaro, CEO of Leadership Contract Inc., is a NY Times best-selling author &amp; adviser on scaling leadership accountability.\r\ngetty\r\nIve worked with hundreds of organizations over the y\u2026 [+5252 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Alok Kulkarni, Forbes Councils Member, \n Alok Kulkarni, Forbes Councils Member\n https://www.forbes.com/sites/forbestechcouncil/people/alokkulkarni/",
+            "title": "Data-Driven Strategy: How Benchmarking Drives Stronger CX Performance",
+            "description": "Let\u2019s explore how through chatbot benchmarking, businesses can ensure their bot is living up to its full potential and driving stronger CX performance.",
+            "url": "https://www.forbes.com/sites/forbestechcouncil/2023/09/15/data-driven-strategy-how-benchmarking-drives-stronger-cx-performance/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/650353a2f5d79fd4bd28ff09/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-15T11:45:00Z",
+            "content": "Alok Kulkarni is Co-Founder and CEO of Cyara, a customer experience (CX) leader trusted by leading brands around the world.\r\ngetty\r\nOrganizations are under increased pressure to meet customers growin\u2026 [+7044 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "ReadWrite"
+            },
+            "author": "Dr Shamael Zaheer Khan",
+            "title": "IoT Serving is Up Delicious Change: The Food Delivery Landscape",
+            "description": "Discover how IoT is transforming e-commerce & food delivery solutions in the modern era. Experience reading about a delicious change happening around, as smart devices and data-driven logistics revolutionize the way we order, receive and enjoy meals.",
+            "url": "https://readwrite.com/iot-is-serving-up-delicious-change-the-food-delivery-landscape/",
+            "urlToImage": "https://readwrite.com/wp-content/uploads/2023/09/The-Food-Delivery-Landscape.jpg",
+            "publishedAt": "2023-09-11T17:30:34Z",
+            "content": "IoT\u2019s impact on e-commerce is worth delving into. The exploration of modern-age food delivery space, a thriving online retail and e-commerce domain, cannot be neglected, likewise. It has brought abou\u2026 [+9715 chars]"
+        },
+        {
+            "source": {
+                "id": "fox-sports",
+                "name": "Fox Sports"
+            },
+            "author": null,
+            "title": "Spain\u2019s men\u2019s team condemn Rubiales\u2019 \u2018unacceptable behavior\u2019 toward Hermoso",
+            "description": "Spain\u2019s men\u2019s national team condemned the \"unacceptable behavior\" of Luis Rubiales in a show of support for Jenni Hermoso.",
+            "url": "https://www.foxsports.com/stories/soccer/spains-mens-team-condemn-rubiales-unacceptable-behavior-toward-hermoso",
+            "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2023/09/1408/814/spain2.jpg?ve=1&tl=1",
+            "publishedAt": "2023-09-05T00:05:50Z",
+            "content": "The captains of Spains mens national team condemned the \"unacceptable behavior\" of soccer federation president Luis Rubiales in a show of support Monday for the Womens World Cup-winning team.\r\nIt was\u2026 [+2417 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "DIYphotography"
+            },
+            "author": "Shreyas S. Yadav",
+            "title": "Five basic composition techniques for stunning wildlife photos",
+            "description": "\u201cI can\u2019t take awesome wildlife images because I have an entry-level camera.\"\n\"My images don\u2019t look excellent. Hmm, I think it is because my camera is not full frame; it does not have high dynamic range and high ISO capability. It\u2019s time that I upgrade to a hi\u2026",
+            "url": "https://www.diyphotography.net/five-basic-composition-techniques-for-stunning-wildlife-photos/",
+            "urlToImage": "https://www.diyphotography.net/wp-content/uploads/2023/09/composition-tips-wildlife-photography01-1.png",
+            "publishedAt": "2023-09-26T13:48:00Z",
+            "content": "I cant take awesome wildlife images because I have an entry-level camera.\u201d\r\n\u201cMy images dont look excellent. Hmm, I think it is because my camera is not full frame; it does not have high dynamic range\u2026 [+6162 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Universe Today"
+            },
+            "author": "Matt Williams",
+            "title": "Polaris is the Closest, Brightest Cepheid Variable. Very Recently, Something Changed.",
+            "description": "A new study has revealed that Polaris' pulsating behavior may be caused by its binary companion, resolving a long-standing mystery in astronomy.\nThe post Polaris is the Closest, Brightest Cepheid Variable. Very Recently, Something Changed. appeared first on U\u2026",
+            "url": "https://www.universetoday.com/163101/polaris-is-the-closest-brightest-cepheid-variable-very-recently-something-changed/",
+            "urlToImage": "https://www.universetoday.com/wp-content/uploads/2023/09/View-artist-star-system-Polaris-rendering.jpg",
+            "publishedAt": "2023-09-10T19:29:46Z",
+            "content": "When you look up in the night sky and find your way to the North Star, you are looking at Polaris. Not only is it the brightest star in the Ursa Minor constellation (the Little Dipper), but its posit\u2026 [+4327 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Search Engine Journal"
+            },
+            "author": "Andrea Atzori",
+            "title": "Why Enhanced Conversions Are Now More Important Than Ever For Google Ads via @sejournal, @andreaatzori",
+            "description": "Harness first-party data to gain a deeper understanding of your audience, leading to more personalized and relevant campaigns.\nThe post Why Enhanced Conversions Are Now More Important Than Ever For Google Ads appeared first on Search Engine Journal.",
+            "url": "https://www.searchenginejournal.com/why-enhanced-conversions-are-now-more-important-than-ever-google-ads/492316/",
+            "urlToImage": "https://www.searchenginejournal.com/wp-content/uploads/2023/07/enhanced-conversions-google-ads-64c245fe8330b-sej.png",
+            "publishedAt": "2023-08-31T08:15:32Z",
+            "content": "The convergence of rising privacy concerns and regulation enforcement with fast-paced technology advancements has sparked a revolutionary transformation in how we approach marketing planning and exec\u2026 [+8472 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Walter Loeb, Senior Contributor, \n Walter Loeb, Senior Contributor\n https://www.forbes.com/sites/walterloeb/",
+            "title": "Drastic Changes At Amazon",
+            "description": "Driving this change is the fact that the Amazon business mix itself has changed and third part sellers now account for 60% of sales.",
+            "url": "https://www.forbes.com/sites/walterloeb/2023/09/22/drastic-changes-at-amazon/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/60c7fd2c9878b5eedc7980fb/0x0.jpg?format=jpg&crop=2025,562,x0,y348,safe&width=1200",
+            "publishedAt": "2023-09-22T10:45:00Z",
+            "content": "Amazon. (Photo by Smith Collection/Gado/Getty Images)\r\nGetty Images\r\nAmazons over-arching business goal has shifted; it has evolved from creating a top performing e-commerce platform to becoming the \u2026 [+4696 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Louis Biscotti, Contributor, \n Louis Biscotti, Contributor\n https://www.forbes.com/sites/louisbiscotti/",
+            "title": "Mergers Make Headlines, But What Makes Them Work?",
+            "description": "Explore the factors driving mergers in the food and beverage sector and their challenges in meeting expectations.",
+            "url": "https://www.forbes.com/sites/louisbiscotti/2023/09/25/mergers-make-headlines-but-what-makes-them-work/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6511d3d89d33a7c2df91e61c/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-25T20:58:39Z",
+            "content": "The success of acquisitions depends on factors such as strong strategy, expertise, good integration, ... [+] riding the waves of trends, expansion, and strong management, while poor integration, faul\u2026 [+10739 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Atlantic"
+            },
+            "author": "Sarah Frier",
+            "title": "The New Musk Biography Is a Distraction",
+            "description": "In Walter Isaacson\u2019s new biography, the focus on psychology diverts us from the questions we should be asking about the world\u2019s richest man.",
+            "url": "https://www.theatlantic.com/books/archive/2023/09/elon-musk-biography-book-walter-isaacson/675426/?utm_source=feed",
+            "urlToImage": null,
+            "publishedAt": "2023-09-24T11:00:00Z",
+            "content": "This past December, Elon Musk\u2019s extended family gathered for Christmas. As was their tradition, they pondered a question of the year, which seemed strategically designed for Elon to answer: \u201cWhat reg\u2026 [+8103 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "NPR"
+            },
+            "author": "Aaron Bolton",
+            "title": "Storing guns away from home could reduce suicides, but there are legal hurdles",
+            "description": "New ideas like \"safe storage maps\" show gun owners where to put their firearms in safekeeping if a mental health crisis happens. The idea has support, but obstacles are in the way in some states.",
+            "url": "https://www.npr.org/sections/health-shots/2023/09/06/1197724579/gun-storage-suicide-risk-safe-storage-maps",
+            "urlToImage": "https://media.npr.org/assets/img/2023/09/05/hegstrom_6_wide-bc56c55a40361143a0ae3a2393930fadd1bca55c-s1400-c100.jpg",
+            "publishedAt": "2023-09-06T09:01:27Z",
+            "content": "Jess Hegstrom, a public health worker for Lewis and Clark County in Montana, tries to start conversations about suicide risk at gun shows. \"I'm not here to waggle my finger at you,\" she says.\r\nAaron \u2026 [+11692 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Singularity Hub"
+            },
+            "author": "Singularity Hub Staff",
+            "title": "This Week\u2019s Awesome Tech Stories From Around the Web (Through September 16)",
+            "description": "ROBOTICS This Driverless Car Company Is Using Chatbots to Make Its Vehicles Smarter Will Douglas Heaven | MIT Technology Review \u201cSelf-driving car startup Wayve can now interrogate its vehicles, asking them questions about their driving decisions\u2014and getting a\u2026",
+            "url": "https://singularityhub.com/2023/09/16/this-weeks-awesome-tech-stories-from-around-the-web-through-september-16/",
+            "urlToImage": "https://singularityhub.com/wp-content/uploads/2023/09/streams-water-aerial-image-iceland.jpeg",
+            "publishedAt": "2023-09-16T14:00:21Z",
+            "content": "This Driverless Car Company Is Using Chatbots to Make Its Vehicles SmarterWill Douglas Heaven | MIT Technology Review\u201cSelf-driving car startup Wayve can now interrogate its vehicles, asking them ques\u2026 [+5552 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Gary Drenik, Contributor, \n Gary Drenik, Contributor\n https://www.forbes.com/sites/garydrenik/",
+            "title": "New Research Shows Social Media Data Is The Driving Force For Business Intelligence Among Most Organizations",
+            "description": "Social media usage has increased to all-time highs and more interactions are happening on social media than ever before.",
+            "url": "https://www.forbes.com/sites/garydrenik/2023/08/31/new-research-shows-social-media-data-is-the-driving-force-for-business-intelligence-among-most-organizations/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/64ef429a88f9154deb0f2e7a/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-08-31T14:00:00Z",
+            "content": "Social Media Data\r\nAdobeStock_219996753\r\nSocial media usage has increased to all-time highs and more interactions are happening on social media than ever before. Business executives now understand th\u2026 [+8158 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Search Engine Journal"
+            },
+            "author": "Corey Morris",
+            "title": "The Importance Of Starting Your SEO Campaign With Strategy Development via @sejournal, @coreydmorris",
+            "description": "SEO strategy is important for many reasons ranging from maximizing return to having an organized plan to manage tactics and the work overall.\nThe post The Importance Of Starting Your SEO Campaign With Strategy Development appeared first on Search Engine Journ\u2026",
+            "url": "https://www.searchenginejournal.com/the-importance-of-starting-your-seo-campaign-with-strategy-development/492677/",
+            "urlToImage": "https://www.searchenginejournal.com/wp-content/uploads/2023/07/strategy-development-64c23ed7e5b21-sej.png",
+            "publishedAt": "2023-09-19T08:15:45Z",
+            "content": "As the online world becomes oversaturated with curated and repetitive content, it\u2019s important to actually develop an SEO strategy that increases the likelihood that your site is in a position to unlo\u2026 [+7935 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gothamist"
+            },
+            "author": "Stephen Nessen",
+            "title": "Program meant to crack down on NYC's dangerous drivers should end, says transportation department",
+            "description": "A Department of Transportation review recommended ending the Dangerous Vehicle Abatement program because it is too difficult to assess its effectiveness. Advocates and elected officials have called the program a failure. [ more \u203a ]",
+            "url": "https://gothamist.com/news/program-meant-to-crack-down-on-nycs-dangerous-drivers-should-end-says-transportation-department",
+            "urlToImage": "https://cms.prod.nypr.digital/images/340864/fill-1200x650|format-webp|webpquality-85/",
+            "publishedAt": "2023-09-22T18:19:00Z",
+            "content": "A program meant to crack down on dangerous drivers did not dramatically reduce their sketchy behavior on New York City streets, the Department of Transportation wrote in a new report on Friday.\r\nThe \u2026 [+4611 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Frontiersin.org"
+            },
+            "author": null,
+            "title": "The computational power of the human brain",
+            "description": "At the end of the 20th century, analog systems in computer science have been widely replaced by digital systems due to their higher computing power. Nevertheless, the question keeps being intriguing until now: is the brain analog or digital? Initially, the la\u2026",
+            "url": "https://www.frontiersin.org/articles/10.3389/fncel.2023.1220030",
+            "urlToImage": "https://www.frontiersin.org/files/MyHome%20Article%20Library/1220030/1220030_Thumb_400.jpg",
+            "publishedAt": "2023-09-07T22:39:18Z",
+            "content": "1. Information processing in brain: theoretical concepts\r\nThe brain has always been compared with a highly sophisticated computer. To this end, scientists and computer technologists have been working\u2026 [+181589 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Techdirt"
+            },
+            "author": "Tim Cushing",
+            "title": "10th Circuit Reminds Cop That A Driver Doing Nothing Suspicious Is Not Reasonable Suspicion To Extend A Stop",
+            "description": "Law enforcement officers rarely care about enforcing traffic laws. Moving violations may produce a little extra revenue for the city or state, but it doesn\u2019t do much for the officers performing the stops. Pretextual stops? The leveraging of any perceived movi\u2026",
+            "url": "https://www.techdirt.com/2023/09/22/10th-circuit-reminds-cop-that-a-driver-doing-nothing-suspicious-is-not-reasonable-suspicion-to-extend-a-stop/",
+            "urlToImage": "https://www.techdirt.com/wp-content/themes/techdirt/assets/images/td-rect-logo-white.png",
+            "publishedAt": "2023-09-22T22:46:16Z",
+            "content": "from the reasonable-is-the-baseline dept\r\nLaw enforcement officers rarely care about enforcing traffic laws. Moving violations may produce a little extra revenue for the city or state, but it doesn\u2019t\u2026 [+13244 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Atlantic"
+            },
+            "author": "Marina Koren",
+            "title": "This Hurricane Season Is Unprecedented",
+            "description": "A very strange climate drove Hurricane Idalia. Scientists can\u2019t predict whether more storms like it are coming.",
+            "url": "https://www.theatlantic.com/science/archive/2023/08/ocean-heat-waves-hurricane-idalia/675197/?utm_source=feed",
+            "urlToImage": null,
+            "publishedAt": "2023-08-31T19:11:32Z",
+            "content": "Earlier this week, mission control commanded the International Space Station to turn its cameras toward the Gulf of Mexico. Giant white clouds, gleaming against the blue of the planet\u2019s oceans and th\u2026 [+5937 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Atlantic"
+            },
+            "author": "Angie Schmitt",
+            "title": "The Agony of the School Car Line",
+            "description": "It\u2019s crazy-making and deeply inefficient.",
+            "url": "https://www.theatlantic.com/ideas/archive/2023/09/school-car-lines-buses-biking/675345/?utm_source=feed",
+            "urlToImage": null,
+            "publishedAt": "2023-09-18T11:00:00Z",
+            "content": "For parents across America, the school car line is a daily punishment. The stern, annoyed command from some poor teacher or volunteer to \u201cpull all the way forward, please!\u201d The breakdown of the whole\u2026 [+6235 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MakeUseOf"
+            },
+            "author": "Sead Fadilpa\u0161i\u0107",
+            "title": "The 9 Top Technology Trends That Are Shaping the Future of Cybersecurity",
+            "description": "The latest tech trends can help you future-proof your cyber defenses. Here are the technologies you need to keep an eye on.",
+            "url": "https://www.makeuseof.com/top-technology-trends-shaping-cybersecurity-future/",
+            "urlToImage": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/08/a-person-dances-under-neon-lights.jpg",
+            "publishedAt": "2023-09-09T21:01:26Z",
+            "content": "As technology marches on, so do the strategies and tactics employed by the most cunning cybercriminals. In this never-ending battle, organizations and individuals alike must remain one step ahead to \u2026 [+10412 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cracked.com"
+            },
+            "author": "Jesse",
+            "title": "12 Nigh-Insurmountable Crags of Trivia Only Conquerable by the Most Intrepid Factoid Aficionados in the World",
+            "description": "By Jesse Published: September 06th, 2023",
+            "url": "https://www.cracked.com/article_39373_12-nigh-insurmountable-crags-of-trivia-only-conquerable-by-the-most-intrepid-factoid-aficionados-in-the-world.html",
+            "urlToImage": "https://s3.crackedcdn.com/phpimages/article/1/0/7/919107.jpg",
+            "publishedAt": "2023-09-06T19:00:00Z",
+            "content": "The facts that lay beyond this point are no tidbits. These are behemoth, titanic boulders of trivia unimaginably immense, deceptively steep, utterly inhospitable to human life. Some are regarded as d\u2026 [+3541 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Adweek"
+            },
+            "author": "Adweek Staff",
+            "title": "The Speed of Culture Podcast: Verizon\u2019s Evolution From Landlines to 5G",
+            "description": "In today's fast-paced marketing landscape, personalizing your message for a unique audience is key. This means diving deep into understanding your consumers' needs. But how do you juggle this when you're overseeing 11 distinct brands? In today's episode, Angi\u2026",
+            "url": "https://www.adweek.com/brand-marketing/the-speed-of-culture-podcast-verizon-angie-klein/",
+            "urlToImage": "https://static-prod.adweek.com/wp-content/uploads/2023/09/Angie-Klein_FB_1200x630-600x315.png",
+            "publishedAt": "2023-09-21T17:30:43Z",
+            "content": "In todays fast-paced marketing landscape, personalizing your message for a unique audience is key. This means diving deep into understanding your consumers needs. But how do you juggle this when your\u2026 [+3801 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "TVLine"
+            },
+            "author": "Nick Caruso",
+            "title": "Angelica Ross Accuses \u2018Miss E.R.\u2019 of Toxic, Transphobic Behavior on AHS: 1984 Set",
+            "description": "Actress Angelica Ross has alleged a toxic, racist and transphobic work environment while on the set of American Horror Story: 1984, seemingly taking aim at costar Emma Roberts. Although Ross doesn\u2019t specifically call out Roberts by name, she at one point conf\u2026",
+            "url": "https://tvline.com/news/angelica-ross-emma-roberts-feud-controversy-ahs-1984-video-allegations-1235046286/",
+            "urlToImage": "https://tvline.com/wp-content/uploads/2023/09/ahs-1984-ep-7-4.jpg.webp",
+            "publishedAt": "2023-09-20T15:20:40Z",
+            "content": "Actress Angelica Ross has alleged a toxic, racist and transphobic work environment while on the set of American Horror Story: 1984, seemingly taking aim at costar Emma Roberts. \r\nAlthough Ross doesn\u2019\u2026 [+1971 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Geeky Gadgets"
+            },
+            "author": "Julian Horsey",
+            "title": "Tesla go-kart upgraded with self-driving autopilot",
+            "description": "In the realm of technological innovation, Austin Blake has made a significant stride by creating a self-driving go-kart, aptly named the Teskart. This unique invention leverages a machine learning technique known as behavioral cloning, a method that replicate\u2026",
+            "url": "https://www.geeky-gadgets.com/self-driving-autopilot-go-cart/",
+            "urlToImage": "https://www.geeky-gadgets.com/wp-content/uploads/2023/09/Tesla-go-kart-upgraded-with-self-driving-autopilot-2023.jpg",
+            "publishedAt": "2023-09-05T08:15:35Z",
+            "content": "In the realm of technological innovation, Austin Blake has made a significant stride by creating a self-driving go-kart, aptly named the Teskart. This unique invention leverages a machine learning te\u2026 [+3699 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "ReadWrite"
+            },
+            "author": "Dr Shamael Zaheer Khan",
+            "title": "The Surreal and Bigger Influence of IoT on the Future of E-Commerce",
+            "description": "The rapid emergence of the Internet of Things (IoT) plays a vital role in shaping the future of e-commerce. It [\u2026]\nThe post The Surreal and Bigger Influence of IoT on the Future of E-Commerce appeared first on ReadWrite.",
+            "url": "https://readwrite.com/the-surreal-and-bigger-influence-of-iot-on-the-future-of-e-commerce/",
+            "urlToImage": "https://readwrite.com/wp-content/uploads/2023/08/IoT-on-the-Future-of-E-Commerce.jpg",
+            "publishedAt": "2023-08-30T16:00:42Z",
+            "content": "The rapid emergence of the Internet of Things (IoT) plays a vital role in shaping the future of e-commerce. It unites physical objects through internet connectivity and advanced data collection capab\u2026 [+13125 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Small Business Trends"
+            },
+            "author": "Matt Mansfield",
+            "title": "What is a Custom 404 Page and Why Do You Need One?",
+            "description": "The dreaded 404 Page error code ... if and when your customers get one could spell the end of their visit to your site. Perhaps not with custom 404 pages. These give wayward browsers another place to visit on your site and are typically a lot more visually ap\u2026",
+            "url": "https://smallbiztrends.com/2023/08/what-is-a-custom-404-page.html",
+            "urlToImage": "https://media.smallbiztrends.com/2016/03/custom-404-660x370.png",
+            "publishedAt": "2023-08-28T11:30:49Z",
+            "content": "In the life of every online marketer, there comes a time when one simple truth is realized: driving traffic to your website is a very hard thing to do.\r\nYep, it takes time and effort to get each and \u2026 [+11886 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Small Business Trends"
+            },
+            "author": "Al Davidson",
+            "title": "5 Easy Ways to Improve Your Social Media Marketing",
+            "description": "No matter where your company stands on the spectrum of social media, there are easy ways to improve your social media marketing efforts.",
+            "url": "https://smallbiztrends.com/2023/08/ways-improve-your-social-media-marketing.html",
+            "urlToImage": "https://media.smallbiztrends.com/2014/02/improve-your-social-media-marketing-660x370.jpg",
+            "publishedAt": "2023-08-28T07:05:10Z",
+            "content": "It seems like every company is interested in how to become better at social media marketing, whether theyre just testing the waters of social media for the first time, or whether they have been on Tw\u2026 [+11019 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Futurity: Research News"
+            },
+            "author": "Matt Shipman-NC State",
+            "title": "Has screening upped reports of suicidal children?",
+            "description": "Reports of increasing suicidal behaviors in kids may be due to changes in screening and reporting, a study in one state suggests.",
+            "url": "https://www.futurity.org/suicidal-children-reporting-2973942-2/",
+            "urlToImage": "https://www.futurity.org/wp/wp-content/uploads/2023/09/suicidal_children_reporting_1600.jpg",
+            "publishedAt": "2023-09-13T13:26:48Z",
+            "content": "Reports of increasing suicidal behaviors in children in the decade before the COVID-19 pandemic may be due to changes in screening and reporting by health professionals, a study in one state suggests\u2026 [+3315 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Vox"
+            },
+            "author": "Rebecca Leber",
+            "title": "There\u2019s been a shift in how we think about climate change",
+            "description": "An environmental psychologist on the \u201cfinite pool of worry\u201d and how climate change views are changing.",
+            "url": "https://www.vox.com/climate/2023/8/31/23849730/climate-public-views-emotions-hope-concern",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/im-RmNnPkH0N7mtznhoYI7CdDog=/0x311:7952x4474/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/24885016/GettyImages_1345174226.jpg",
+            "publishedAt": "2023-08-31T10:00:00Z",
+            "content": "Our actions today will determine just how bad climate change will become. But which emotions best drive a person to become politically active? Hope? Anger? Persevering through complacency? What if th\u2026 [+11787 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Vox"
+            },
+            "author": "Marin Cogan",
+            "title": "A fatal crash shows us everything that\u2019s wrong with traffic enforcement",
+            "description": "Amid rising traffic deaths, legal mechanisms designed to keep streets safe are breaking down. Is there a better way?",
+            "url": "https://www.vox.com/23880418/traffic-safety-enforcement-tickets-rock-creek-crash",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/dHpha0zfbBtEBIpx1z8jQh49H8k=/0x161:1325x855/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/24938310/crash.jpeg",
+            "publishedAt": "2023-09-21T10:00:00Z",
+            "content": "Is there a reason were driving, like, 80 mph, blowing red lights? the police officer asked the driver of the black Lexus SUV, according to his body camera footage. It was just after 1 am on a March n\u2026 [+13049 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Rubyflow.com"
+            },
+            "author": null,
+            "title": "Fixing Thor\u2019s CLI Quirks",
+            "description": "I\u2019ve been wanting to build a CLI in Ruby, and Thor is the obvious library to use. But Thor has some weird behaviors that were driving me crazy. Here\u2019s what I found, and how I extended Thor to fix it. https://mattbrictson.com/blog/fixing-thor-cli-behavior",
+            "url": "https://rubyflow.com/p/ayng7m-fixing-thors-cli-quirks",
+            "urlToImage": null,
+            "publishedAt": "2023-08-29T14:24:13Z",
+            "content": "Ive been wanting to build a CLI in Ruby, and Thor is the obvious library to use. But Thor has some weird behaviors that were driving me crazy. Heres what I found, and how I extended Thor to fix it. h\u2026 [+52 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Phys.Org"
+            },
+            "author": "Randall Brown",
+            "title": "Discovery puts a magnetic spin on neuromorphic computing",
+            "description": "The word \"fractals\" might inspire images of psychedelic colors spiraling into infinity in a computer animation. An invisible, but powerful and useful, version of this phenomenon exists in the realm of dynamic magnetic fractal networks.",
+            "url": "https://phys.org/news/2023-08-discovery-magnetic-neuromorphic.html",
+            "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2023/discovery-puts-a-magne.jpg",
+            "publishedAt": "2023-08-28T21:52:03Z",
+            "content": "The word \"fractals\" might inspire images of psychedelic colors spiraling into infinity in a computer animation. An invisible, but powerful and useful, version of this phenomenon exists in the realm o\u2026 [+4792 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Techdirt"
+            },
+            "author": "Mike Masnick",
+            "title": "Texas Ruling Shows You Can\u2019t Regulate Online Pornography Like A Public Health Crisis",
+            "description": "A Texas federal district judge granted a preliminary injunction blocking the enforcement of a controversial age verification law set to enter force September 1. The court determined that House Bill (HB) 1181 was overly broad, even in the narrowest interpretat\u2026",
+            "url": "https://www.techdirt.com/2023/08/31/texas-ruling-shows-you-cant-regulate-online-pornography-like-a-public-health-crisis/",
+            "urlToImage": "https://www.techdirt.com/wp-content/themes/techdirt/assets/images/td-rect-logo-white.png",
+            "publishedAt": "2023-08-31T22:20:17Z",
+            "content": "from the your-porn-addiction-isn't-real dept\r\nA Texas federal district judge granted a preliminary injunctionblocking the enforcement of a controversial age verification law set to enter force Septem\u2026 [+5866 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Zenger News, Contributor, \n Zenger News, Contributor\n https://www.forbes.com/sites/zengernews/",
+            "title": "How AI Is Helping Big Fleet Operators Cut Greenhouse Gas Emissions",
+            "description": "The trend is accelerating as artificial intelligence and machine learning help fleet management services deliver new efficiencies that weren\u2019t previously possible.",
+            "url": "https://www.forbes.com/sites/zengernews/2023/09/15/how-ai-is-helping-big-fleet-operators-cut-greenhouse-gas-emissions/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6504e2b2ce4f66f9f328ff09/0x0.jpg?format=jpg&crop=780,439,x0,y193,safe&width=1200",
+            "publishedAt": "2023-09-15T23:05:17Z",
+            "content": "By Benjamin Raziel\r\nAs scorching heat waves, wildfires and hurricanes fuel greater attention to global warming, businesses with significant greenhouse gas emissions are putting a premium on new techn\u2026 [+4189 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Nilay Patel",
+            "title": "Biometrics? Bring it on: why Okta\u2019s Jameeka Green Aaron wants passwords to go away",
+            "description": "Okta CISO, Customer Identity Jameeka Green Aaron explains why identity is central to security \u2014 and how biometrics, AI, and diversity are affecting the present and future of the field.",
+            "url": "https://www.theverge.com/23850354/biometrics-breaches-okta-jameeka-green-aaron-passwords-passkeys-security",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/zXf8nvCVRFW1xLo4byuggTiOhDs=/0x0:3000x2000/1200x628/filters:focal(1500x1000:1501x1001)/cdn.vox-cdn.com/uploads/chorus_asset/file/24881149/Jameeka_Green_Aaron_Decoder.jpg",
+            "publishedAt": "2023-08-29T15:47:19Z",
+            "content": "Photo illustration by Alex Parkin / The Verge\r\n\n \n\n\n How do you define what it means to be you in the all-digital 21st century \u2014 and how should systems protect that? Today, I\u2019m talking with Jameeka G\u2026 [+72952 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Cyrus Farivar, Forbes Staff, \n Cyrus Farivar, Forbes Staff\n https://www.forbes.com/sites/cyrusfarivar/",
+            "title": "Firefighters Say Cruise Robotaxi Delayed Ambulance After Deadly Accident, But The Company Denies It",
+            "description": "As autonomous vehicles flood San Francisco, first responders have flagged dozens of instances where a self-driving car has gotten in the way. Some of the incidents have been disputed, and other cities haven\u2019t faced the same problems.",
+            "url": "https://www.forbes.com/sites/cyrusfarivar/2023/08/30/cruise-robotaxis-waymo-san-francisco-firefighters/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/64e92f14c5e35e13c84af6bf/0x0.jpg?format=jpg&crop=1920,1080,x0,y0,safe&width=1200",
+            "publishedAt": "2023-08-31T10:30:00Z",
+            "content": "Shortly before 11 p.m. on August 14, firefighters and police officers were called to a grizzly scene in the South of Market neighborhood of San Francisco.\r\nThere they found someone who'd been hit by \u2026 [+12738 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Richard Bishop, Contributor, \n Richard Bishop, Contributor\n https://www.forbes.com/sites/richardbishop1/",
+            "title": "Motive Claims Superiority In Driver Dashcam Performance, Prompting Side-Eyes From Competitors",
+            "description": "Video telematics have revolutionized trucking operations in recent years.  A new study of system efficacy has created controversy amongst the many dashcam vendors.",
+            "url": "https://www.forbes.com/sites/richardbishop1/2023/09/18/motive-claims-superiority-in-driver-dashcam-performance-prompting-side-eyes-from-competitors/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/650320d9ed332c7cf0aea6b5/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-18T21:05:12Z",
+            "content": "Truck drivers are highly professional and safety conscious as a whole. Dashcam systems provide a key ... [+] safety backup.\r\ngetty\r\nAI-powered video telematics have revolutionized trucking operations\u2026 [+9795 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Jess Cording, Contributor, \n Jess Cording, Contributor\n https://www.forbes.com/sites/jesscording/",
+            "title": "How To Stop Overthinking, Overworking And Overgiving At Your Job",
+            "description": "Caught in a pattern of overthinking, overworking, or overgiving at your job? Here\u2019s what to do about it, according to  mental health experts.",
+            "url": "https://www.forbes.com/sites/jesscording/2023/09/14/how-to-stop-overthinking-overworking-and-overgiving-at-your-job/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6501d2c69fb1f077844f3f1a/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-14T12:00:00Z",
+            "content": "It starts off innocently enough. Youre thinking carefully when making decisions and working on projects, or maybe youre putting in extra time at your job because youre new and you want to make a good\u2026 [+5387 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Celia Fleischaker, Forbes Councils Member, \n Celia Fleischaker, Forbes Councils Member\n https://www.forbes.com/sites/forbescommunicationscouncil/people/celiafleischaker/",
+            "title": "Marketing's New Mission: Deciphering Customer Intent",
+            "description": "Customer experience is the new brand battleground, and marketers are increasingly on the front lines helping the business respond to shifting buyer preferences.",
+            "url": "https://www.forbes.com/sites/forbescommunicationscouncil/2023/09/05/marketings-new-mission-deciphering-customer-intent/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6388b3bf1aa815d94ae2e8db/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-05T11:30:00Z",
+            "content": "Celia Fleischaker is CMO at Verint, overseeing the companys global marketing, customer experience program and sales enablement.\r\ngetty\r\nIn the past, marketing data and the marketing tech stack were a\u2026 [+5804 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Theregister.com"
+            },
+            "author": "Richard Currie",
+            "title": "Elon Musk has beef with Bill Gates because he shorted Tesla stock, says biographer",
+            "description": "The origin story of the 'in case u need to lose a boner fast' tweet\nComment Elon Musk's Weltanschauung isn't so much \"forgive and forget\" as it is \"resent and remember\" \u2013 then post a nasty meme on the internet about the person who \"wronged\" you.\u2026",
+            "url": "https://www.theregister.com/2023/09/11/gates_musk_beef_biography/",
+            "urlToImage": "https://regmedia.co.uk/2022/12/16/shutterstock_bill_gates.jpg",
+            "publishedAt": "2023-09-11T14:26:06Z",
+            "content": "Comment Elon Musk's Weltanschauung isn't so much \"forgive and forget\" as it is \"resent and remember\" then post a nasty meme on the internet about the person who \"wronged\" you.\r\nIn April 2022, Musk ha\u2026 [+5405 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hubspot.com"
+            },
+            "author": "Sean Potter",
+            "title": "A Conversation with Hotjar: How They Scaled Organic Traffic Into Millions",
+            "description": "Learn how Hotjar grew organic search traffic by 734% in just three years, and how they were able to turn that traffic into 1,398% growth in new customers.",
+            "url": "https://blog.hubspot.com/marketing/how-hotjar-scaled-organic-traffic#article",
+            "urlToImage": "https://blog.hubspot.com/hubfs/hotjar%20organic%20growth.png#keepProtocol",
+            "publishedAt": "2023-09-18T11:00:00Z",
+            "content": "User empathy is at the heart of everything we do at Hotjar, and that extends into our content strategy.\r\nIt is how we grew non-branded organic search traffic by 734% in just 3 years (2022 versus 2019\u2026 [+9347 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Psychology Today"
+            },
+            "author": "Soren Kaplan Ph.D.",
+            "title": "How to Manage Negative Employees",
+            "description": "Tired of the office negativity? Uncover the psychology behind it and learn strategies to foster a positive, innovative work culture. Boost morale, productivity, and success.",
+            "url": "https://www.psychologytoday.com/intl/blog/the-power-of-experience/202309/how-to-manage-negative-employees",
+            "urlToImage": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2023-09/Office%20Negativity.jpeg.jpg?itok=u1BxNRbD",
+            "publishedAt": "2023-09-21T13:48:05Z",
+            "content": "Have you ever run across someone who is perpetually negative? They might consistently say things like You cant do that, That wont work, and other de-motivating statements. They might use body languag\u2026 [+5499 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The A.V. Club"
+            },
+            "author": "Mary Kate Carr",
+            "title": "What is actually going on at Burning Man?",
+            "description": "The Burning Man fiasco is slowly coming to an end, so perhaps now is a good time to recap the Burning Man fiasco. If you\u2019ve been living in blissful ignorance of Burning Man and its attendant ecological disasters, this one\u2019s for you. (If you want to retain tha\u2026",
+            "url": "https://www.avclub.com/what-is-actually-going-on-burning-man-2023-1850804031",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/fd38980332b5fb5cbffa41e9c5b11da7.jpg",
+            "publishedAt": "2023-09-05T15:09:39Z",
+            "content": "The Burning Man fiasco is slowly coming to an end, so perhaps now is a good time to recap the Burning Man fiasco. If youve been living in blissful ignorance of Burning Man and its attendant ecologica\u2026 [+4859 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Harvard Business Review"
+            },
+            "author": null,
+            "title": "How Do I Handle a Bad Boss?",
+            "description": "How to protect yourself from a bad boss.",
+            "url": "https://hbr.org/podcast/2023/09/how-do-i-handle-a-bad-boss",
+            "urlToImage": "https://hbr.org/resources/images/article_assets/2023/08/wide-new-here.png",
+            "publishedAt": "2023-09-13T13:02:00Z",
+            "content": "ELAINY MATA: What makes a boss bad? Would you be able to tell the difference between a boss who\u2019s just not great at their job, or maybe your personalities are just clashing a bit versus a boss that\u2019s\u2026 [+24210 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Psychology Today"
+            },
+            "author": "Jourdan Travers LCSW",
+            "title": "3 Signs That Your Partner Is a Serial Cheater",
+            "description": "The \"once a cheater, always a cheater\" euphemism applies to these people.",
+            "url": "https://www.psychologytoday.com/intl/blog/hard-cold-research/202309/3-signs-that-your-partner-is-a-serial-cheater",
+            "urlToImage": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2023-09/a-medicine-bottle-with-heart-pills-symbolyzing-an-addiction-to-multiple-relationships-1x1.jpg?itok=FKCY3mf4",
+            "publishedAt": "2023-09-21T15:50:47Z",
+            "content": "The toll that infidelity can take on the foundation of a committed relationship cannot be understated. Serial cheaters, or individuals with a history of repetitive and compulsive infidelity, however,\u2026 [+5894 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Quicksprout.com"
+            },
+            "author": "Lars Lofgren",
+            "title": "15 Ecommerce Conversion Rate Optimization Wins to Test",
+            "description": "Ecommerce platforms rely on sales to survive. If you operate one of these websites, you know how important sales are \u2026\n 15 Ecommerce Conversion Rate Optimization Wins to Test Read More \u00bb\nThe post 15 Ecommerce Conversion Rate Optimization Wins to Test appeared\u2026",
+            "url": "https://www.quicksprout.com/ecommerce-conversion-rate-optimization/",
+            "urlToImage": "https://www.quicksprout.com/wp-content/uploads/2023/06/ecommerce-conversion-rate-optimization_featured-image.webp",
+            "publishedAt": "2023-09-04T18:00:00Z",
+            "content": "Ecommerce platforms rely on sales to survive. If you operate one of these websites, you know how important sales are for your business.\r\nWhether you sell products exclusively online or have an ecomme\u2026 [+27875 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Phys.Org"
+            },
+            "author": "Science X",
+            "title": "How does voltage drive nonmetallic catalysts to perform electrocatalytic reactions?",
+            "description": "Understanding how voltage drives nanoscale electrocatalysts to initiate reactions is a fundamental scientific question. This is especially challenging when dealing with non-metallic electrocatalysts due to their low inherent carrier concentration, which leads\u2026",
+            "url": "https://phys.org/news/2023-09-voltage-nonmetallic-catalysts-electrocatalytic-reactions.html",
+            "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2023/how-does-voltage-drive.jpg",
+            "publishedAt": "2023-09-22T17:46:04Z",
+            "content": "Understanding how voltage drives nanoscale electrocatalysts to initiate reactions is a fundamental scientific question. This is especially challenging when dealing with non-metallic electrocatalysts \u2026 [+3937 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CleanTechnica"
+            },
+            "author": "Arthur Frederick (Fritz) Hasler",
+            "title": "Tesla\u2019s Full Self Driving Beta V11.4.4: When It\u2019s Good, It\u2019s Very, Very, Good; When It\u2019s Bad, It\u2019s Horrid",
+            "description": "Below, I will look at what Tesla Full Self Driving (FSD) is currently very good at, what it\u2019s bad at, what it\u2019s very bad at, where I have to intervene even though I don\u2019t have to, and the future of FSD. I have several updates throughout the piece, but let\u2019s s\u2026",
+            "url": "https://cleantechnica.com/2023/09/12/teslas-full-self-driving-beta-v11-4-4-when-its-good-its-very-very-good-when-its-bad-its-horrid/",
+            "urlToImage": "http://cleantechnica.com/files/2023/09/3555_FullSelfDriving-Beta-Screen-17April2023-scaled.jpg",
+            "publishedAt": "2023-09-12T14:13:21Z",
+            "content": "Below, I will look at what Tesla Full Self Driving (FSD) is currently very good at, what it\u2019s bad at, what it\u2019s very bad at, where I have to intervene even though I don\u2019t have to, and the future of F\u2026 [+9536 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Moz.com"
+            },
+            "author": "Minnie Mururi",
+            "title": "How to Future-Proof Your Brand with SEO",
+            "description": "Learn how to future-proof your brand with SEO by adapting to the ever-changing digital landscape and securing your online presence. Follow Minnie\u2019s eight essential tips to ensure your brand's long-term success through SEO.",
+            "url": "https://moz.com/blog/how-to-future-proof-your-brand-with-seo",
+            "urlToImage": null,
+            "publishedAt": "2023-09-07T07:00:00Z",
+            "content": "The digital landscape is evolving quickly, and businesses must adjust their marketing techniques to maintain a competitive edge. You need to be able to transform how you operate your business and eng\u2026 [+17037 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Atlantic"
+            },
+            "author": "Andrew Moseman",
+            "title": "It\u2019s Still Tesla\u2019s World",
+            "description": "The UAW strike is what happens when the car companies in Detroit start acting like Silicon Valley.",
+            "url": "https://www.theatlantic.com/technology/archive/2023/09/uaw-strike-tesla-evs/675393/?utm_source=feed",
+            "urlToImage": null,
+            "publishedAt": "2023-09-20T20:03:00Z",
+            "content": "The Jeep Wrangler was built to drive out past where the power lines end. Watch any ad for the car, and you\u2019ll surely see it surmounting boulders and conquering muck in places far from the beaten free\u2026 [+8741 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Mark Travers, Contributor, \n Mark Travers, Contributor\n https://www.forbes.com/sites/traversmark/",
+            "title": "Is Your Partner A \u2018Serial Cheater\u2019? How To Spot The Signs",
+            "description": "A deeper look into the phenomenon of serial cheating reveals its multifaceted and complex nature.",
+            "url": "https://www.forbes.com/sites/traversmark/2023/09/06/is-your-partner-a-serial-cheater-how-to-spot-the-signs/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/632dd1708bd2182a207d2c1f/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-06T21:50:39Z",
+            "content": "A deeper look into the phenomenon of serial cheating reveals its multifaceted and complex nature.\r\ngetty\r\nThe toll that infidelity can take on the foundation of a committed relationship cannot be und\u2026 [+5994 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MMA Mania"
+            },
+            "author": "Ryan Harkness",
+            "title": "Adesanya Pleads Guilty To Drunk Driving Charge",
+            "description": "The former UFC middleweight champion will be sentenced in January 2024 after pleading guilty to drink driving in New Zealand.",
+            "url": "https://www.mmamania.com/2023/9/24/23888570/israel-adesanya-pleads-guilty-to-drunk-driving-charge-after-august-19th-incident",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/8jJW5FupxavGCl-7TZFdzAKJ74U=/0x56:5386x2876/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/24949966/1526970087.jpg",
+            "publishedAt": "2023-09-25T01:08:55Z",
+            "content": "Photo by Chris Unger/Zuffa LLC via Getty Images\r\n\n \n\n The former UFC middleweight champion will be sentenced in January 2024 after pleading guilty to drink driving in New Zealand. Israel Adesanya was\u2026 [+1862 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "TVLine"
+            },
+            "author": "Nick Caruso",
+            "title": "Angelica Ross Publicly Thanks Emma Roberts for Apology Following Transphobia Allegations",
+            "description": "The Angelica Ross-Emma Roberts drama has take a sudden, healing turn. In the wake of Ross accusing her American Horror Story: 1984 co-star of transphobic behavior on the set of the FX anthology, the Pose vet returned to social media Wednesday afternoon to rev\u2026",
+            "url": "https://tvline.com/news/emma-roberts-apology-statement-transphobia-allegations-angelica-ross-1235046329/",
+            "urlToImage": "https://tvline.com/wp-content/uploads/2023/09/angelica-ross-emma-roberts.jpg.webp",
+            "publishedAt": "2023-09-20T19:54:11Z",
+            "content": "The Angelica Ross-Emma Roberts drama has take a sudden, healing turn. \r\nIn the wake of Ross accusing her American Horror Story: 1984 co-star of transphobic behavior on the set of the FX anthology, th\u2026 [+2161 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "HuffPost"
+            },
+            "author": "Stephen A. Crockett Jr.",
+            "title": "Hip-Hop\u2019s New Generation Is Giving A Polished Middle Finger To Toxic Masculinity",
+            "description": "Gen Z was born into hip-hop, and they don't concern themselves with made-up heteronormative rules.",
+            "url": "https://www.huffpost.com/entry/hip-hops-new-generation-is-giving-a-painted-middle-finger-to-toxic-masculinity_n_64da42c6e4b0516e112da7b3",
+            "urlToImage": "https://img.huffingtonpost.com/asset/64dbf60c1e00001c00513bd9.jpg?cache=3hM1MeUD7v&ops=1200_630",
+            "publishedAt": "2023-08-29T09:45:04Z",
+            "content": "Maddie Abuyuan / HuffPost; Getty Images; Lil Yachty via Youtube\r\nGen Z was born into hip-hop, and they dont concern themselves with made-up heteronormative rules.\r\nBy Stephen A. Crockett\r\nAug. 29, 20\u2026 [+11359 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Javacodegeeks.com"
+            },
+            "author": "Java Code Geeks",
+            "title": "Exploring SIL Testing: Advantages and Applications",
+            "description": "Software-in-the-Loop (SIL) testing stands as a pivotal methodology within the realm of software development and verification. It plays a critical role in ensuring the reliability, functionality, and performance of software systems. SIL testing involves the si\u2026",
+            "url": "https://www.javacodegeeks.com/2023/09/exploring-sil-testing-advantages-and-applications.html",
+            "urlToImage": "https://www.javacodegeeks.com/wp-content/uploads/2012/10/software-development-2-logo.jpg",
+            "publishedAt": "2023-09-20T06:00:00Z",
+            "content": "Software-in-the-Loop (SIL) testing stands as a pivotal methodology within the realm of software development and verification. It plays a critical role in ensuring the reliability, functionality, and \u2026 [+13652 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Rene Head, Forbes Councils Member, \n Rene Head, Forbes Councils Member\n https://www.forbes.com/sites/forbestechcouncil/people/renehead/",
+            "title": "A Vision Of AI-Enhanced Test Automation",
+            "description": "Leveraging AI to enhance test automation reshapes the landscape of software testing to align with these modern demands, redefining the nature of testing excellence.",
+            "url": "https://www.forbes.com/sites/forbestechcouncil/2023/09/11/a-vision-of-ai-enhanced-test-automation/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/632dbc560496916bbddd5385/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-11T11:15:00Z",
+            "content": "Rene Head is a VP of The Methodical Group and Head of Methodical Engineering. LinkedIn Profile.\r\ngetty\r\nThe complexity of software architecture and diverse user interactions presents challenges to co\u2026 [+7159 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "New York Daily News"
+            },
+            "author": "New York Daily News Editorial Board, New York Daily News",
+            "title": "Editorial: Speed cameras work: A year on, NYC shows how to slow traffic and save lives",
+            "description": "Rarely does one see a clearer cause-and-effect correlation between public policy and human behavior. One year after Albany belatedly gave New York City the...",
+            "url": "https://www.nydailynews.com/opinion/ny-edit-speed-cameras-work-20230830-e4fuepfvxfbsdedzntjfdzqoay-story.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/IZyWd4qiI_wnS3.dIPYXHA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/ny_daily_news_national_852/2fbb6ee0eaeda0ae8ee94d8225358c76",
+            "publishedAt": "2023-09-01T08:00:00Z",
+            "content": "Rarely does one see a clearer cause-and-effect correlation between public policy and human behavior. One year after Albany belatedly gave New York City the power to keep speed cameras on in school zo\u2026 [+2950 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Tanya Mohn, Contributor, \n Tanya Mohn, Contributor\n https://www.forbes.com/sites/tanyamohn/",
+            "title": "Hundreds Estimated To Die On U.S. Roads Labor Day Weekend",
+            "description": "More than 450 people may lose their lives in preventable traffic crashes over the upcoming holiday weekend, according to new analysis from the National Safety Council.",
+            "url": "https://www.forbes.com/sites/tanyamohn/2023/08/31/hundreds-estimated-to-die-on-us-roads-labor-day-weekend/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/64f0c43fe70975d3cd1e8144/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-08-31T16:52:33Z",
+            "content": "More than 450 people may lose their lives in preventable traffic crashes over the upcoming Labor Day ... [+] holiday weekend.\r\nMediaNews Group via Getty Images\r\nMore than 450 people may lose their li\u2026 [+4502 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Nitin Kumar, Forbes Councils Member, \n Nitin Kumar, Forbes Councils Member\n https://www.forbes.com/sites/forbestechcouncil/people/nitinkumar1/",
+            "title": "Web3 Wallets: Transforming Brand-Consumer Engagement",
+            "description": "As the traditional cookie-centric marketing model fades, the Web3 wallet network effect heralds a new era of empowerment, transparency and growth.",
+            "url": "https://www.forbes.com/sites/forbestechcouncil/2023/09/14/web3-wallets-transforming-brand-consumer-engagement/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6501e898f57b9d2c465e700d/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-14T11:15:00Z",
+            "content": "Cofounder at zblocks and at Mergeflo. Globally recognized business builder, thought leader and entrepreneur.\r\ngetty\r\nAs technology evolves, it impacts the way brands reach and engage their consumers.\u2026 [+6184 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cracked.com"
+            },
+            "author": "Mike Rampton",
+            "title": "15 Seemingly Innocuous Things Banned by Foreign Governments",
+            "description": "By Mike Rampton Published: September 06th, 2023",
+            "url": "https://www.cracked.com/article_39383_15-seemingly-innocuous-things-banned-by-foreign-governments.html",
+            "urlToImage": "https://s3.crackedcdn.com/phpimages/article/1/7/5/919175.jpg",
+            "publishedAt": "2023-09-06T21:00:00Z",
+            "content": "Most people obey the law most of the time. Like, everyone pushes their luck now and then who hasnt occasionally jaywalked, handed their young cousin a beer or done a bit of questionable downloading?\r\u2026 [+4135 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Ryan McGrath, Forbes Councils Member, \n Ryan McGrath, Forbes Councils Member\n https://www.forbes.com/sites/forbesbusinesscouncil/people/ryanmcgrath/",
+            "title": "The Role Of Ethical Leadership In Long-Term Organizational Success",
+            "description": "Ethical leadership goes beyond just doing what's right; it carries a powerful impact on business outcomes.",
+            "url": "https://www.forbes.com/sites/forbesbusinesscouncil/2023/09/08/the-role-of-ethical-leadership-in-long-term-organizational-success/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6022b2f5c80db38f65a64982/0x0.jpg?format=jpg&width=1200",
+            "publishedAt": "2023-09-08T14:00:00Z",
+            "content": "Ryan McGrath is the CEO and President of Asset Living, the third-largest apartment manager in the United States. \r\ngetty\r\nEthics lies at the core of successful leadership, providing a solid framework\u2026 [+5023 chars]"
+        }
+    ]
+}
