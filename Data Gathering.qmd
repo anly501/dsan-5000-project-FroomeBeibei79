@@ -9,6 +9,14 @@ format: html
 
 The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean
 
+### Gender
+Now the raw data looks like this,
+![Raw Data Gender](images/Raw%20data%20gender.jpg)
+It's quite messy on the top. So, I will need to clean the column names to make it tidy. 
+
+After cleaning process, the data now looks like this, 
+![Cleaned Data Gender](images/Cleaned%20Data%20gender.jpg)
+
 ## Text Data 
 
 There are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page.

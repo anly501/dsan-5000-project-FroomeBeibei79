@@ -186,7 +186,7 @@
     "href": "Data.html#driver-side",
     "title": "Data Section",
     "section": "Driver Side",
-    "text": "Driver Side\n\nAge\nAge is a good source for driver behavior analysis, as studies are showing that\n\n\nProfession\nStudent, racer, lawyer, doctor, etc"
+    "text": "Driver Side\n\nAge\nAge is a good source for driver behavior analysis, as studies are showing that\n\n\nGender\nThere’s a research focus on how gender affect driving,\nNow the raw data looks like this,"
   },
   {
     "objectID": "Data.html#vehicle-side",
@@ -299,5 +299,33 @@
     "title": "Clustering",
     "section": "",
     "text": "Build out your website tab for “clustering”"
+  },
+  {
+    "objectID": "Data Gathering.html",
+    "href": "Data Gathering.html",
+    "title": "Data Gathering",
+    "section": "",
+    "text": "The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean\n\n\nNow the raw data looks like this,  It’s quite messy on the top. So\n\n\n\n\nThere are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page."
+  },
+  {
+    "objectID": "Data Gathering.html#record-data",
+    "href": "Data Gathering.html#record-data",
+    "title": "Data Gathering",
+    "section": "",
+    "text": "The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean\n\n\nNow the raw data looks like this,  It’s quite messy on the top. So"
+  },
+  {
+    "objectID": "Data Gathering.html#text-data",
+    "href": "Data Gathering.html#text-data",
+    "title": "Data Gathering",
+    "section": "",
+    "text": "There are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page."
+  },
+  {
+    "objectID": "record data cleaning.html",
+    "href": "record data cleaning.html",
+    "title": "record data cleaning",
+    "section": "",
+    "text": "Step 1: read the data\n\nlibrary(readxl)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.3     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\ngender &lt;- read_excel(\"data/dl220.xls\")\n\nNew names:\n• `` -&gt; `...2`\n• `` -&gt; `...3`\n• `` -&gt; `...4`\n• `` -&gt; `...5`\n• `` -&gt; `...6`\n• `` -&gt; `...7`\n• `` -&gt; `...8`\n• `` -&gt; `...9`\n• `` -&gt; `...10`\n• `` -&gt; `...11`\n• `` -&gt; `...12`\n• `` -&gt; `...13`\n• `` -&gt; `...14`\n• `` -&gt; `...15`\n• `` -&gt; `...16`\n• `` -&gt; `...17`\n• `` -&gt; `...18`\n• `` -&gt; `...19`\n• `` -&gt; `...20`\n• `` -&gt; `...21`\n• `` -&gt; `...22`\n• `` -&gt; `...23`\n• `` -&gt; `...24`\n• `` -&gt; `...25`\n• `` -&gt; `...26`\n• `` -&gt; `...27`\n• `` -&gt; `...28`\n• `` -&gt; `...29`\n• `` -&gt; `...30`\n• `` -&gt; `...31`\n• `` -&gt; `...32`\n• `` -&gt; `...33`\n• `` -&gt; `...34`\n• `` -&gt; `...35`\n• `` -&gt; `...36`\n• `` -&gt; `...37`\n• `` -&gt; `...38`\n• `` -&gt; `...39`\n• `` -&gt; `...40`\n• `` -&gt; `...41`\n• `` -&gt; `...42`\n• `` -&gt; `...43`\n• `` -&gt; `...44`\n• `` -&gt; `...45`\n• `` -&gt; `...46`\n• `` -&gt; `...47`\n• `` -&gt; `...48`\n• `` -&gt; `...49`\n• `` -&gt; `...50`\n• `` -&gt; `...51`\n• `` -&gt; `...52`\n• `` -&gt; `...53`\n• `` -&gt; `...54`\n• `` -&gt; `...55`\n• `` -&gt; `...56`\n• `` -&gt; `...57`\n• `` -&gt; `...58`\n• `` -&gt; `...59`\n• `` -&gt; `...60`\n• `` -&gt; `...61`\n• `` -&gt; `...62`\n• `` -&gt; `...63`\n• `` -&gt; `...64`\n• `` -&gt; `...65`\n• `` -&gt; `...66`\n• `` -&gt; `...67`\n• `` -&gt; `...68`\n• `` -&gt; `...69`\n• `` -&gt; `...70`\n• `` -&gt; `...71`\n• `` -&gt; `...72`\n• `` -&gt; `...73`\n• `` -&gt; `...74`\n• `` -&gt; `...75`\n• `` -&gt; `...76`\n• `` -&gt; `...77`\n• `` -&gt; `...78`\n• `` -&gt; `...79`\n\ngender &lt;- gender[-(1:2),]\ncolnames(gender) &lt;- gender[1,]\ngender &lt;- gender[-1,]\ngender &lt;- gender[1:(nrow(gender) -4),]\ncolnames(gender)[1] &lt;- \"Year\"\ngender &lt;- gender[-1,]\ncolnames1 &lt;- paste0(colnames(gender), unlist(gender[1,]))\ncolnames(gender) &lt;- colnames1\ngender &lt;- gender[-1,]\n\nnames &lt;- which(duplicated(colnames(gender)))\nfor (col_index in names){\n  colnames(gender)[col_index] &lt;- paste0(colnames(gender)[col_index], \"_\", col_index)\n}\n\ngender1 &lt;- t(gender)\ncolnames(gender1) &lt;- gender1[1,]\ngender1 &lt;- gender1[-1,]"
   }
 ]
