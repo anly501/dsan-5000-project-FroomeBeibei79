@@ -11,14 +11,20 @@ website:
         text: About me
       - href: Code.qmd
         text: Code
-      - href: Data.qmd
-        text: Data
-      - href: Data Gathering.qmd
-        text: Data Gathering
-      - href: Data Exploration.qmd
-        text: Data Exploration
-      - href: Data Cleaning.qmd
-        text: Data Cleaning
+      - tab: Data
+        choices:
+          - href: Data.qmd
+            text: Data
+          - href: Data Gathering.qmd
+            text: Data Gathering
+          - href: Data Exploration.qmd
+            text: Data Exploration
+          - href: Data Cleaning.qmd
+            text: Data Cleaning
+          - href: Data Cleaning R.ipynb
+            text: Data Cleaning in R
+          - href: Data Cleaning python.ipynb
+            text: Data Cleaning in python
       - href: Clustering.qmd
         text: Clustering
       - href: Dimensionality Reduction.qmd
@@ -29,12 +35,8 @@ website:
         text: ARM
       - href: Conclusions.qmd
         text: Conclusions
-    
 
 format:
   html:
     theme: cosmo
     toc: true
-
-
-
