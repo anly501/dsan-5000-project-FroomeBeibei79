@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Xingrui’s Project - Untitled</title>
+<title>Xingrui’s Project - Explore the Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Data Exploration.html">Data Exploration</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./DataMain.html">Everything About Data</a></li><li class="breadcrumb-item"><a href="./Data Exploration.html">Data Exploration</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -115,42 +115,53 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Code</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./DataMain.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Everything About Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Data Gathering.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Gathering</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Data Exploration.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Data Exploration</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Data Cleaning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Cleaning</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Data Cleaning R.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Cleaning in R</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Data Cleaning python.ipynb" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Cleaning in python</span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Clustering.html" class="sidebar-item-text sidebar-link">
@@ -187,14 +198,31 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#explore" id="toc-explore" class="nav-link active" data-scroll-target="#explore">Explore</a>
+  <ul class="collapse">
+  <li><a href="#data-understanding" id="toc-data-understanding" class="nav-link" data-scroll-target="#data-understanding">1.1 Data Understanding:</a></li>
+  <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link" data-scroll-target="#descriptive-statistics">1.2 Descriptive Statistics:</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">1.3 Data Visualization:</a></li>
+  <li><a href="#correlation-analysis" id="toc-correlation-analysis" class="nav-link" data-scroll-target="#correlation-analysis">1.4 Correlation Analysis:</a></li>
+  <li><a href="#hypothesis-generation" id="toc-hypothesis-generation" class="nav-link" data-scroll-target="#hypothesis-generation">1.5 Hypothesis Generation:</a></li>
+  <li><a href="#data-grouping-and-segmentation" id="toc-data-grouping-and-segmentation" class="nav-link" data-scroll-target="#data-grouping-and-segmentation">1.6 Data Grouping and Segmentation:</a></li>
+  <li><a href="#identifying-outliers" id="toc-identifying-outliers" class="nav-link" data-scroll-target="#identifying-outliers">1.7 Identifying Outliers:</a></li>
+  <li><a href="#report-and-discuss-your-methods-and-findings" id="toc-report-and-discuss-your-methods-and-findings" class="nav-link" data-scroll-target="#report-and-discuss-your-methods-and-findings">1.8 Report and discuss your methods and findings:</a></li>
+  <li><a href="#tools-and-software" id="toc-tools-and-software" class="nav-link" data-scroll-target="#tools-and-software">1.9 Tools and Software:</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Untitled</h1>
+<h1 class="title">Explore the Data</h1>
 </div>
 
 
@@ -209,8 +237,48 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="explore" class="level1">
+<h1>Explore</h1>
+<p>In this page we will explore the data in various kinds of ways to see what might catch out eyes</p>
+<section id="data-understanding" class="level2">
+<h2 class="anchored" data-anchor-id="data-understanding">1.1 Data Understanding:</h2>
+<p>Begin by thoroughly understanding the dataset and the problem you are trying to solve. Familiarize yourself with the characteristics of each feature, including their data types (numerical, categorical), potential relationships, and relevance to the project’s objectives.</p>
+</section>
+<section id="descriptive-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="descriptive-statistics">1.2 Descriptive Statistics:</h2>
+<p>Calculate and report basic summary statistics such as mean, median, mode, standard deviation, and variance for numerical variables. For categorical variables, provide frequency distributions and bar charts to visualize data distribution.</p>
+</section>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">1.3 Data Visualization:</h2>
+<p>Create visualizations such as histograms, box plots, scatter plots, and heatmaps to explore the data’s distribution, relationships between variables, and potential patterns or trends. Visualizations can make complex data more interpretable.</p>
+</section>
+<section id="correlation-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-analysis">1.4 Correlation Analysis:</h2>
+<p>Examine the correlations between variables using correlation matrices, heat-maps, or scatter plots. Identify which variables are positively, negatively, or not correlated, which can guide further analysis.</p>
+</section>
+<section id="hypothesis-generation" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-generation">1.5 Hypothesis Generation:</h2>
+<p>Based on your initial observations from the data, refine your hypotheses and research questions.</p>
+</section>
+<section id="data-grouping-and-segmentation" class="level2">
+<h2 class="anchored" data-anchor-id="data-grouping-and-segmentation">1.6 Data Grouping and Segmentation:</h2>
+<p>If applicable, group or segment the data based on relevant criteria to uncover insights within specific subgroups.</p>
+</section>
+<section id="identifying-outliers" class="level2">
+<h2 class="anchored" data-anchor-id="identifying-outliers">1.7 Identifying Outliers:</h2>
+<p>Detect and investigate outliers that may indicate data quality issues or reveal interesting anomalies in the dataset.</p>
+</section>
+<section id="report-and-discuss-your-methods-and-findings" class="level2">
+<h2 class="anchored" data-anchor-id="report-and-discuss-your-methods-and-findings">1.8 Report and discuss your methods and findings:</h2>
+<p>Summarize the key findings, insights, and patterns discovered during the EDA phase. Present these findings in a clear and organized manner, using textual narration, tables, charts, and narrative descriptions.</p>
+</section>
+<section id="tools-and-software" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-software">1.9 Tools and Software:</h2>
+<p>Mention and discuss the software tools you will use for EDA, such as Python with libraries like Pandas, Matplotlib, Seaborn, or R with ggplot2, depending on your preference and project requirements.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

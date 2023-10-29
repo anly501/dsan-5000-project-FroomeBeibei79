@@ -11,7 +11,7 @@
     "href": "Data.html#driver-side",
     "title": "Data Section",
     "section": "Driver Side",
-    "text": "Driver Side\n\nAge\nAge is a good source for driver behavior analysis, as studies are showing that\n\n\nGender\nThere’s a research focus on how gender affect driving,"
+    "text": "Driver Side\n\nAge\nAge is a good source for driver behavior analysis, as statistics showing that “The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers.”\n\n\nGender\nThere’s a publication focus on how gender affect driver behavior analysis, as statistics stating that “The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers.” (U.S. Department of Transportation, National Highway Traffic Safety Administration. (2022). Traffic Safety Facts 2021 Data (Report No. 813492))"
   },
   {
     "objectID": "Data.html#vehicle-side",
@@ -130,7 +130,7 @@
     "href": "Data Cleaning Python.html",
     "title": "Xingrui's Project",
     "section": "",
-    "text": "First I use NewsAPI to get text data from NewsAPI on different key words in terms of driver behavior analysis\nThe key words I used are: driving behavior, distracted driving, driver risk assessment, driver profilling\n\nimport requests\nimport json\nimport re\nimport os\nimport pandas as pd\nfrom sklearn.feature_extraction.text import CountVectorizer\n\nbaseURL = \"https://newsapi.org/v2/everything?\"\ntotal_requests=1\nverbose=True\n\nAPI_KEY='2133663c4ec54af8a9839f0c500203de'\nTOPIC1 = 'driver profiling'\n\nURLpost1 = {'apiKey': API_KEY,\n            'q': '+'+TOPIC1,\n            'sortBy': 'relevancy',\n            'totalRequests': 1}\n\nprint(baseURL)\n\nresponse1 = requests.get(baseURL, URLpost1) \n\nresponse1 = response1.json() \n\nprint(json.dumps(response1, indent=2))\n\nfrom datetime import datetime\ntimestamp = datetime.now().strftime(\"%Y-%m-%d-H%H-M%M-S%S\")\n\noutput_file_path = os.path.join(\"data\", f'{timestamp}-topic1-newapi-raw-data-driver-profilling.json')\n\nwith open(output_file_path, 'w') as outfile:\n    json.dump(response1, outfile, indent=4)"
+    "text": "First I use NewsAPI to get text data from NewsAPI on different key words in terms of driver behavior analysis\nThe key words I used are: driving behavior, distracted driving, driver risk assessment, driver profilling\n\nimport requests\nimport json\nimport re\nimport os\nimport pandas as pd\nfrom sklearn.feature_extraction.text import CountVectorizer\n\nbaseURL = \"https://newsapi.org/v2/everything?\"\ntotal_requests=1\nverbose=True\n\nAPI_KEY='2133663c4ec54af8a9839f0c500203de'\nTOPIC1 = 'driver profiling'\n\nURLpost1 = {'apiKey': API_KEY,\n            'q': '+'+TOPIC1,\n            'sortBy': 'relevancy',\n            'totalRequests': 1}\n\nprint(baseURL)\n\nresponse1 = requests.get(baseURL, URLpost1) \n\nresponse1 = response1.json() \n\nprint(json.dumps(response1, indent=2))\n\nfrom datetime import datetime\ntimestamp = datetime.now().strftime(\"%Y-%m-%d-H%H-M%M-S%S\")\n\noutput_file_path = os.path.join(\"data\", f'{timestamp}-topic1-newapi-raw-data-driver-profilling.json')\n\nwith open(output_file_path, 'w') as outfile:\n    json.dump(response1, outfile, indent=4)\n\nHere we have extracted the readings from News API, what I will do next is to filter the title, publisher, etc"
   },
   {
     "objectID": "Data Gathering.html",
@@ -229,5 +229,82 @@
     "title": "Data Cleaning Code",
     "section": "",
     "text": "This is code section\n\nR Data\nThis will be a link to another page where you can see the code of how to clean the dataset in R\n\n\nPython Data\nThis will be a link to another page where you can see the code of how to clean the dataset in python"
+  },
+  {
+    "objectID": "Data Exploration.html",
+    "href": "Data Exploration.html",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "In this page we will explore the data in various kinds of ways to see what might catch out eyes\n\n\nBegin by thoroughly understanding the dataset and the problem you are trying to solve. Familiarize yourself with the characteristics of each feature, including their data types (numerical, categorical), potential relationships, and relevance to the project’s objectives.\n\n\n\nCalculate and report basic summary statistics such as mean, median, mode, standard deviation, and variance for numerical variables. For categorical variables, provide frequency distributions and bar charts to visualize data distribution.\n\n\n\nCreate visualizations such as histograms, box plots, scatter plots, and heatmaps to explore the data’s distribution, relationships between variables, and potential patterns or trends. Visualizations can make complex data more interpretable.\n\n\n\nExamine the correlations between variables using correlation matrices, heat-maps, or scatter plots. Identify which variables are positively, negatively, or not correlated, which can guide further analysis.\n\n\n\nBased on your initial observations from the data, refine your hypotheses and research questions.\n\n\n\nIf applicable, group or segment the data based on relevant criteria to uncover insights within specific subgroups.\n\n\n\nDetect and investigate outliers that may indicate data quality issues or reveal interesting anomalies in the dataset.\n\n\n\nSummarize the key findings, insights, and patterns discovered during the EDA phase. Present these findings in a clear and organized manner, using textual narration, tables, charts, and narrative descriptions.\n\n\n\nMention and discuss the software tools you will use for EDA, such as Python with libraries like Pandas, Matplotlib, Seaborn, or R with ggplot2, depending on your preference and project requirements."
+  },
+  {
+    "objectID": "Data Exploration.html#data-understanding",
+    "href": "Data Exploration.html#data-understanding",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "Begin by thoroughly understanding the dataset and the problem you are trying to solve. Familiarize yourself with the characteristics of each feature, including their data types (numerical, categorical), potential relationships, and relevance to the project’s objectives."
+  },
+  {
+    "objectID": "Data Exploration.html#descriptive-statistics",
+    "href": "Data Exploration.html#descriptive-statistics",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "Calculate and report basic summary statistics such as mean, median, mode, standard deviation, and variance for numerical variables. For categorical variables, provide frequency distributions and bar charts to visualize data distribution."
+  },
+  {
+    "objectID": "Data Exploration.html#data-visualization",
+    "href": "Data Exploration.html#data-visualization",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "Create visualizations such as histograms, box plots, scatter plots, and heatmaps to explore the data’s distribution, relationships between variables, and potential patterns or trends. Visualizations can make complex data more interpretable."
+  },
+  {
+    "objectID": "Data Exploration.html#correlation-analysis",
+    "href": "Data Exploration.html#correlation-analysis",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "Examine the correlations between variables using correlation matrices, heat-maps, or scatter plots. Identify which variables are positively, negatively, or not correlated, which can guide further analysis."
+  },
+  {
+    "objectID": "Data Exploration.html#hypothesis-generation",
+    "href": "Data Exploration.html#hypothesis-generation",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "Based on your initial observations from the data, refine your hypotheses and research questions."
+  },
+  {
+    "objectID": "Data Exploration.html#data-grouping-and-segmentation",
+    "href": "Data Exploration.html#data-grouping-and-segmentation",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "If applicable, group or segment the data based on relevant criteria to uncover insights within specific subgroups."
+  },
+  {
+    "objectID": "Data Exploration.html#identifying-outliers",
+    "href": "Data Exploration.html#identifying-outliers",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "Detect and investigate outliers that may indicate data quality issues or reveal interesting anomalies in the dataset."
+  },
+  {
+    "objectID": "Data Exploration.html#report-and-discuss-your-methods-and-findings",
+    "href": "Data Exploration.html#report-and-discuss-your-methods-and-findings",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "Summarize the key findings, insights, and patterns discovered during the EDA phase. Present these findings in a clear and organized manner, using textual narration, tables, charts, and narrative descriptions."
+  },
+  {
+    "objectID": "Data Exploration.html#tools-and-software",
+    "href": "Data Exploration.html#tools-and-software",
+    "title": "Explore the Data",
+    "section": "",
+    "text": "Mention and discuss the software tools you will use for EDA, such as Python with libraries like Pandas, Matplotlib, Seaborn, or R with ggplot2, depending on your preference and project requirements."
+  },
+  {
+    "objectID": "DataMain.html",
+    "href": "DataMain.html",
+    "title": "Everything About Data",
+    "section": "",
+    "text": "Data\nData is the foundation of every data analysis, with more data, the more information we will get. On those sub-tab, you will find different steps of data analysis. It includes how I collected the data, how to clean those data, and in what ways I can explore them and elaborate based on those data."
   }
 ]

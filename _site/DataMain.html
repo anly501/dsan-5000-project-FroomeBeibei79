@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Xingrui’s Project - Data Section</title>
+<title>Xingrui’s Project - Everything About Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./DataMain.html">Everything About Data</a></li><li class="breadcrumb-item"><a href="./Data.html">Data</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./DataMain.html">Everything About Data</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./DataMain.html" class="sidebar-item-text sidebar-link">
+            <a href="./DataMain.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Everything About Data</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Data.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data</span></a>
   </div>
 </li>
@@ -202,22 +202,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data">Data</a>
-  <ul class="collapse">
-  <li><a href="#driver-side" id="toc-driver-side" class="nav-link" data-scroll-target="#driver-side">Driver Side</a>
-  <ul class="collapse">
-  <li><a href="#age" id="toc-age" class="nav-link" data-scroll-target="#age">Age</a></li>
-  <li><a href="#gender" id="toc-gender" class="nav-link" data-scroll-target="#gender">Gender</a></li>
-  </ul></li>
-  <li><a href="#vehicle-side" id="toc-vehicle-side" class="nav-link" data-scroll-target="#vehicle-side">Vehicle Side</a>
-  <ul class="collapse">
-  <li><a href="#acceleration" id="toc-acceleration" class="nav-link" data-scroll-target="#acceleration">Acceleration</a></li>
-  <li><a href="#braking" id="toc-braking" class="nav-link" data-scroll-target="#braking">Braking</a></li>
-  <li><a href="#speed" id="toc-speed" class="nav-link" data-scroll-target="#speed">Speed</a></li>
-  <li><a href="#cornering" id="toc-cornering" class="nav-link" data-scroll-target="#cornering">Cornering</a></li>
-  <li><a href="#phone-usage" id="toc-phone-usage" class="nav-link" data-scroll-target="#phone-usage">Phone Usage</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data">Data</a></li>
   </ul>
 </nav>
     </div>
@@ -226,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Section</h1>
+<h1 class="title">Everything About Data</h1>
 </div>
 
 
@@ -241,47 +226,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is a link to data in GitHub <a href="https://github.com/anly501/dsan-5000-project-FroomeBeibei79/tree/main/data">Click here</a></p>
 <section id="data" class="level1">
 <h1>Data</h1>
-<p>What kind of data is helpful in terms of driver behavior analysis?</p>
-<p>Basically, driver behavior it’s people driving cars. As an intuitive result, I will need to know how the drivers interact with their vehicles. So, we can start from two sides: the driver side and the vehicle side.</p>
-<section id="driver-side" class="level2">
-<h2 class="anchored" data-anchor-id="driver-side">Driver Side</h2>
-<section id="age" class="level3">
-<h3 class="anchored" data-anchor-id="age">Age</h3>
-<p><a href="https://www.fhwa.dot.gov/policyinformation/statistics/2021/">Age</a> is a good source for driver behavior analysis, as statistics showing that “The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers.”</p>
-</section>
-<section id="gender" class="level3">
-<h3 class="anchored" data-anchor-id="gender">Gender</h3>
-<p>There’s a publication focus on how <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813492">gender</a> affect driver behavior analysis, as statistics stating that “The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers.” (U.S. Department of Transportation, National Highway Traffic Safety Administration. (2022). Traffic Safety Facts 2021 Data (Report No.&nbsp;813492))</p>
-</section>
-</section>
-<section id="vehicle-side" class="level2">
-<h2 class="anchored" data-anchor-id="vehicle-side">Vehicle Side</h2>
-<section id="acceleration" class="level3">
-<h3 class="anchored" data-anchor-id="acceleration">Acceleration</h3>
-<p>This one can be measureed in either G Force detector or the usage of throttle pedal</p>
-</section>
-<section id="braking" class="level3">
-<h3 class="anchored" data-anchor-id="braking">Braking</h3>
-<p>This one can be measureed in either G Force detector or the usage of break pedal</p>
-</section>
-<section id="speed" class="level3">
-<h3 class="anchored" data-anchor-id="speed">Speed</h3>
-<p>This one can be measured with speedometer</p>
-</section>
-<section id="cornering" class="level3">
-<h3 class="anchored" data-anchor-id="cornering">Cornering</h3>
-<p>This one can be measured with G Force detector</p>
-</section>
-<section id="phone-usage" class="level3">
-<h3 class="anchored" data-anchor-id="phone-usage">Phone Usage</h3>
-<p>This one can be used of a specfic device connected to the phone via bluetooth</p>
+<p>Data is the foundation of every data analysis, with more data, the more information we will get. On those sub-tab, you will find different steps of data analysis. It includes how I collected the data, how to clean those data, and in what ways I can explore them and elaborate based on those data.</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

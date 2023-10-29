@@ -17,10 +17,10 @@ Basically, driver behavior it's people driving cars. As an intuitive result, I w
 
 ### Age
 
-[Age](https://www.fhwa.dot.gov/policyinformation/statistics/2021/) is a good source for driver behavior analysis, as studies are showing that 
+[Age](https://www.fhwa.dot.gov/policyinformation/statistics/2021/) is a good source for driver behavior analysis, as statistics showing that "The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers. "
 
 ### Gender
-There's a research focus on how [gender](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813513) affect driving,
+There's a publication focus on how [gender](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813492) affect driver behavior analysis, as statistics stating that "The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers. " (U.S. Department of Transportation, National Highway Traffic Safety Administration. (2022). Traffic Safety Facts 2021 Data (Report No. 813492))
 
 ## Vehicle Side
 

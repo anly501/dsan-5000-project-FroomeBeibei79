@@ -12,7 +12,8 @@ website:
       - href: Code.qmd
         text: Code
       - tab: Data
-        choices:
+        href: DataMain.qmd  # This makes the "Data" tab clickable
+        contents:
           - href: Data.qmd
             text: Data
           - href: Data Gathering.qmd
