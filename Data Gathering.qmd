@@ -19,6 +19,11 @@ After cleaning process, the data now looks like this,
 
 Note this is not enough, I still need to further tidy the column names to make it better
 
+### Young Driver
+
+The data available about young driver information is mainly from NHTSA, and it's in PDF format, so I will need to first download the data, scrape them into csv file, and then do more analysis.
+
+
 ## Text Data 
 
 There are also some text data available that I use API to pull them from the webiste. I will further clean them and also put them onto the page.

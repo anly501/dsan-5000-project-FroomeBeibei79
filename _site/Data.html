@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Data Cleaning python.ipynb" class="sidebar-item-text sidebar-link">
+  <a href="./Data Cleaning Python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Cleaning in python</span></a>
   </div>
 </li>
@@ -206,16 +206,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#driver-side" id="toc-driver-side" class="nav-link" data-scroll-target="#driver-side">Driver Side</a>
   <ul class="collapse">
-  <li><a href="#age" id="toc-age" class="nav-link" data-scroll-target="#age">Age</a></li>
   <li><a href="#gender" id="toc-gender" class="nav-link" data-scroll-target="#gender">Gender</a></li>
-  </ul></li>
-  <li><a href="#vehicle-side" id="toc-vehicle-side" class="nav-link" data-scroll-target="#vehicle-side">Vehicle Side</a>
-  <ul class="collapse">
-  <li><a href="#acceleration" id="toc-acceleration" class="nav-link" data-scroll-target="#acceleration">Acceleration</a></li>
-  <li><a href="#braking" id="toc-braking" class="nav-link" data-scroll-target="#braking">Braking</a></li>
-  <li><a href="#speed" id="toc-speed" class="nav-link" data-scroll-target="#speed">Speed</a></li>
-  <li><a href="#cornering" id="toc-cornering" class="nav-link" data-scroll-target="#cornering">Cornering</a></li>
-  <li><a href="#phone-usage" id="toc-phone-usage" class="nav-link" data-scroll-target="#phone-usage">Phone Usage</a></li>
+  <li><a href="#young-driver" id="toc-young-driver" class="nav-link" data-scroll-target="#young-driver">Young driver</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -244,40 +236,18 @@ ul.task-list li input[type="checkbox"] {
 <p>This is a link to data in GitHub <a href="https://github.com/anly501/dsan-5000-project-FroomeBeibei79/tree/main/data">Click here</a></p>
 <section id="data" class="level1">
 <h1>Data</h1>
+<p>This project will primarily focus on driver behavior analysis. Specifically, we will dive into a different set of groups to learn about what kind of groups with specific characteristics have higher fatality rates in passenger vehicle accidents and look for possible reasons behind them.</p>
 <p>What kind of data is helpful in terms of driver behavior analysis?</p>
-<p>Basically, driver behavior it’s people driving cars. As an intuitive result, I will need to know how the drivers interact with their vehicles. So, we can start from two sides: the driver side and the vehicle side.</p>
+<p>Basically, driver behavior is people driving cars. There will be different groups like gender, young drivers, older drivers, etc. We will elaborate on different groups one after another. We can also acquire analysis from the vehicle side, that is, how a vehicle behaves while the vehicle is in operation. However, data acquisition is hard to get as, nowadays, car motion data from individual drivers are considered private information and thus cannot be accessed by the public. We will leave this part for now and probably come back for more in the future.</p>
 <section id="driver-side" class="level2">
 <h2 class="anchored" data-anchor-id="driver-side">Driver Side</h2>
-<section id="age" class="level3">
-<h3 class="anchored" data-anchor-id="age">Age</h3>
-<p><a href="https://www.fhwa.dot.gov/policyinformation/statistics/2021/">Age</a> is a good source for driver behavior analysis, as statistics showing that “The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers.”</p>
-</section>
 <section id="gender" class="level3">
 <h3 class="anchored" data-anchor-id="gender">Gender</h3>
-<p>There’s a publication focus on how <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813492">gender</a> affect driver behavior analysis, as statistics stating that “The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers.” (U.S. Department of Transportation, National Highway Traffic Safety Administration. (2022). Traffic Safety Facts 2021 Data (Report No.&nbsp;813492))</p>
+<p>Gender is a significant factor that has an impact on driver behavior. When it comes to fatal injury odds in passenger vehicle accidents, “the fatal injury odds for females were lower than males.” <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813513">(p21)</a></p>
 </section>
-</section>
-<section id="vehicle-side" class="level2">
-<h2 class="anchored" data-anchor-id="vehicle-side">Vehicle Side</h2>
-<section id="acceleration" class="level3">
-<h3 class="anchored" data-anchor-id="acceleration">Acceleration</h3>
-<p>This one can be measureed in either G Force detector or the usage of throttle pedal</p>
-</section>
-<section id="braking" class="level3">
-<h3 class="anchored" data-anchor-id="braking">Braking</h3>
-<p>This one can be measureed in either G Force detector or the usage of break pedal</p>
-</section>
-<section id="speed" class="level3">
-<h3 class="anchored" data-anchor-id="speed">Speed</h3>
-<p>This one can be measured with speedometer</p>
-</section>
-<section id="cornering" class="level3">
-<h3 class="anchored" data-anchor-id="cornering">Cornering</h3>
-<p>This one can be measured with G Force detector</p>
-</section>
-<section id="phone-usage" class="level3">
-<h3 class="anchored" data-anchor-id="phone-usage">Phone Usage</h3>
-<p>This one can be used of a specfic device connected to the phone via bluetooth</p>
+<section id="young-driver" class="level3">
+<h3 class="anchored" data-anchor-id="young-driver">Young driver</h3>
+<p>Another publication focus on <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813492">young driver</a> affect driver behavior analysis, as statistics state that “The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers.” (U.S. Department of Transportation, National Highway Traffic Safety Administration. (2022). Traffic Safety Facts 2021 Data (Report No.&nbsp;813492))</p>
 
 
 </section>

@@ -1,0 +1,66 @@
+---
+jupyter: python3
+---
+
+
+First I use NewsAPI to get text data from NewsAPI on different key words in terms of driver behavior analysis
+
+The key words I used are: driving behavior, distracted driving, driver risk assessment, driver profilling
+
+```{python}
+import requests
+import json
+import re
+import os
+import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer
+
+baseURL = "https://newsapi.org/v2/everything?"
+total_requests=1
+verbose=True
+
+API_KEY='2133663c4ec54af8a9839f0c500203de'
+TOPIC1 = 'driver profiling'
+
+URLpost1 = {'apiKey': API_KEY,
+            'q': '+'+TOPIC1,
+            'sortBy': 'relevancy',
+            'totalRequests': 1}
+
+print(baseURL)
+
+response1 = requests.get(baseURL, URLpost1) 
+
+response1 = response1.json() 
+
+print(json.dumps(response1, indent=2))
+
+from datetime import datetime
+timestamp = datetime.now().strftime("%Y-%m-%d-H%H-M%M-S%S")
+
+output_file_path = os.path.join("data", f'{timestamp}-topic1-newapi-raw-data-driver-profilling.json')
+
+with open(output_file_path, 'w') as outfile:
+    json.dump(response1, outfile, indent=4)
+```
+
+Here we have extracted the readings from News API, what I will do next is to filter the title, publisher, etc
+
+
+Next is how I scrape data from pdf file
+
+```{python}
+
+import PyPDF2
+import pdfplumber
+import tabula
+import csv
+import pandas as pd
+import jpype
+import fitz 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+
+```

@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Data Cleaning python.ipynb" class="sidebar-item-text sidebar-link">
+  <a href="./Data Cleaning Python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Cleaning in python</span></a>
   </div>
 </li>
@@ -206,12 +206,42 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#data-understanding" id="toc-data-understanding" class="nav-link" data-scroll-target="#data-understanding">1.1 Data Understanding:</a></li>
   <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link" data-scroll-target="#descriptive-statistics">1.2 Descriptive Statistics:</a></li>
-  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">1.3 Data Visualization:</a></li>
-  <li><a href="#correlation-analysis" id="toc-correlation-analysis" class="nav-link" data-scroll-target="#correlation-analysis">1.4 Correlation Analysis:</a></li>
-  <li><a href="#hypothesis-generation" id="toc-hypothesis-generation" class="nav-link" data-scroll-target="#hypothesis-generation">1.5 Hypothesis Generation:</a></li>
-  <li><a href="#data-grouping-and-segmentation" id="toc-data-grouping-and-segmentation" class="nav-link" data-scroll-target="#data-grouping-and-segmentation">1.6 Data Grouping and Segmentation:</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">1.3 Data Visualization:</a>
+  <ul class="collapse">
+  <li><a href="#distribution-by-state" id="toc-distribution-by-state" class="nav-link" data-scroll-target="#distribution-by-state">Distribution by State</a></li>
+  <li><a href="#distrbution-by-weekday" id="toc-distrbution-by-weekday" class="nav-link" data-scroll-target="#distrbution-by-weekday">Distrbution by Weekday</a></li>
+  <li><a href="#distribution-by-direction" id="toc-distribution-by-direction" class="nav-link" data-scroll-target="#distribution-by-direction">Distribution by Direction</a></li>
+  </ul></li>
+  <li><a href="#correlation-analysis" id="toc-correlation-analysis" class="nav-link" data-scroll-target="#correlation-analysis">1.4 Correlation Analysis:</a>
+  <ul class="collapse">
+  <li><a href="#raw-correlation" id="toc-raw-correlation" class="nav-link" data-scroll-target="#raw-correlation">Raw correlation</a></li>
+  <li><a href="#correlation-heatmap" id="toc-correlation-heatmap" class="nav-link" data-scroll-target="#correlation-heatmap">Correlation heatmap</a></li>
+  <li><a href="#correlation-between-day-of-the-week-and-hour-of-the-day" id="toc-correlation-between-day-of-the-week-and-hour-of-the-day" class="nav-link" data-scroll-target="#correlation-between-day-of-the-week-and-hour-of-the-day">Correlation between day of the week and hour of the day</a></li>
+  </ul></li>
+  <li><a href="#hypothesis-generation" id="toc-hypothesis-generation" class="nav-link" data-scroll-target="#hypothesis-generation">1.5 Hypothesis Generation:</a>
+  <ul class="collapse">
+  <li><a href="#time-of-day-and-incidents" id="toc-time-of-day-and-incidents" class="nav-link" data-scroll-target="#time-of-day-and-incidents">Time of Day and Incidents:</a></li>
+  <li><a href="#weekend-driving-behavior" id="toc-weekend-driving-behavior" class="nav-link" data-scroll-target="#weekend-driving-behavior">Weekend Driving Behavior:</a></li>
+  <li><a href="#state-wise-distribution" id="toc-state-wise-distribution" class="nav-link" data-scroll-target="#state-wise-distribution">State-wise Distribution:</a></li>
+  <li><a href="#impact-areas" id="toc-impact-areas" class="nav-link" data-scroll-target="#impact-areas">Impact Areas:</a></li>
+  <li><a href="#sequence-of-events" id="toc-sequence-of-events" class="nav-link" data-scroll-target="#sequence-of-events">Sequence of Events:</a></li>
+  </ul></li>
+  <li><a href="#data-grouping-and-segmentation" id="toc-data-grouping-and-segmentation" class="nav-link" data-scroll-target="#data-grouping-and-segmentation">1.6 Data Grouping and Segmentation:</a>
+  <ul class="collapse">
+  <li><a href="#group-by-states" id="toc-group-by-states" class="nav-link" data-scroll-target="#group-by-states">Group by States</a></li>
+  <li><a href="#group-by-time-of-the-day" id="toc-group-by-time-of-the-day" class="nav-link" data-scroll-target="#group-by-time-of-the-day">Group by time of the day</a></li>
+  </ul></li>
   <li><a href="#identifying-outliers" id="toc-identifying-outliers" class="nav-link" data-scroll-target="#identifying-outliers">1.7 Identifying Outliers:</a></li>
-  <li><a href="#report-and-discuss-your-methods-and-findings" id="toc-report-and-discuss-your-methods-and-findings" class="nav-link" data-scroll-target="#report-and-discuss-your-methods-and-findings">1.8 Report and discuss your methods and findings:</a></li>
+  <li><a href="#report-and-discuss-your-methods-and-findings" id="toc-report-and-discuss-your-methods-and-findings" class="nav-link" data-scroll-target="#report-and-discuss-your-methods-and-findings">1.8 Report and discuss your methods and findings:</a>
+  <ul class="collapse">
+  <li><a href="#data-understanding-1" id="toc-data-understanding-1" class="nav-link" data-scroll-target="#data-understanding-1">Data Understanding</a></li>
+  <li><a href="#descriptive-statistics-1" id="toc-descriptive-statistics-1" class="nav-link" data-scroll-target="#descriptive-statistics-1">Descriptive Statistics</a></li>
+  <li><a href="#data-visualization-1" id="toc-data-visualization-1" class="nav-link" data-scroll-target="#data-visualization-1">Data Visualization</a></li>
+  <li><a href="#correlation-analysis-1" id="toc-correlation-analysis-1" class="nav-link" data-scroll-target="#correlation-analysis-1">Correlation Analysis</a></li>
+  <li><a href="#hypothesis-generation-1" id="toc-hypothesis-generation-1" class="nav-link" data-scroll-target="#hypothesis-generation-1">Hypothesis Generation</a></li>
+  <li><a href="#data-grouping-and-segmentation-1" id="toc-data-grouping-and-segmentation-1" class="nav-link" data-scroll-target="#data-grouping-and-segmentation-1">Data Grouping and Segmentation</a></li>
+  <li><a href="#identifying-outliers-1" id="toc-identifying-outliers-1" class="nav-link" data-scroll-target="#identifying-outliers-1">Identifying Outliers</a></li>
+  </ul></li>
   <li><a href="#tools-and-software" id="toc-tools-and-software" class="nav-link" data-scroll-target="#tools-and-software">1.9 Tools and Software:</a></li>
   </ul></li>
   </ul>
@@ -242,39 +272,198 @@ ul.task-list li input[type="checkbox"] {
 <p>In this page we will explore the data in various kinds of ways to see what might catch out eyes</p>
 <section id="data-understanding" class="level2">
 <h2 class="anchored" data-anchor-id="data-understanding">1.1 Data Understanding:</h2>
-<p>Begin by thoroughly understanding the dataset and the problem you are trying to solve. Familiarize yourself with the characteristics of each feature, including their data types (numerical, categorical), potential relationships, and relevance to the project’s objectives.</p>
+<p>The data I have here is the accident summary conducted by the Fatality Analysis Reporting System (FARS); FARS is a nationwide census providing NHTSA, Congress and the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. This data contains very detailed information that records the condition of each accident.</p>
+<p>The data was separated into different files, which can be joined together by a universal column, case number. So we can combine different files to get different information. <img src="images/EDA Raw Data.jpg" class="img-fluid" alt="Raw Data"></p>
 </section>
 <section id="descriptive-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="descriptive-statistics">1.2 Descriptive Statistics:</h2>
-<p>Calculate and report basic summary statistics such as mean, median, mode, standard deviation, and variance for numerical variables. For categorical variables, provide frequency distributions and bar charts to visualize data distribution.</p>
+<p>Some basic summary statistics are mean, standard deviation, minimum, median, and variance. Among all these descriptive statistics, the only meaningful column is time, specifically, hour. That is when the accident happened during the day. <img src="images/EDA Descriptive Stat.jpg" class="img-fluid" alt="Descriptive Statistics"></p>
 </section>
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization">1.3 Data Visualization:</h2>
-<p>Create visualizations such as histograms, box plots, scatter plots, and heatmaps to explore the data’s distribution, relationships between variables, and potential patterns or trends. Visualizations can make complex data more interpretable.</p>
+<p>There are a couple of visulaized plots help us to see intuitivalely</p>
+<section id="distribution-by-state" class="level3">
+<h3 class="anchored" data-anchor-id="distribution-by-state">Distribution by State</h3>
+<p>Below the plot provides an overview of accident summaries distributed by state, allowing us to identify the states with the highest and lowest accident counts. <img src="images/EDA crash distribution of state.png" class="img-fluid" alt="distribution by state"></p>
+<p>From the chart, we can observe that the distribution is not uniform across states. Some states have a significantly higher number of entries compared to others. This could be due to various factors such as population, geographical size, traffic volume, or data collection methods.</p>
+</section>
+<section id="distrbution-by-weekday" class="level3">
+<h3 class="anchored" data-anchor-id="distrbution-by-weekday">Distrbution by Weekday</h3>
+<p>This plot reveals the days of the week that are most likely to experience fatal crashes <img src="images/EDA crash distribution of day.png" class="img-fluid" alt="distribution by weekday"></p>
+<p>The distribution of entries is relatively uniform across the days of the week. There seems to be a slight increase in entries on Saturdays and Sundays. This could suggest a potential increase in incidents or events during the weekends, but further analysis would be needed to confirm any such trends and to understand their causes.</p>
+</section>
+<section id="distribution-by-direction" class="level3">
+<h3 class="anchored" data-anchor-id="distribution-by-direction">Distribution by Direction</h3>
+<p>This plot illustrates the direction in which a vehicle is most likely to experience an accident <img src="images/EDA crash distribution of direction.png" class="img-fluid" alt="distribution by direction"></p>
+<p>From this chart, we can observe that: “Non-Harmful Event” and “12 Clock Point” are the most common areas of impact recorded in the dataset. There are various other areas of impact with fewer occurrences. This information could be useful for understanding the common types of impacts and their frequencies, which might help in identifying areas for safety improvements.</p>
+</section>
 </section>
 <section id="correlation-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="correlation-analysis">1.4 Correlation Analysis:</h2>
-<p>Examine the correlations between variables using correlation matrices, heat-maps, or scatter plots. Identify which variables are positively, negatively, or not correlated, which can guide further analysis.</p>
+<p>In the Correlation Analysis step, we will:</p>
+<ol type="1">
+<li>Calculate the correlation matrix for the numerical variables in the dataset.</li>
+<li>Visualize the correlations using a heatmap.</li>
+</ol>
+<section id="raw-correlation" class="level3">
+<h3 class="anchored" data-anchor-id="raw-correlation">Raw correlation</h3>
+<p>Let’s start by calculating the correlation matrix. <img src="images/EDA Correlation Raw.jpg" class="img-fluid" alt="Raw correlation"></p>
+<p>As we can see from the matrix, STATE_x and ST_CASE have a very high positive correlation (almost 1), which is expected as the case number (ST_CASE) is likely assigned sequentially within each state.</p>
+<p>HOUR and MINUTE have a positive correlation of 0.2644, indicating a moderate relationship.</p>
+<p>EVENTNUM and VNUMBER1 also have a strong positive correlation of 0.8227, suggesting a strong relationship between these two variables.</p>
+<p>AOI1 and SOE have a positive correlation of 0.5630, indicating a moderate to strong relationship.</p>
+</section>
+<section id="correlation-heatmap" class="level3">
+<h3 class="anchored" data-anchor-id="correlation-heatmap">Correlation heatmap</h3>
+<p>Next, we will visualize these correlations using a heatmap to make it easier to interpret the relationships between variables. <img src="images/EDA heatmap correlation.png" class="img-fluid" alt="Correlation Heatmap"></p>
+<p>The heatmap above visualizes the correlation matrix, providing a color-coded representation of the correlation coefficients between each pair of numerical variables.</p>
+<p>From the heatmap, we can easily identify strong positive correlations (dark red areas) and observe the relationships between different variables. For example, the strong positive correlation between “EVENTNUM” and “VNUMBER1” is clearly visible.</p>
+</section>
+<section id="correlation-between-day-of-the-week-and-hour-of-the-day" class="level3">
+<h3 class="anchored" data-anchor-id="correlation-between-day-of-the-week-and-hour-of-the-day">Correlation between day of the week and hour of the day</h3>
+<p>To investigate the relationship between the day of the week and the hour of the day, we can create a heatmap that displays the count of entries for each combination of day and hour. This will help us visualize if there are certain times of the day that are more prone to incidents on specific weekdays <img src="images/EDA heatmap time and day.png" class="img-fluid" alt="Heatmap correlation"></p>
+<p>From this visualization, we can observe that:</p>
+<p>The hours with the most entries tend to be in the afternoon and evening, particularly from around 14:00 to 18:00. This could be due to increased traffic during these hours.</p>
+<p>There are fewer entries during the early morning hours, which is expected since there is typically less traffic at that time.</p>
+<p>Saturday and Sunday show a slightly different pattern compared to the weekdays, with more entries occurring late at night and in the early morning hours. This could be indicative of different driving behaviors during the weekends, potentially related to social activities.</p>
+<p>The column labeled “Unknown” represents entries where the hour was not recorded or was unknown. These entries are spread across all days of the week.</p>
+</section>
 </section>
 <section id="hypothesis-generation" class="level2">
 <h2 class="anchored" data-anchor-id="hypothesis-generation">1.5 Hypothesis Generation:</h2>
-<p>Based on your initial observations from the data, refine your hypotheses and research questions.</p>
+<p>Based on the exploratory data analysis we’ve conducted so far, here are some potential hypotheses and questions:</p>
+<section id="time-of-day-and-incidents" class="level3">
+<h3 class="anchored" data-anchor-id="time-of-day-and-incidents">Time of Day and Incidents:</h3>
+<p>Hypothesis: There are more incidents in the afternoon and evening compared to other times of the day. Potential Analysis: Investigate if certain types of incidents are more likely to occur during these times.</p>
+</section>
+<section id="weekend-driving-behavior" class="level3">
+<h3 class="anchored" data-anchor-id="weekend-driving-behavior">Weekend Driving Behavior:</h3>
+<p>Hypothesis: Driving behavior during the weekends, especially late at night and in the early morning hours, leads to more incidents.</p>
+<p>Potential Analysis: Examine the types of incidents that occur during these times and if they are different from weekday incidents.</p>
+</section>
+<section id="state-wise-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="state-wise-distribution">State-wise Distribution:</h3>
+<p>Question: Why do some states have significantly more incidents recorded in the dataset? Is it due to population, traffic volume, or data collection methods?</p>
+<p>Potential Analysis: Normalize the data by population or traffic volume to better understand the state-wise distribution.</p>
+</section>
+<section id="impact-areas" class="level3">
+<h3 class="anchored" data-anchor-id="impact-areas">Impact Areas:</h3>
+<p>Hypothesis: Certain areas of impact, such as the “Non-Harmful Event” and “12 Clock Point”, are more common.</p>
+<p>Potential Analysis: Investigate the circumstances that lead to these common impact areas.</p>
+</section>
+<section id="sequence-of-events" class="level3">
+<h3 class="anchored" data-anchor-id="sequence-of-events">Sequence of Events:</h3>
+<p>Hypothesis: The “Motor Vehicle In-Transport” event is the most common sequence of events leading to incidents.</p>
+<p>Potential Analysis: Explore what specific situations or factors contribute to this sequence of events.</p>
+</section>
 </section>
 <section id="data-grouping-and-segmentation" class="level2">
 <h2 class="anchored" data-anchor-id="data-grouping-and-segmentation">1.6 Data Grouping and Segmentation:</h2>
 <p>If applicable, group or segment the data based on relevant criteria to uncover insights within specific subgroups.</p>
+<section id="group-by-states" class="level3">
+<h3 class="anchored" data-anchor-id="group-by-states">Group by States</h3>
+<p><img src="images/EDA Group States.png" class="img-fluid" alt="Group by States"> The data grouped by state shows the total number of entries (incidents) for each state:</p>
+<ol type="1">
+<li>California and Texas have the highest number of entries, with 11,952 and 11,787 incidents respectively.</li>
+<li>States like Alaska, District of Columbia, and Rhode Island have the lowest number of entries, all below 150 incidents.</li>
+<li>This distribution could be influenced by various factors such as population, geographical size, traffic volume, and data collection methods.</li>
+</ol>
+</section>
+<section id="group-by-time-of-the-day" class="level3">
+<h3 class="anchored" data-anchor-id="group-by-time-of-the-day">Group by time of the day</h3>
+<p><img src="images/EDA Group Day.png" class="img-fluid" alt="Group by Day"> From this distribution, we can observe that:</p>
+<ol type="1">
+<li>The number of incidents is higher in the evening, followed by the afternoon and night.</li>
+<li>The morning has the lowest number of incidents.</li>
+<li>There are a significant number of incidents during the night, which could be worth investigating further, especially given the reduced traffic volumes during these hours.</li>
+</ol>
+</section>
 </section>
 <section id="identifying-outliers" class="level2">
 <h2 class="anchored" data-anchor-id="identifying-outliers">1.7 Identifying Outliers:</h2>
-<p>Detect and investigate outliers that may indicate data quality issues or reveal interesting anomalies in the dataset.</p>
+<p>To identify outliers, we can use various methods such as:</p>
+<ol type="1">
+<li>Z-Scores: Calculate the Z-score of each data point and identify points with a Z-score beyond a certain threshold (e.g., |Z| &gt; 3).</li>
+<li>IQR Method: Calculate the Interquartile Range (IQR) and identify points beyond 1.5 * IQR from the quartiles.</li>
+<li>Visualizations: Use box plots to visually identify outliers.</li>
+</ol>
+<p>Since we have multiple numerical variables in our dataset, we will start by using box plots to visually identify outliers in these variables. <img src="images/EDA box plot.png" class="img-fluid" alt="Box Plots"></p>
+<p>From the box plots, we can observe that:</p>
+<ol type="1">
+<li>STATE_x: There are no visible outliers.</li>
+<li>ST_CASE: This is a case number, and it doesn’t have outliers in the traditional sense</li>
+<li>DAY: There are no visible outliers.</li>
+<li>HOUR: There are values set to 99, which likely represent unknown or missing values rather than outliers.</li>
+<li>MINUTE: Similar to “HOUR”, there are values set to 99.</li>
+<li>EVENTNUM, VNUMBER1, AOI1, SOE: These variables have a significant number of high values that could be considered outliers. However, without more context on what these numbers represent, it’s challenging to definitively label them as outliers.</li>
+</ol>
+<p>To properly handle the potential outliers, we would need additional context on the data and the variables, especially for the ones with coded values (EVENTNUM, VNUMBER1, AOI1, SOE).</p>
 </section>
 <section id="report-and-discuss-your-methods-and-findings" class="level2">
 <h2 class="anchored" data-anchor-id="report-and-discuss-your-methods-and-findings">1.8 Report and discuss your methods and findings:</h2>
-<p>Summarize the key findings, insights, and patterns discovered during the EDA phase. Present these findings in a clear and organized manner, using textual narration, tables, charts, and narrative descriptions.</p>
+<section id="data-understanding-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-understanding-1">Data Understanding</h3>
+<p>The dataset contains information about various incidents, with a total of 112,725 entries. There are 13 columns, consisting of both numerical and categorical variables.</p>
+</section>
+<section id="descriptive-statistics-1" class="level3">
+<h3 class="anchored" data-anchor-id="descriptive-statistics-1">Descriptive Statistics</h3>
+<section id="numerical-variables" class="level4">
+<h4 class="anchored" data-anchor-id="numerical-variables">Numerical Variables:</h4>
+<ol type="1">
+<li>STATE_x: Represents the state codes, ranging from 1 to 56.</li>
+<li>ST_CASE: A unique case number assigned to each incident.</li>
+<li>DAY: Day of the incident, ranging from 1 to 31.</li>
+<li>HOUR: Hour of the day when the incident occurred, ranging from 0 to 99 (with 99 representing unknown values).</li>
+<li>MINUTE: Minute of the hour when the incident occurred, ranging from 0 to 99 (with 99 representing unknown values).</li>
+<li>EVENTNUM, VNUMBER1, AOI1, SOE: Coded variables representing various aspects of the incidents.</li>
+</ol>
+</section>
+<section id="categorical-variables" class="level4">
+<h4 class="anchored" data-anchor-id="categorical-variables">Categorical Variables:</h4>
+<ol type="1">
+<li>STATENAME_x: The name of the state where the incident occurred.</li>
+<li>DAY_WEEKNAME: The day of the week when the incident occurred.</li>
+<li>AOI1NAME: Descriptions related to the area of impact.</li>
+<li>SOENAME: Descriptions related to the sequence of events.</li>
+</ol>
+</section>
+</section>
+<section id="data-visualization-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-visualization-1">Data Visualization</h3>
+<section id="distribution-of-categorical-variables" class="level4">
+<h4 class="anchored" data-anchor-id="distribution-of-categorical-variables">Distribution of Categorical Variables:</h4>
+<ol type="1">
+<li>STATENAME_x: California and Texas have the highest number of incidents.</li>
+<li>DAY_WEEKNAME: Incidents are fairly evenly distributed across days of the week, with a slight increase on Saturdays and Sundays.</li>
+<li>AOI1NAME: “Non-Harmful Event” and “12 Clock Point” are the most common areas of impact</li>
+<li>SOENAME: “Motor Vehicle In-Transport” is the most common sequence of events.</li>
+</ol>
+</section>
+</section>
+<section id="correlation-analysis-1" class="level3">
+<h3 class="anchored" data-anchor-id="correlation-analysis-1">Correlation Analysis</h3>
+<p>A strong positive correlation exists between STATE_x and ST_CASE, as case numbers are likely assigned sequentially within each state. HOUR and MINUTE have a positive correlation, suggesting a moderate relationship. EVENTNUM and VNUMBER1 also show a strong positive correlation. AOI1 and SOE have a moderate to strong positive correlation.</p>
+</section>
+<section id="hypothesis-generation-1" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-generation-1">Hypothesis Generation</h3>
+<p>Hypotheses were generated related to time of day and incidents, weekend driving behavior, state-wise distribution of incidents, impact areas, and sequence of events.</p>
+</section>
+<section id="data-grouping-and-segmentation-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-grouping-and-segmentation-1">Data Grouping and Segmentation</h3>
+<p>By State:</p>
+<p>California and Texas have the highest number of incidents. Alaska, District of Columbia, and Rhode Island have the lowest.</p>
+<p>By Time of Day:</p>
+<p>The evening has the highest number of incidents, followed by the afternoon and night. The morning has the lowest number of incidents.</p>
+</section>
+<section id="identifying-outliers-1" class="level3">
+<h3 class="anchored" data-anchor-id="identifying-outliers-1">Identifying Outliers</h3>
+<p>Potential outliers were identified in the variables HOUR, MINUTE, EVENTNUM, VNUMBER1, AOI1, and SOE. The values 99 in HOUR and MINUTE are likely placeholders for unknown values.</p>
+</section>
 </section>
 <section id="tools-and-software" class="level2">
 <h2 class="anchored" data-anchor-id="tools-and-software">1.9 Tools and Software:</h2>
-<p>Mention and discuss the software tools you will use for EDA, such as Python with libraries like Pandas, Matplotlib, Seaborn, or R with ggplot2, depending on your preference and project requirements.</p>
+<p>The analysis was performed using Python, leveraging libraries such as:</p>
+<p>Pandas: For data manipulation and analysis. Matplotlib and Seaborn: For data visualization. NumPy: For numerical computations.</p>
 
 
 </section>

@@ -24,7 +24,7 @@ website:
             text: Data Cleaning
           - href: Data Cleaning R.ipynb
             text: Data Cleaning in R
-          - href: Data Cleaning python.ipynb
+          - href: Data Cleaning Python.qmd
             text: Data Cleaning in python
       - href: Clustering.qmd
         text: Clustering
