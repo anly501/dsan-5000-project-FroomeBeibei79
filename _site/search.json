@@ -327,5 +327,61 @@
     "title": "Grouping by State",
     "section": "Grouping by Time of the Day",
     "text": "Grouping by Time of the Day\n\n# Convert HOUR back to numeric, treating \"Unknown\" as a missing value\ndf['HOUR'] = pd.to_numeric(df['HOUR'], errors='coerce')\n\n# Define a function to categorize the time of day\ndef categorize_time_of_day(hour):\n    if pd.isna(hour):\n        return \"Unknown\"\n    elif 6 &lt;= hour &lt; 12:\n        return \"Morning\"\n    elif 12 &lt;= hour &lt; 18:\n        return \"Afternoon\"\n    elif 18 &lt;= hour &lt; 24:\n        return \"Evening\"\n    else:\n        return \"Night\"\n\n# Apply the function to create a new variable \"TIME_OF_DAY\"\ndf['TIME_OF_DAY'] = df['HOUR'].apply(categorize_time_of_day)\n\n# Group the data by \"TIME_OF_DAY\" and calculate the total number of entries for each time segment\ntime_of_day_group = df.groupby('TIME_OF_DAY').size().sort_index()\n\ntime_of_day_group\n\n# Set the size of the plot\nplt.figure(figsize=(10, 6))\n\n# Create a bar plot for the number of entries by time of day\nax = sns.barplot(x=time_of_day_group.index, y=time_of_day_group.values, palette=\"husl\")\n\n# Set the title and labels\nax.set_title('Number of Entries by Time of Day', fontsize=15)\nax.set_xlabel('Time of Day', fontsize=12)\nax.set_ylabel('Number of Entries', fontsize=12)\n\n# Show the plot\nplt.show()\n\n\n/var/folders/h3/qs6jt3s124g0xq78192txdnr0000gn/T/ipykernel_5884/3951407133.py:29: FutureWarning: \n\nPassing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.\n\n  ax = sns.barplot(x=time_of_day_group.index, y=time_of_day_group.values, palette=\"husl\")\n\n\n\n\n\nStep 7\n\n# Set the size of the plots\nplt.figure(figsize=(15, 10))\n\n# Create box plots for the numerical variables\nfor i, column in enumerate(numerical_vars.columns, 1):\n    plt.subplot(3, 3, i)\n    sns.boxplot(x=df[column])\n    plt.title(column)\n\nplt.tight_layout()\nplt.show()\n\n\n\n\nEVENTNUM, VNUMBER1, AOI1, SOE: These variables have a significant number of high values that could be considered outliers. However, without more context on what these numbers represent, it’s challenging to definitively label them as outliers. To properly handle the potential outliers, we would need additional context on the data and the variables, especially for the ones with coded values (EVENTNUM, VNUMBER1, AOI1, SOE)."
+  },
+  {
+    "objectID": "NB.html",
+    "href": "NB.html",
+    "title": "Naïve Bayes",
+    "section": "",
+    "text": "Naive Bayes is a probabilistic machine learning algorithm based on Bayes’ theorem, which is used for classification tasks. In its essence, it involves using probability to make predictions.\n\n\nNaive Bayes relies on Bayes’ theorem, which describes the probability of an event based on prior knowledge of related conditions. In the context of classification, it’s used to find the probability that a given instance belongs to a particular category based on its features.\n\n\nIt calculates the probability of each class given the input features, and the class with the highest probability is considered as the output.\nAssumption of Independence: The “Naive” part of Naive Bayes comes from the assumption that all the features are independent of each other given the class label. While this is a strong and often unrealistic assumption, in practice, Naive Bayes classifiers perform surprisingly well even when this condition is not met.\n\n\n\n\nThe main objective of Naive Bayes classification is to quickly and efficiently categorize new instances into predefined classes based on the statistical properties of the features of the training data.\n\n\n\n\nDue to its simplicity and the fact that it doesn’t require complex iterative optimization, it’s very fast and efficient, especially for high-dimensional datasets.\n\n\n\nIt can handle missing values by ignoring the missing features during computation.\n\n\n\nIt provides a good baseline model for classification tasks, offering a point of comparison for more complex algorithms.\n\n\n\n\n\n\nAssumes that the features follow a normal distribution. It’s useful when dealing with continuous data.\n\n\n\nUseful for discrete counts, such as word counts in text classification.\n\n\n\n\nSimilar to Multinomial Naive Bayes, but it’s specifically designed for binary/boolean features.\n\n\n\n\n\nUse when your features are continuous and you can assume a Gaussian distribution.\n\n\n\nIdeal for text classification problems where you have counts of word occurrences.\n\n\n\nUse when you’re dealing with binary or boolean features."
+  },
+  {
+    "objectID": "NB.html#bayes-theorem-foundation",
+    "href": "NB.html#bayes-theorem-foundation",
+    "title": "Naïve Bayes",
+    "section": "",
+    "text": "Naive Bayes relies on Bayes’ theorem, which describes the probability of an event based on prior knowledge of related conditions. In the context of classification, it’s used to find the probability that a given instance belongs to a particular category based on its features.\n\n\nIt calculates the probability of each class given the input features, and the class with the highest probability is considered as the output.\nAssumption of Independence: The “Naive” part of Naive Bayes comes from the assumption that all the features are independent of each other given the class label. While this is a strong and often unrealistic assumption, in practice, Naive Bayes classifiers perform surprisingly well even when this condition is not met."
+  },
+  {
+    "objectID": "NB.html#probabilistic-nature",
+    "href": "NB.html#probabilistic-nature",
+    "title": "Naïve Bayes",
+    "section": "",
+    "text": "It calculates the probability of each class given the input features, and the class with the highest probability is considered as the output.\nAssumption of Independence: The “Naive” part of Naive Bayes comes from the assumption that all the features are independent of each other given the class label. While this is a strong and often unrealistic assumption, in practice, Naive Bayes classifiers perform surprisingly well even when this condition is not met."
+  },
+  {
+    "objectID": "NB.html#objectives",
+    "href": "NB.html#objectives",
+    "title": "Naïve Bayes",
+    "section": "",
+    "text": "The main objective of Naive Bayes classification is to quickly and efficiently categorize new instances into predefined classes based on the statistical properties of the features of the training data.\n\n\n\n\nDue to its simplicity and the fact that it doesn’t require complex iterative optimization, it’s very fast and efficient, especially for high-dimensional datasets.\n\n\n\nIt can handle missing values by ignoring the missing features during computation.\n\n\n\nIt provides a good baseline model for classification tasks, offering a point of comparison for more complex algorithms.\n\n\n\n\n\n\nAssumes that the features follow a normal distribution. It’s useful when dealing with continuous data.\n\n\n\nUseful for discrete counts, such as word counts in text classification.\n\n\n\n\nSimilar to Multinomial Naive Bayes, but it’s specifically designed for binary/boolean features.\n\n\n\n\n\nUse when your features are continuous and you can assume a Gaussian distribution.\n\n\n\nIdeal for text classification problems where you have counts of word occurrences.\n\n\n\nUse when you’re dealing with binary or boolean features."
+  },
+  {
+    "objectID": "NB.html#what-it-aims-to-achieve",
+    "href": "NB.html#what-it-aims-to-achieve",
+    "title": "Naïve Bayes",
+    "section": "",
+    "text": "Due to its simplicity and the fact that it doesn’t require complex iterative optimization, it’s very fast and efficient, especially for high-dimensional datasets.\n\n\n\nIt can handle missing values by ignoring the missing features during computation.\n\n\n\nIt provides a good baseline model for classification tasks, offering a point of comparison for more complex algorithms."
+  },
+  {
+    "objectID": "NB.html#variants-of-naive-bayes",
+    "href": "NB.html#variants-of-naive-bayes",
+    "title": "Naïve Bayes",
+    "section": "",
+    "text": "Assumes that the features follow a normal distribution. It’s useful when dealing with continuous data.\n\n\n\nUseful for discrete counts, such as word counts in text classification.\n\n\n\nSimilar to Multinomial Naive Bayes, but it’s specifically designed for binary/boolean features."
+  },
+  {
+    "objectID": "NB.html#when-to-use-each",
+    "href": "NB.html#when-to-use-each",
+    "title": "Naïve Bayes",
+    "section": "",
+    "text": "Use when your features are continuous and you can assume a Gaussian distribution. #### Multinomial Naive Bayes:\nIdeal for text classification problems where you have counts of word occurrences.\n\n\n\nUse when you’re dealing with binary or boolean features."
+  },
+  {
+    "objectID": "NB.html#record-data-of-naïve-bayes",
+    "href": "NB.html#record-data-of-naïve-bayes",
+    "title": "Naïve Bayes",
+    "section": "Record Data of Naïve Bayes",
+    "text": "Record Data of Naïve Bayes\nFor the record data, we will focus on fatalties of accidents. We choose to predict the time for EMS took on the road. The time here, specififcally, means the time when the EMS received the notification and the time EMS arrived at the scene. So the time gap will vary based on various conditions, we will use this time difference as our target variable for the Naive Bayes classification."
   }
 ]

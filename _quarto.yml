@@ -28,6 +28,8 @@ website:
             text: Data Cleaning in python
       - href: Clustering.qmd
         text: Clustering
+      - href: NB.qmd
+        text: Naïve Bayes
       - href: Dimensionality Reduction.qmd
         text: Dimensionality Reduction
       - href: Decision Trees.qmd

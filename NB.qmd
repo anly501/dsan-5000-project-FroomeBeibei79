@@ -1,0 +1,75 @@
+---
+title: "Naïve Bayes"
+format: html
+---
+
+# Introduction
+
+Naive Bayes is a probabilistic machine learning algorithm based on Bayes’ theorem, which is used for classification tasks. In its essence, it involves using probability to make predictions.
+
+## Bayes' Theorem Foundation: 
+
+Naive Bayes relies on Bayes’ theorem, which describes the probability of an event based on prior knowledge of related conditions. In the context of classification, it’s used to find the probability that a given instance belongs to a particular category based on its features.
+
+### Probabilistic Nature: 
+
+It calculates the probability of each class given the input features, and the class with the highest probability is considered as the output.
+
+Assumption of Independence: The “Naive” part of Naive Bayes comes from the assumption that all the features are independent of each other given the class label. While this is a strong and often unrealistic assumption, in practice, Naive Bayes classifiers perform surprisingly well even when this condition is not met.
+
+## Objectives:
+
+The main objective of Naive Bayes classification is to quickly and efficiently categorize new instances into predefined classes based on the statistical properties of the features of the training data.
+
+### What it Aims to Achieve:
+
+#### Fast and Efficient Classification: 
+
+Due to its simplicity and the fact that it doesn’t require complex iterative optimization, it’s very fast and efficient, especially for high-dimensional datasets.
+
+#### Handling of Missing Values: 
+
+It can handle missing values by ignoring the missing features during computation.
+
+#### Good Baseline Model: 
+
+It provides a good baseline model for classification tasks, offering a point of comparison for more complex algorithms.
+
+### Variants of Naive Bayes:
+
+#### Gaussian Naive Bayes: 
+Assumes that the features follow a normal distribution. It’s useful when dealing with continuous data.
+
+#### Multinomial Naive Bayes: 
+
+Useful for discrete counts, such as word counts in text classification.
+
+### Bernoulli Naive Bayes: 
+
+Similar to Multinomial Naive Bayes, but it’s specifically designed for binary/boolean features.
+
+### When to Use Each:
+
+#### Gaussian Naive Bayes: 
+
+Use when your features are continuous and you can assume a Gaussian distribution.
+
+#### Multinomial Naive Bayes: 
+
+Ideal for text classification problems where you have counts of word occurrences.
+
+#### Bernoulli Naive Bayes: 
+
+Use when you’re dealing with binary or boolean features.
+
+
+
+
+
+# Progress
+
+## Record Data of Naïve Bayes
+
+For the record data, we will focus on fatalties of accidents. We choose to predict the time for EMS took on the road. The time here, specififcally, means the time when the EMS received the notification and the time EMS arrived at the scene. So the time gap will vary based on various conditions, we will use this time difference as our target variable for the Naive Bayes classification.
+
+

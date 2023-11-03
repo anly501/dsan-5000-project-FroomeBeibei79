@@ -2,7 +2,7 @@
 jupyter: python3
 ---
 
-
+# Data cleaning in text data
 First I use NewsAPI to get text data from NewsAPI on different key words in terms of driver behavior analysis
 
 The key words I used are: driving behavior, distracted driving, driver risk assessment, driver profilling
@@ -42,12 +42,12 @@ output_file_path = os.path.join("data", f'{timestamp}-topic1-newapi-raw-data-dri
 
 with open(output_file_path, 'w') as outfile:
     json.dump(response1, outfile, indent=4)
+```
 
 
-Here we have extracted the readings from News API, what I will do next is to filter the title, publisher, etc
+# Data Cleaning for EDA
 
-
-Next is how I scrape data from pdf file
+```{.python .hide}
 
 import csv
 import pandas as pd
@@ -216,3 +216,5 @@ plt.tight_layout()
 plt.show()
 
 ```
+
+# Data Cleaning in NB Progress
