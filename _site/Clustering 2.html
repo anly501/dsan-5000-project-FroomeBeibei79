@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Xingrui’s Project - Clustering</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Clustering.html">Clustering</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Xingrui’s Project</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About me</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./DataMain.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Everything About Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Data Gathering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Gathering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Data Exploration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Exploration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Data Cleaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Cleaning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Data Cleaning R.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Cleaning in R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Data Cleaning Python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Cleaning in python</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Clustering.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Clustering</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./NB.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Naïve Bayes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Dimensionality Reduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dimensionality Reduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Decision Trees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decision Trees</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ARM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ARM</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conclusions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conclusions</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introdution" id="toc-introdution" class="nav-link active" data-scroll-target="#introdution">Introdution</a></li>
+  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory">Theory</a>
+  <ul class="collapse">
+  <li><a href="#k-means-clustering" id="toc-k-means-clustering" class="nav-link" data-scroll-target="#k-means-clustering">K-Means Clustering</a></li>
+  <li><a href="#dbscan" id="toc-dbscan" class="nav-link" data-scroll-target="#dbscan">DBSCAN</a></li>
+  <li><a href="#hierarchical-clustering" id="toc-hierarchical-clustering" class="nav-link" data-scroll-target="#hierarchical-clustering">Hierarchical Clustering</a></li>
+  </ul></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#k-means-clustering-1" id="toc-k-means-clustering-1" class="nav-link" data-scroll-target="#k-means-clustering-1">K-Means Clustering</a>
+  <ul class="collapse">
+  <li><a href="#elbow-method" id="toc-elbow-method" class="nav-link" data-scroll-target="#elbow-method">Elbow Method</a></li>
+  <li><a href="#results-of-k-means-clustering-elbow-method" id="toc-results-of-k-means-clustering-elbow-method" class="nav-link" data-scroll-target="#results-of-k-means-clustering-elbow-method">Results of K-Means Clustering (Elbow Method)</a></li>
+  <li><a href="#silhouette-method" id="toc-silhouette-method" class="nav-link" data-scroll-target="#silhouette-method">Silhouette Method</a></li>
+  <li><a href="#results-of-k-means-clustering-silhouette-method" id="toc-results-of-k-means-clustering-silhouette-method" class="nav-link" data-scroll-target="#results-of-k-means-clustering-silhouette-method">Results of K-Means Clustering (Silhouette Method)</a></li>
+  </ul></li>
+  <li><a href="#dbscan-1" id="toc-dbscan-1" class="nav-link" data-scroll-target="#dbscan-1">DBSCAN</a></li>
+  <li><a href="#hierarchical-clustering-1" id="toc-hierarchical-clustering-1" class="nav-link" data-scroll-target="#hierarchical-clustering-1">Hierarchical Clustering</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Clustering</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introdution" class="level1">
+<h1>Introdution</h1>
+<p>The data I choose is the data that recorded the information about vehicle involved in fatal crashes. The dataset consists of 54,552 entries and 16 columns, reflecting various aspects of vehicle-related incidents. The columns are:</p>
+<ol type="1">
+<li>Weather (WEATHER): An integer representing different weather conditions at the time of the incident.</li>
+<li>State Case Number (ST_CASE): A unique identifier for each case.</li>
+<li>State (STATE): An integer indicating the state where the incident occurred.</li>
+<li>Light Condition (LGT_COND): An integer code representing the light conditions during the incident.</li>
+<li>Fatalities (FATALS): The number of fatalities in the incident.</li>
+<li>Driver Drinking (DR_DRINK): An indicator of whether the driver was drinking, represented as an integer.</li>
+<li>Driver ZIP Code (DR_ZIP): The ZIP code of the driver.</li>
+<li>Hit and Run (HIT_RUN): An integer indicating whether the incident was a hit-and-run.</li>
+<li>Driver’s License State (L_STATE): The state of issuance of the driver’s license.</li>
+<li>Make Name (MAKENAME), Make and Model Name (MAK_MODNAME): Textual descriptions of the vehicle’s make and specific make-model combination.</li>
+<li>Model Year (MOD_YEAR): The year of the vehicle model.</li>
+<li>Road Surface Condition (VSURCOND): An integer code representing the condition of the road surface.</li>
+<li>vPIC Make Name (VPICMAKENAME), vPIC Model Name (VPICMODELNAME): Textual descriptions of the vehicle’s make and model derived from the Vehicle Plant Inquiry Data (vPIC).</li>
+</ol>
+<p>Each row in the dataset represents an incident, providing a comprehensive view of various factors like environmental conditions, vehicle specifics, and the nature of the incident.</p>
+<p>What I’m trying to achieve is to the data to analyze what kind of environment(i.e.&nbsp;weather, road surface condition, light condition) would most likely to lead fatal crashes, and also which manufacture’s vehicles are involved in fatal crashes most.</p>
+</section>
+<section id="theory" class="level1">
+<h1>Theory</h1>
+<section id="k-means-clustering" class="level2">
+<h2 class="anchored" data-anchor-id="k-means-clustering">K-Means Clustering</h2>
+<p>K_Means Clustering is a method used to partition data into groups (clusters) based on similarity. Imageine you are working in a retail store, and your boss want to understand, “Who will come to our store and buy goods from us?” Here you will have the data on customer who came to your store, on what they bought, how often they visit your store, and what goods will some customer will usually buy in one time. For example, you might notice that some customers, possibly students, come in every few days for essentials like milk, eggs, and bread, while others might visit less frequently but fill up multiple carts with a wide variety of items.</p>
+<p>These distinct shopping behaviors suggest that your customers can be grouped into different segments. K-Means Clustering helps you do just that. By analyzing the purchase data, K-Means can categorize customers into segments based on their shopping habits. This segmentation is invaluable because it enables your store to tailor marketing strategies and product placements to cater to the specific needs and preferences of each group. For example, you might target the frequent, small-basket customers with quick checkout options and convenience goods, while the less frequent, large-basket shoppers might be more interested in bulk deals and a wider variety of products.</p>
+<p>An essential aspect of K-Means Clustering is choosing the right number of clusters, denoted as ‘K’. This is where the Elbow Method comes in handy. It involves running the K-Means algorithm multiple times with varying numbers of clusters and plotting the average distance of data points from their cluster center for each run. As you increase K, there comes a point where increasing the number of clusters doesn’t significantly improve the closeness of data points to their centers. This point, evident as a bend or ‘elbow’ in the plot, is an indicator of an appropriate number of clusters. By using this method, you can determine the optimal number of customer segments, ensuring a more precise and effective customer segmentation strategy.</p>
+</section>
+<section id="dbscan" class="level2">
+<h2 class="anchored" data-anchor-id="dbscan">DBSCAN</h2>
+<p>DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a clustering technique that excels at grouping data points based on their density. It’s particularly effective when dealing with irregularly shaped clusters or data with a lot of ‘noise’ (irrelevant or outlier points). The process begins by selecting a random data point and searching for nearby points within a specified distance.</p>
+<p>If enough points are found close to this initial point, DBSCAN treats this as a cluster. It then iteratively expands the cluster by finding all points close to each new point added to the cluster. Points that don’t belong closely to any cluster are marked as outliers.</p>
+<p>This method is different from K-Means as it doesn’t require pre-setting the number of clusters. Instead, DBSCAN dynamically determines the number of clusters based on the data itself. However, it does require defining two key parameters: the distance threshold for points to be considered neighbors and the minimum number of points needed to form a dense region (or a cluster).</p>
+<p>Let’s think about a practical application in urban planning. Suppose a city’s planning department wants to analyze traffic accident data to improve road safety. They have a dataset of traffic incident locations spanning several years. Using DBSCAN, they can pinpoint clusters of accidents, indicating high-risk areas on the roads.</p>
+<p>This method is ideal for such data, as it adeptly handles the irregular clustering of accidents around road networks and distinguishes isolated incidents (noise) from significant patterns. Identifying these clusters helps the city focus on specific areas for safety improvements, like traffic signal installation or intersection redesigns. In essence, DBSCAN aids in the efficient allocation of resources to areas where they can have the most substantial impact on improving road safety and traffic management.</p>
+</section>
+<section id="hierarchical-clustering" class="level2">
+<h2 class="anchored" data-anchor-id="hierarchical-clustering">Hierarchical Clustering</h2>
+<p>Hierarchical Clustering is a method that arranges data into a hierarchy of nested clusters. There are two main approaches: Agglomerative (bottom-up) and Divisive (top-down). In the Agglomerative approach, each data point starts as its own cluster, and pairs of clusters are merged as one moves up the hierarchy. This is akin to constructing a family tree from the ground up, where individuals (data points) are grouped into families (clusters), and families into larger units, gradually forming the entire tree. The Divisive approach is the opposite, starting with all data points in one cluster and progressively dividing them into smaller clusters.</p>
+<p>The result of this process is visualized in a dendrogram, a tree-like diagram. This diagram shows how every cluster is related to the others, and cutting the dendrogram at different levels gives different cluster groupings. To determine the best level for ‘cutting’, visual inspection is commonly used. Alternatively, one might use the Silhouette Score, which measures how similar an object is to its own cluster compared to other clusters. A high average silhouette score suggests well-defined clusters.</p>
+<p>Applying this to a real-world scenario if you still don’t quite catch up. Consider a large organization with a vast array of digital documents. Managing and organizing these documents can be a significant challenge. Hierarchical clustering can effectively categorize these documents based on content similarity. Starting from individual documents, the algorithm creates a hierarchy where documents are grouped together based on their similarities. For example, all finance-related documents might form one cluster, which can further be subdivided into more specific groups like tax documents, investment reports, and budget plans. This hierarchical organization of documents allows for easier navigation and retrieval, enabling employees to find relevant documents more efficiently. It’s akin to organizing a library where books are grouped by genres and sub-genres, making it easier for readers to find what they’re looking for.</p>
+</section>
+</section>
+<section id="methods" class="level1">
+<h1>Methods</h1>
+<section id="k-means-clustering-1" class="level2">
+<h2 class="anchored" data-anchor-id="k-means-clustering-1">K-Means Clustering</h2>
+<section id="elbow-method" class="level3">
+<h3 class="anchored" data-anchor-id="elbow-method">Elbow Method</h3>
+<p>We will first use elbow method to determine the optimal number of clusters <img src="images/Cluster kmeans elbow.png" class="img-fluid" alt="elbow"></p>
+<p>Here we chose the optimal number as 5 And we can get a cluster result like below <img src="images/cluster kmeans output.png" class="img-fluid" alt="elbow method"></p>
+<p>Before we jump into result, we need to identify what does those number means</p>
+<p>Here, numbers in each features represent differnt conditions.</p>
+<table class="table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 34%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weather</th>
+<th>Light Condition</th>
+<th>Road Surface Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Clear</td>
+<td>1. Daylight</td>
+<td>0. Non - Trafficway or Driveway Access</td>
+</tr>
+<tr class="even">
+<td>2. Rain</td>
+<td>2. Dark - Not Lighted</td>
+<td>1. Dry</td>
+</tr>
+<tr class="odd">
+<td>3. Sleet or Hail</td>
+<td>3. Dark - Lighted</td>
+<td>2. Wet</td>
+</tr>
+<tr class="even">
+<td>4. Snow</td>
+<td>4. Dawn</td>
+<td>3. Snow</td>
+</tr>
+<tr class="odd">
+<td>5. Fog, Smog, Smoke</td>
+<td>5. Dusk</td>
+<td>4. Ice/Frost</td>
+</tr>
+<tr class="even">
+<td>6. Severe Crosswinds</td>
+<td>6. Dark - Unknown Lighting</td>
+<td>5. Sand</td>
+</tr>
+<tr class="odd">
+<td>7. Blowing Sand, Soil, Dirt</td>
+<td>7. Other</td>
+<td>6. Water (Standing or Moving)</td>
+</tr>
+<tr class="even">
+<td>8. Other</td>
+<td>8. Not Reported</td>
+<td>7. Oil</td>
+</tr>
+<tr class="odd">
+<td>9. N/A</td>
+<td>9. Reported as Unknown</td>
+<td>8. Other</td>
+</tr>
+<tr class="even">
+<td>10. Cloudy</td>
+<td></td>
+<td>9. Slush</td>
+</tr>
+<tr class="odd">
+<td>11. Blowing Snow</td>
+<td></td>
+<td>10. Mud, Dirt or Gravel</td>
+</tr>
+<tr class="even">
+<td>12. Freezing Rain or Drizzle</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>So let’s dive in the result</p>
+</section>
+<section id="results-of-k-means-clustering-elbow-method" class="level3">
+<h3 class="anchored" data-anchor-id="results-of-k-means-clustering-elbow-method">Results of K-Means Clustering (Elbow Method)</h3>
+<p>Clusters Analysis: The clusters appear to be differentiated mostly along the ‘WEATHER’ and ‘VSURCOND’ axes. This suggests that weather conditions and road surface conditions play significant roles in differentiating between clusters. The histograms on the diagonal show the distribution of each feature within each cluster. For instance, one of the clusters (in red) seems to have a higher frequency of incidents occurring under a specific weather condition(1 and 2, that is clear or rain) whereas the light and road surface conditions are more spread out. This is because these are two most common weather condition happen on the road, whereas others are less likely to happen or in some states it won’t ever happen. Also, we can see from the (0,0) plot that the number of accidents happened during clear and rain are much larger than accidents happened in other weather condition.</p>
+<p>Relationships between Features: In the scatter plots, you can see how the clusters are distributed with respect to two features at a time. For example, in the ‘WEATHER’ versus ‘LGT_COND’ scatter plot, you can see that some clusters are more prevalent under certain combinations of weather and light conditions. It looks like the blue, purple, and orange clusters are more scattered across conditions, indicating light condition might not have a strong impact on chance of fatal crashes, while the red and orange clusters also represent more specific conditions (Rain, Sleet or Hail, Blowing Snow or Freezing Rain, which will cause road surface condition getting worse and the chance of having a fatal crash increases dramatically).</p>
+</section>
+<section id="silhouette-method" class="level3">
+<h3 class="anchored" data-anchor-id="silhouette-method">Silhouette Method</h3>
+<p>The Silhouette method returned a quite similar result <img src="images/cluster silhou clusters.png" class="img-fluid" alt="Silhouette"></p>
+<p>The optimal number of clusters should be 2, but there was not much useful infomration we can get form that, so I used the second highest score, which is 9 clusters.</p>
+<p>And the results are <img src="images/cluster silhouette output.png" class="img-fluid" alt="Sihouette result"></p>
+</section>
+<section id="results-of-k-means-clustering-silhouette-method" class="level3">
+<h3 class="anchored" data-anchor-id="results-of-k-means-clustering-silhouette-method">Results of K-Means Clustering (Silhouette Method)</h3>
+<p>Based on the plot and the ouput result, we can infer that</p>
+<ol type="1">
+<li>The highest risk of fatality seems to be associated with driving in the dark without proper lighting, especially in foggy conditions.</li>
+<li>Weather that impacts visibility, like fog and heavy clouds, or adverse road conditions, such as blowing snow and non-standard surfaces, appears to increase the risk of fatal accidents.</li>
+<li>Clusters with daylight, clear weather, and dry roads tend to have lower fatality rates, suggesting these are the safest conditions among the clusters analyzed.</li>
+<li>Rainy conditions with wet roads also show an increased average in fatalities, indicating the hazardous nature of such conditions.</li>
+</ol>
+</section>
+</section>
+<section id="dbscan-1" class="level2">
+<h2 class="anchored" data-anchor-id="dbscan-1">DBSCAN</h2>
+<p>This is a cluster result plotted without any noise points on.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Dbscan no nosie.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">no noise</figcaption>
+</figure>
+</div>
+<p>Clearly this plot cannot bring us any useful information, let’s try another way to see what will happen.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/too many clusters.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">wayyyy to many clusters</figcaption>
+</figure>
+</div>
+<p>The plot shows a variety of clusters, each represented by a different color. Some clusters appear more densely packed, while others are sparse. The densely packed clusters likely represent more common combinations of weather, light, and road surface conditions that frequently occur together, while sparser ones may represent less common or more unique conditions. This is not an ideal result for us to see, and probablt DBSCAN is not a good model for this dataset.</p>
+</section>
+<section id="hierarchical-clustering-1" class="level2">
+<h2 class="anchored" data-anchor-id="hierarchical-clustering-1">Hierarchical Clustering</h2>
+<p><img src="images/HCD.png" class="img-fluid" alt="hierarchical"> <img src="images/HCR.png" class="img-fluid" alt="hier cluster"></p>
+<p>The plot shows PCA has been used to reduce the dimensionality of the data to two principal components, which are linear combinations of the original variables. The proximity of points within the same cluster (same color) suggests they are similar to each other based on the original features (weather, light, and road surface conditions).</p>
+<p>Some clusters are more tightly grouped, suggesting that there are well-defined conditions under which a number of accidents commonly occur. Based on the size of count and the size of data, most of the likely combination could be clear weather, daylight, and dry road surface condition, which is the most environmental condition for an accident, also the most common one. Some other clusters that are sparse or have points spread out may indicate less common or more variable conditions. Probably these are some adverse weather conditions like fod or snow with dusk or dawn light condition, with some potential hazardous road surface condition that is rarely happen in real life. All of those needs to be confirmed by further analysis.</p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Based on those plots generated by differnt methods, I will say that K-Means is the best method for this dataset. It has the most intuitive result, and bring the most information. DBSCAN, on the other hand, is not as competitive as K-means as it seperate the dataset into too many small clusters, which is likely to capture noise and random fluctuations, also, in some cases, Each data point might become its own cluster, which defeats the purpose of clustering to find broader patterns.</p>
+<p>Hierarchical Clustering is also a good method for this dataset as it generated just fine number of clusters and the clusters make sense logically and intuitively based on the domain knowledge and also make sense in the real world</p>
+<p>In conclusion, our analysis of vehicle accident data through various clustering methods has provided us with meaningful insights into the conditions under which accidents are most likely to occur. By examining the environmental factors—specifically, weather conditions, lighting, and road surface states—we have identified patterns that could have significant implications for public safety and policy.</p>
+<section id="predominant-conditions-for-accidents" class="level4">
+<h4 class="anchored" data-anchor-id="predominant-conditions-for-accidents">Predominant Conditions for Accidents:</h4>
+<p>A notable number of accidents occur under clear weather, during daylight, and on dry roads. This finding is somewhat counterintuitive as these conditions are typically considered safe. It suggests that other factors, such as driver distraction or traffic volume, might play a more significant role than expected.</p>
+</section>
+<section id="high-risk-conditions" class="level4">
+<h4 class="anchored" data-anchor-id="high-risk-conditions">High-Risk Conditions:</h4>
+<p>Although less frequent, accidents occurring under rare and extreme conditions, like severe crosswinds or during weather phenomena like blowing sand, are especially concerning. These events, while not common, have a high impact and could benefit from targeted, situation-specific safety measures.</p>
+</section>
+<section id="overlap-of-conditions" class="level4">
+<h4 class="anchored" data-anchor-id="overlap-of-conditions">Overlap of Conditions:</h4>
+<p>The overlap between clusters in certain conditions, such as cloudy weather transitioning to rain, indicates that accidents under these conditions may not be distinctly more dangerous than others. This suggests that interventions should be balanced across a range of weather conditions rather than focusing on one in isolation</p>
+</section>
+<section id="potential-for-targeted-interventions" class="level4">
+<h4 class="anchored" data-anchor-id="potential-for-targeted-interventions">Potential for Targeted Interventions:</h4>
+<p>Understanding the commonalities within each cluster allows for the development of targeted interventions. For instance, enhancing street lighting and implementing anti-fog measures could mitigate the risk of accidents under specific conditions identified as higher risk.</p>
+<p>In real-life terms, this analysis could help inform where and when to focus road safety resources to prevent accidents. It could lead to better-timed traffic advisories, more effective deployment of road maintenance crews, and smarter city planning regarding road design and lighting. On a personal level, it could help drivers be more aware of the conditions that are deceptively risky, like clear days, or truly dangerous, like foggy, poorly lit nights, potentially encouraging safer driving behaviors.</p>
+<p>Ultimately, the goal of this analysis is to contribute to safer roads and to reduce the number and severity of traffic accidents, potentially saving lives and reducing injuries among road users.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
