@@ -273,9 +273,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="project-proposal" class="level1">
 <h1>Project Proposal</h1>
-<p>This project is aiming to find out which factors could have strong influce on fatal crashes. Does it have connections with drinking and drugs? Is it positively related to sex or age?</p>
-<p>In this page, we will discover two ways of doing dimensionality reduction. One is PCA, Principal Component Analysis, the other is t-Distributed Stochastic Neighbor Embedding (t-SNE). These techniques are applied to a dataset to understand their effectiveness in data visualization and pattern recognition.</p>
-<p>The data I used is the fatal accidents happened within America in 2020. It contains detaiedl information about every accidents police recorded, and we will this time focus on people side, to see which factors has the most impact on driver behavior and lead to fatal crashes.</p>
+<p>This project aims to find out which factors could have a strong influence on fatal crashes. Does it have connections with drinking and drugs? Is it positively related to sex or age?</p>
+<p>On this page, we will discover two ways of doing dimensionality reduction. One is PCA, Principal Component Analysis, the other is t-Distributed Stochastic Neighbor Embedding (t-SNE). These techniques are applied to a dataset to understand their effectiveness in data visualization and pattern recognition.</p>
+<p>The data I used is the fatal accidents that happened in America in 2020. It contains detailed information about every accident police recorded, and we will this time focus on the people side, to see which factors have the most impact on driver behavior and lead to fatal crashes.</p>
 <p>Packages used in this project: 1. Scikit-Learn: For implementing PCA and t-SNE algorithms. This library offers efficient and easy-to-use tools for data analysis and machine learning. 2. Matplotlib: For data visualization, creating plots to visually compare the results obtained from PCA and t-SNE. 3. NumPy: For numerical computations, which might be necessary for data preprocessing or additional analysis. 4. Pandas: For data manipulation and extraction, especially useful if the dataset is in a tabular format.</p>
 <section id="pca" class="level2">
 <h2 class="anchored" data-anchor-id="pca">PCA</h2>
@@ -327,9 +327,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="comparsion" class="level1">
 <h1>Comparsion</h1>
-<p>When working with these two different methods, I can tell that the PCA is much faster when it comes to generating plots in a global data structure scale. t-SNE, on the other hand, is better at identifying clusters and local pattersn in a high-dimensional data. And for my dataset, the visualization is very sensitive to parameter setting.</p>
+<p>When working with these two different methods, I can tell that the PCA is much faster when it comes to generating plots in a global data structure scale. t-SNE, on the other hand, is better at identifying clusters and local patterns in high-dimensional data. And for my dataset, the visualization is very sensitive to parameter settings.</p>
 <p>PCA is effective at preserving global structure and linear relationships in the data. It’s good at capturing the directions in which the data varies the most, while t-SNE is excellent at preserving local structures and revealing clusters in the data.</p>
-<p>Overall, PCA is fast, scalable to large datasets, and provides a clear rank ordering of dimensions. However, it’s less effective for non-linear data. t-SNE is highly effective in revealing local structures and clusters, but it is computationally intensive, which cannot be scale up to large datasets, like this one I’m working on, sometimes it even took 10 minutes to get results, and sometimes it’s inconsistent.</p>
+<p>Overall, PCA is fast, scalable to large datasets, and provides a clear rank ordering of dimensions. However, it’s less effective for non-linear data. t-SNE is highly effective in revealing local structures and clusters, but it is computationally intensive, and cannot be scaled up to large datasets, like this one I’m working on, it even took 10 minutes to get results, and sometimes it’s inconsistent.</p>
 
 
 </section>
