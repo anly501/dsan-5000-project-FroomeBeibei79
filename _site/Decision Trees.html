@@ -210,9 +210,28 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#what-is-decision-tree" id="toc-what-is-decision-tree" class="nav-link active" data-scroll-target="#what-is-decision-tree">What is Decision Tree?</a>
   <ul class="collapse">
-  <li><a href="#if-you-happened-to-watch-formula-1" id="toc-if-you-happened-to-watch-formula-1" class="nav-link" data-scroll-target="#if-you-happened-to-watch-formula-1">If you happened to watch Formula 1…</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   </ul></li>
-  <li><a href="#baseline-decision-tree-analysis" id="toc-baseline-decision-tree-analysis" class="nav-link" data-scroll-target="#baseline-decision-tree-analysis">Baseline Decision Tree Analysis</a></li>
+  <li><a href="#baseline-decision-tree-analysis" id="toc-baseline-decision-tree-analysis" class="nav-link" data-scroll-target="#baseline-decision-tree-analysis">Baseline Decision Tree Analysis</a>
+  <ul class="collapse">
+  <li><a href="#dataset-and-what-i-want-to-achieve" id="toc-dataset-and-what-i-want-to-achieve" class="nav-link" data-scroll-target="#dataset-and-what-i-want-to-achieve">Dataset and What I want to Achieve</a></li>
+  <li><a href="#baseline-model-result" id="toc-baseline-model-result" class="nav-link" data-scroll-target="#baseline-model-result">Baseline Model Result</a></li>
+  <li><a href="#baseline-tree" id="toc-baseline-tree" class="nav-link" data-scroll-target="#baseline-tree">Baseline Tree</a></li>
+  <li><a href="#classification-report-analysis" id="toc-classification-report-analysis" class="nav-link" data-scroll-target="#classification-report-analysis">Classification Report Analysis：</a></li>
+  <li><a href="#confusion-matrix-analysis" id="toc-confusion-matrix-analysis" class="nav-link" data-scroll-target="#confusion-matrix-analysis">Confusion Matrix Analysis</a></li>
+  </ul></li>
+  <li><a href="#random-forest-analysis" id="toc-random-forest-analysis" class="nav-link" data-scroll-target="#random-forest-analysis">Random Forest Analysis</a>
+  <ul class="collapse">
+  <li><a href="#classification-report-analysis-based-on-random-forest" id="toc-classification-report-analysis-based-on-random-forest" class="nav-link" data-scroll-target="#classification-report-analysis-based-on-random-forest">Classification Report Analysis Based on Random Forest</a></li>
+  <li><a href="#confusion-matrix-analysis-1" id="toc-confusion-matrix-analysis-1" class="nav-link" data-scroll-target="#confusion-matrix-analysis-1">Confusion Matrix Analysis</a></li>
+  <li><a href="#feature-importances-analysis" id="toc-feature-importances-analysis" class="nav-link" data-scroll-target="#feature-importances-analysis">Feature Importances Analysis</a></li>
+  </ul></li>
+  <li><a href="#hyper-parameter-tunning" id="toc-hyper-parameter-tunning" class="nav-link" data-scroll-target="#hyper-parameter-tunning">Hyper-Parameter Tunning</a></li>
+  <li><a href="#the-final-result" id="toc-the-final-result" class="nav-link" data-scroll-target="#the-final-result">The Final Result</a>
+  <ul class="collapse">
+  <li><a href="#optimized-tree" id="toc-optimized-tree" class="nav-link" data-scroll-target="#optimized-tree">Optimized Tree</a></li>
+  <li><a href="#result-analysis" id="toc-result-analysis" class="nav-link" data-scroll-target="#result-analysis">Result Analysis</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -238,9 +257,10 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="what-is-decision-tree" class="level1">
 <h1>What is Decision Tree?</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>A decision tree is a flowchart-like structure used in decision making and data mining. It’s a popular tool in machine learning, statistics, and information theory for modeling decisions and their possible consequences.</p>
-<section id="if-you-happened-to-watch-formula-1" class="level3">
-<h3 class="anchored" data-anchor-id="if-you-happened-to-watch-formula-1">If you happened to watch Formula 1…</h3>
+<p>If you happened to watch Formula 1…</p>
 <p><img src="images/f1 decision tree.jpeg" class="img-fluid" alt="Formula 1 meme"> <a href="https://www.reddit.com/r/formuladank/comments/12qhedw/made_this_for_my_biology_homework/">Source</a></p>
 <p>In this plot, each question helps you make a decision, and you follow the path that matches the answers you get. It’s like a flowchart of choices that leads you to a final decision. Decision trees work similarly in various fields, helping to make choices based on a series of yes-or-no questions and criteria.</p>
 <p><img src="images/decision tree.jpeg" class="img-fluid" alt="Decision Tree"> <a href="https://www.kaggle.com/code/ahmetburabua/decision-tree">Source</a></p>
@@ -248,6 +268,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="baseline-decision-tree-analysis" class="level1">
 <h1>Baseline Decision Tree Analysis</h1>
+<section id="dataset-and-what-i-want-to-achieve" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-and-what-i-want-to-achieve">Dataset and What I want to Achieve</h2>
+<p>In this analysis, we delve deeper into understanding the factors contributing to fatal crashes by examining specific conditions such as Lighting Condition, Weather Condition, Car Make, and Year. By leveraging the power of machine learning, particularly classification algorithms like Decision Trees and Random Forest, we aim to unearth patterns and interactions among these variables that significantly increase the risk of fatal outcomes in crashes.</p>
+<p>The dataset, previously used for clustering, provides a rich source of information for this supervised learning task. Each record in the dataset represents a unique crash event, detailing various attributes like the make and model year of the car involved, the lighting condition at the time of the crash (e.g., daylight, dusk, or darkness), and the prevailing weather conditions (such as clear, rainy, or foggy). By analyzing these factors, we can build a predictive model that not only identifies high-risk scenarios but also helps in recommending preventive measures. For instance, if certain car models or specific weather conditions are found to be more frequently associated with fatal crashes, this information can be invaluable for road safety authorities and car manufacturers to improve safety standards and for drivers to exercise caution under identified high-risk conditions.</p>
+<p>Furthermore, this approach also enables us to evaluate the relative importance of each factor in contributing to fatal crashes. For example, it may be revealed that certain lighting conditions, when combined with specific weather patterns, significantly heighten the risk of a fatal outcome, regardless of the car make or year. Such insights are crucial for targeted safety campaigns and policy-making, emphasizing conditions where drivers should be extra cautious. By dissecting the dataset in this manner, we not only aim to contribute to the broader field of traffic safety research but also provide actionable insights that could potentially save lives on the road.</p>
+</section>
+<section id="baseline-model-result" class="level2">
+<h2 class="anchored" data-anchor-id="baseline-model-result">Baseline Model Result</h2>
 <p>The baseline model returned as follows: Classification Report:</p>
 <table class="table">
 <thead>
@@ -316,8 +344,235 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>Confusion Matrix: <img src="images/confusion matrix.jpg" class="img-fluid" alt="cm"></p>
+</section>
+<section id="baseline-tree" class="level2">
+<h2 class="anchored" data-anchor-id="baseline-tree">Baseline Tree</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/baseline tree.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">baseline</figcaption>
+</figure>
+</div>
+</section>
+<section id="classification-report-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="classification-report-analysis">Classification Report Analysis：</h2>
+<ol type="1">
+<li>Class ‘1’ (Most Likely Single Fatality) High precision (0.91) and recall (0.98), indicating good model performance for this class. The model correctly predicts most of the single fatality cases.</li>
+<li>Class ‘2’ and Beyond (Multiple Fatalities) Significantly lower precision and recall, particularly for classes 3 to 6. Indicates poor performance in predicting instances with more than one fatality.</li>
+<li>Overall Accuracy The accuracy is 0.89, which seems high. However, this is largely due to the model’s performance on the most common class (class 1).</li>
+</ol>
+</section>
+<section id="confusion-matrix-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="confusion-matrix-analysis">Confusion Matrix Analysis</h2>
+<ol type="1">
+<li>Class ‘1’ The model correctly predicted 8664 out of 8866 cases. Most errors involve class ‘1’ being predicted when it’s actually class ‘2’.</li>
+<li>Classes ‘2’ to ‘6’ High misclassification rates, with the majority being incorrectly predicted as class ‘1’. Very few correct predictions for these classes.</li>
+</ol>
+<p>The analysis shows that while the model performs well for the most common scenario, it struggles with less common, potentially more complex scenarios. Let’s see if it would be better if we use random forest method.</p>
+</section>
+</section>
+<section id="random-forest-analysis" class="level1">
+<h1>Random Forest Analysis</h1>
+<p>The random forests returned as follows:</p>
+<p>Random Forest Classification Report:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>precision</th>
+<th>recall</th>
+<th>f1-score</th>
+<th>support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0.91</td>
+<td>0.99</td>
+<td>0.95</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0.08</td>
+<td>0.01</td>
+<td>0.02</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>0.08</td>
+<td>0.01</td>
+<td>0.02</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>accuracy</td>
+<td></td>
+<td></td>
+<td>0.90</td>
+</tr>
+<tr class="even">
+<td>macro avg</td>
+<td>0.18</td>
+<td>0.17</td>
+<td>0.16</td>
+</tr>
+<tr class="odd">
+<td>weighted avg</td>
+<td>0.83</td>
+<td>0.90</td>
+<td>0.86</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/random forest result.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">rf</figcaption>
+</figure>
+</div>
+<p>The tree looks almost the same… <img src="images/random forest tree.png" class="img-fluid" alt="rft"></p>
+<section id="classification-report-analysis-based-on-random-forest" class="level2">
+<h2 class="anchored" data-anchor-id="classification-report-analysis-based-on-random-forest">Classification Report Analysis Based on Random Forest</h2>
+<ol type="1">
+<li>Class ‘1’ (Most Likely Single Fatality): High precision (0.91) and recall (0.99), indicating the model is very effective in predicting this class.</li>
+<li>Class ‘2’ and Beyond (Multiple Fatalities): Low precision and recall for these classes, similar to the baseline decision tree. Indicates a struggle to correctly predict cases with multiple fatalities.</li>
+<li>Overall Accuracy: The accuracy is 0.90, which is slightly better than the baseline decision tree. However, this is still largely due to the model’s performance on the most common class (class 1).</li>
+</ol>
+</section>
+<section id="confusion-matrix-analysis-1" class="level2">
+<h2 class="anchored" data-anchor-id="confusion-matrix-analysis-1">Confusion Matrix Analysis</h2>
+<ol type="1">
+<li>Class ‘1’: High number of correct predictions (8734 out of 8865). Relatively few misclassifications into other classes.</li>
+<li>Classes ‘2’ to ‘6’: Majority are incorrectly predicted as class ‘1’. Very few correct predictions for these classes, indicating that the model struggles with minority classes.</li>
+</ol>
+</section>
+<section id="feature-importances-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="feature-importances-analysis">Feature Importances Analysis</h2>
+<ol type="1">
+<li>MAKENAME and MOD_YEAR: These features have the highest importance scores (0.453 and 0.374 respectively), suggesting they are the most influential in the model’s decisions.</li>
+<li>Other Features: WEATHER, LGT_COND, DR_DRINK, and HIT_RUN have lower importance scores, indicating less influence on the model’s predictions.</li>
+</ol>
+<p>The Random Forest model provides a slight improvement over the baseline decision tree, especially in overall accuracy, but still faces challenges with the less common classes. Addressing the data imbalance and exploring alternative models or features could lead to further improvements.</p>
+</section>
+</section>
+<section id="hyper-parameter-tunning" class="level1">
+<h1>Hyper-Parameter Tunning</h1>
+<p>Both results are not very ideal, let’s try to find the optimal parameters for this model.</p>
+<p>For this model, we are using 10 iterrations and 3-fold cross-validation to find the optimal parameters.</p>
+<p>The results are as follows:</p>
+<p>Best Parameters: {‘max_depth’: 9, ‘max_features’: 4, ‘min_samples_leaf’: 8, ‘min_samples_split’: 6, ‘n_estimators’: 112}</p>
+</section>
+<section id="the-final-result" class="level1">
+<h1>The Final Result</h1>
+<p>Using the optimal parameters, we run the model and the result is quite good on majority class compared to the previous one, but still, very poor on minority class.</p>
+<p>Accuracy: 0.909697280656747</p>
+<p>Classification Report:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>precision</th>
+<th>recall</th>
+<th>f1-score</th>
+<th>support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0.91</td>
+<td>1.00</td>
+<td>0.95</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>accuracy</td>
+<td></td>
+<td></td>
+<td>0.91</td>
+</tr>
+<tr class="even">
+<td>macro avg</td>
+<td>0.15</td>
+<td>0.17</td>
+<td>0.16</td>
+</tr>
+<tr class="odd">
+<td>weighted avg</td>
+<td>0.83</td>
+<td>0.91</td>
+<td>0.87</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/best parameters cm.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">optimal parameter confusion matrix</figcaption>
+</figure>
+</div>
+<section id="optimized-tree" class="level2">
+<h2 class="anchored" data-anchor-id="optimized-tree">Optimized Tree</h2>
+<p><img src="images/optimized tree.png" class="img-fluid" alt="optimized tree"> This plot is hard to interpret, and it’s probably overfitting, so let’s set the layer limit into 3 to make it easy to interpret.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/4 layer.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">4 layer</figcaption>
+</figure>
+</div>
+</section>
+<section id="result-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="result-analysis">Result Analysis</h2>
+<p>The model performs very well in predicting the majority class (labeled as “1”), with a precision of 0.91 and a recall of 1.00. This is indicated by the 8865 correct predictions in the confusion matrix for this class.</p>
+<p>The model fails to correctly predict any instances of the minority classes (labeled as “2”, “3”, “4”, “5”, and “6”). This could be due to imbalance datasets as fatal numbers of 1 is the most common and anything bigger than 1 is rarely seen in accidents. The model also tends to be overwhelmingly favor the majority class.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

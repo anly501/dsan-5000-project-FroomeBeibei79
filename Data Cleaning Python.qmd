@@ -392,7 +392,7 @@ X = data['text']
 y = data['sentiment_encoded']
 
 # Perform a train-test split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=74)
 
 # Initialize TF-IDF Vectorizer
 tfidf_vectorizer = TfidfVectorizer(stop_words='english', max_features=5000)
@@ -612,7 +612,7 @@ perplexities = [5, 20, 40]
 plt.figure(figsize=(12,12))  # Set the figure size for the subplot layout
 
 for i, perp in enumerate(perplexities, 1):
-    tsne = TSNE(n_components=2, perplexity=perp, n_iter=300, random_state=42)
+    tsne = TSNE(n_components=2, perplexity=perp, n_iter=300, random_state=74)
     tsne_results = tsne.fit_transform(df_scaled)
     
     plt.subplot(1, len(perplexities), i)
@@ -717,7 +717,7 @@ silhouette_scores = []
 range_n_clusters = list(range(2, 10))  # Example range from 2 to 9 clusters
 
 for n_clusters in range_n_clusters:
-    kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+    kmeans = KMeans(n_clusters=n_clusters, random_state=74)
     clusters = kmeans.fit_predict(features)
     silhouette_avg = silhouette_score(features, clusters)
     silhouette_scores.append(silhouette_avg)
@@ -887,3 +887,208 @@ plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')
 plt.show()
 ```
+
+## Decision Tree
+```{.python .hide}
+import pandas as pd
+
+
+data = pd.read_csv("Data/clustering_data.csv")
+
+# Calculate the distribution of class labels
+class_distribution = data['FATALS'].value_counts(normalize=True) * 100
+
+print(class_distribution)
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import classification_report, confusion_matrix
+
+data = pd.read_csv("Data/clustering_data.csv")
+
+# Select the relevant features and target variable
+features = data[['MAKENAME', 'MOD_YEAR', 'WEATHER', 'LGT_COND', 'DR_DRINK', 'HIT_RUN']]
+target = data['FATALS']
+
+# Encoding categorical variables
+label_encoders = {}
+for column in ['MAKENAME', 'WEATHER', 'LGT_COND']:
+    le = LabelEncoder()
+    features[column] = le.fit_transform(features[column])
+    label_encoders[column] = le
+
+# Splitting the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=74)
+
+# Creating and training a baseline decision tree classifier
+dt_classifier = DecisionTreeClassifier(random_state=74)
+dt_classifier.fit(X_train, y_train)
+
+# Predicting using the baseline decision tree
+y_pred = dt_classifier.predict(X_test)
+
+# Evaluating the baseline decision tree
+class_report = classification_report(y_test, y_pred)
+conf_matrix = confusion_matrix(y_test, y_pred)
+
+# Print the classification report and confusion matrix
+print("Classification Report:\n", class_report)
+print("Confusion Matrix:\n", conf_matrix)
+
+
+import matplotlib.pyplot as plt
+from sklearn.tree import plot_tree
+
+# Assuming the decision tree model is stored in `dt_classifier`
+plt.figure(figsize=(20,10))  # Adjust the size as needed
+plot_tree(dt_classifier, 
+          filled=True, 
+          rounded=True, 
+          class_names=True, 
+          feature_names=['MAKENAME', 'MOD_YEAR', 'WEATHER', 'LGT_COND', 'DR_DRINK', 'HIT_RUN'],
+          max_depth=5)  
+plt.show()
+
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix
+
+# Creating and training a Random Forest classifier
+rf_classifier = RandomForestClassifier(random_state=74, n_estimators=100)  # You can adjust the number of trees with n_estimators
+rf_classifier.fit(X_train, y_train)
+
+# Predicting using the Random Forest
+rf_predictions = rf_classifier.predict(X_test)
+
+# Evaluating the Random Forest
+rf_class_report = classification_report(y_test, rf_predictions)
+rf_conf_matrix = confusion_matrix(y_test, rf_predictions)
+rf_feature_importances = rf_classifier.feature_importances_
+
+# Print the evaluation metrics and feature importances
+print("Random Forest Classification Report:\n", rf_class_report)
+print("Random Forest Confusion Matrix:\n", rf_conf_matrix)
+print("Feature Importances:\n", rf_feature_importances)
+
+
+import matplotlib.pyplot as plt
+from sklearn.tree import plot_tree
+
+
+tree_in_rf = rf_classifier.estimators_[0]
+
+# Visualizing the selected tree
+plt.figure(figsize=(20,10))  # Adjust the size as needed
+plot_tree(tree_in_rf, 
+          filled=True, 
+          rounded=True, 
+          feature_names=['MAKENAME', 'MOD_YEAR', 'WEATHER', 'LGT_COND', 'DR_DRINK', 'HIT_RUN'],
+          max_depth=5,  
+          class_names=True)
+plt.show()
+
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import RandomizedSearchCV
+from scipy.stats import randint as sp_randint
+
+# Load the data
+data = pd.read_csv("Data/clustering_data.csv")
+
+# Select the relevant features and target variable
+features = data[['MAKENAME', 'MOD_YEAR', 'WEATHER', 'LGT_COND', 'DR_DRINK', 'HIT_RUN']]
+target = data['FATALS']
+
+# Encoding categorical variables
+label_encoders = {}
+for column in ['MAKENAME', 'WEATHER', 'LGT_COND']:
+    le = LabelEncoder()
+    features[column] = le.fit_transform(features[column])
+    label_encoders[column] = le
+
+# Splitting the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=74)
+
+# Parameter grid for Random Search
+param_dist = {
+    "n_estimators": sp_randint(10, 200),
+    "max_depth": sp_randint(3, 20),
+    "min_samples_split": sp_randint(2, 11),
+    "min_samples_leaf": sp_randint(1, 11),
+    "max_features": sp_randint(1, X_train.shape[1]+1)
+}
+
+# Setting up RandomizedSearchCV
+# Using 10 iterations and 3-fold cross-validation
+random_search = RandomizedSearchCV(
+    estimator=RandomForestClassifier(random_state=74),
+    param_distributions=param_dist,
+    n_iter=10,
+    cv=3,
+    random_state=74,
+    n_jobs=-1  # Using all processors
+)
+
+# Running the Random Search
+random_search.fit(X_train, y_train)
+
+# Best parameters found
+best_params = random_search.best_params_
+print("Best Parameters:", best_params)
+
+# Evaluate the best model on the test data
+best_model = random_search.best_estimator_
+y_pred = best_model.predict(X_test)
+
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+
+# Initialize the Random Forest Classifier with the best parameters
+tuned_rf = RandomForestClassifier(
+    n_estimators=112,
+    max_depth=9,
+    min_samples_split=6,
+    min_samples_leaf=8,
+    max_features=4,
+    random_state=74
+)
+
+# Train the model
+tuned_rf.fit(X_train, y_train)
+
+# Predict on the test data
+y_pred = tuned_rf.predict(X_test)
+
+# Evaluate the model
+accuracy = accuracy_score(y_test, y_pred)
+class_report = classification_report(y_test, y_pred)
+conf_matrix = confusion_matrix(y_test, y_pred)
+
+print(f"Accuracy: {accuracy}")
+print("Classification Report:\n", class_report)
+print("Confusion Matrix:\n", conf_matrix)
+
+
+import matplotlib.pyplot as plt
+from sklearn.tree import plot_tree
+
+# Assuming 'tuned_rf' is your trained Random Forest model
+# Extract one tree from the Random Forest
+chosen_tree = tuned_rf.estimators_[0]
+
+# Set the figure size
+plt.figure(figsize=(20,10))
+
+# Plot the decision tree
+plot_tree(chosen_tree, 
+          feature_names=features.columns, 
+          class_names=True, 
+          filled=True, 
+          rounded=True,
+          max_depth = 3)
+
+plt.show()

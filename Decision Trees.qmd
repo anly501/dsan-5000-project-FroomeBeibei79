@@ -24,6 +24,18 @@ In this plot, each question helps you make a decision, and you follow the path t
 
 # Baseline Decision Tree Analysis
 
+## Dataset and What I want to Achieve
+
+In this analysis, we delve deeper into understanding the factors contributing to fatal crashes by examining specific conditions such as Lighting Condition, Weather Condition, Car Make, and Year. By leveraging the power of machine learning, particularly classification algorithms like Decision Trees and Random Forest, we aim to unearth patterns and interactions among these variables that significantly increase the risk of fatal outcomes in crashes.
+
+The dataset, previously used for clustering, provides a rich source of information for this supervised learning task. Each record in the dataset represents a unique crash event, detailing various attributes like the make and model year of the car involved, the lighting condition at the time of the crash (e.g., daylight, dusk, or darkness), and the prevailing weather conditions (such as clear, rainy, or foggy). By analyzing these factors, we can build a predictive model that not only identifies high-risk scenarios but also helps in recommending preventive measures. For instance, if certain car models or specific weather conditions are found to be more frequently associated with fatal crashes, this information can be invaluable for road safety authorities and car manufacturers to improve safety standards and for drivers to exercise caution under identified high-risk conditions.
+
+Furthermore, this approach also enables us to evaluate the relative importance of each factor in contributing to fatal crashes. For example, it may be revealed that certain lighting conditions, when combined with specific weather patterns, significantly heighten the risk of a fatal outcome, regardless of the car make or year. Such insights are crucial for targeted safety campaigns and policy-making, emphasizing conditions where drivers should be extra cautious. By dissecting the dataset in this manner, we not only aim to contribute to the broader field of traffic safety research but also provide actionable insights that could potentially save lives on the road.
+
+
+
+## Baseline Model Result
+
 The baseline model returned as follows:
 Classification Report:
 
@@ -43,7 +55,7 @@ Confusion Matrix:
 ![cm](images/confusion%20matrix.jpg)
 
 
-## Baseline Model Result
+
 
 ## Baseline Tree
 
@@ -68,7 +80,7 @@ Confusion Matrix:
     High misclassification rates, with the majority being incorrectly predicted as class '1'.
     Very few correct predictions for these classes.
 
-The analysis shows that while the model performs well for the most common scenario, it struggles with less common, potentially more complex scenarios. Adjusting your approach to address these challenges will be key in developing a more robust model.
+The analysis shows that while the model performs well for the most common scenario, it struggles with less common, potentially more complex scenarios. Let's see if it would be better if we use random forest method.
 
 
 # Random Forest Analysis
@@ -121,3 +133,58 @@ The tree looks almost the same...
 
 
 The Random Forest model provides a slight improvement over the baseline decision tree, especially in overall accuracy, but still faces challenges with the less common classes. Addressing the data imbalance and exploring alternative models or features could lead to further improvements.
+
+
+# Hyper-Parameter Tunning
+
+Both results are not very ideal, let's try to find the optimal parameters for this model.
+
+For this model, we are using 10 iterrations and 3-fold cross-validation to find the optimal parameters.
+
+The results are as follows:
+
+Best Parameters: {'max_depth': 9, 'max_features': 4, 'min_samples_leaf': 8, 'min_samples_split': 6, 'n_estimators': 112}
+
+# The Final Result
+
+Using the optimal parameters, we run the model and the result is quite good on majority class compared to the previous one, but still, very poor on minority class.
+
+Accuracy: 0.909697280656747
+
+Classification Report:
+
+|precision |   recall  | f1-score | support |
+|----------|-----------|----------|---------|
+|  1       |0.91  |    1.00      |0.95      |8865
+|  2       |0.00  |    0.00      |0.00       |739
+|  3       |0.00  |    0.00      |0.00      |103
+|  4       |0.00  |    0.00      |0.00        |26
+|  5       |0.00  |    0.00      |0.00        |11
+|  6       |0.00  |    0.00      |0.00         |1
+|accuracy   |            |     |0.91      |9745
+   macro avg|       0.15      |0.17      |0.16      |9745
+weighted avg|       0.83      |0.91      |0.87      |9745
+
+![optimal parameter confusion matrix](images/best%20parameters%20cm.jpg)
+
+
+## Optimized Tree
+![optimized tree](images/optimized%20tree.png)
+This plot is hard to interpret, and it's probably overfitting, so let's set the layer limit into 3 to make it easy to interpret.
+
+![4 layer](images/4%20layer.png)
+
+
+## Result Analysis
+
+The model performs very well in predicting the majority class (labeled as "1"), with a precision of 0.91 and a recall of 1.00. This is indicated by the 8865 correct predictions in the confusion matrix for this class.
+
+The model fails to correctly predict any instances of the minority classes (labeled as "2", "3", "4", "5", and "6"). This could be due to imbalance datasets as fatal numbers of 1 is the most common and anything bigger than 1 is rarely seen in accidents. The model also tends to be overwhelmingly favor the majority class.
+
+
+
+
+
+
+
+

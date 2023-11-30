@@ -263,7 +263,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#dbscan" id="toc-dbscan" class="nav-link" data-scroll-target="#dbscan">DBSCAN</a></li>
   <li><a href="#hierarchical-clustering" id="toc-hierarchical-clustering" class="nav-link" data-scroll-target="#hierarchical-clustering">Hierarchical Clustering</a></li>
+  <li><a href="#decision-tree" id="toc-decision-tree" class="nav-link" data-scroll-target="#decision-tree">Decision Tree</a></li>
   </ul></li>
+  <li><a href="#calculate-the-distribution-of-class-labels" id="toc-calculate-the-distribution-of-class-labels" class="nav-link" data-scroll-target="#calculate-the-distribution-of-class-labels">Calculate the distribution of class labels</a></li>
+  <li><a href="#select-the-relevant-features-and-target-variable" id="toc-select-the-relevant-features-and-target-variable" class="nav-link" data-scroll-target="#select-the-relevant-features-and-target-variable">Select the relevant features and target variable</a></li>
+  <li><a href="#encoding-categorical-variables" id="toc-encoding-categorical-variables" class="nav-link" data-scroll-target="#encoding-categorical-variables">Encoding categorical variables</a></li>
+  <li><a href="#splitting-the-data-into-training-and-testing-sets" id="toc-splitting-the-data-into-training-and-testing-sets" class="nav-link" data-scroll-target="#splitting-the-data-into-training-and-testing-sets">Splitting the data into training and testing sets</a></li>
+  <li><a href="#creating-and-training-a-baseline-decision-tree-classifier" id="toc-creating-and-training-a-baseline-decision-tree-classifier" class="nav-link" data-scroll-target="#creating-and-training-a-baseline-decision-tree-classifier">Creating and training a baseline decision tree classifier</a></li>
+  <li><a href="#predicting-using-the-baseline-decision-tree" id="toc-predicting-using-the-baseline-decision-tree" class="nav-link" data-scroll-target="#predicting-using-the-baseline-decision-tree">Predicting using the baseline decision tree</a></li>
+  <li><a href="#evaluating-the-baseline-decision-tree" id="toc-evaluating-the-baseline-decision-tree" class="nav-link" data-scroll-target="#evaluating-the-baseline-decision-tree">Evaluating the baseline decision tree</a></li>
+  <li><a href="#print-the-classification-report-and-confusion-matrix" id="toc-print-the-classification-report-and-confusion-matrix" class="nav-link" data-scroll-target="#print-the-classification-report-and-confusion-matrix">Print the classification report and confusion matrix</a></li>
+  <li><a href="#assuming-the-decision-tree-model-is-stored-in-dt_classifier" id="toc-assuming-the-decision-tree-model-is-stored-in-dt_classifier" class="nav-link" data-scroll-target="#assuming-the-decision-tree-model-is-stored-in-dt_classifier">Assuming the decision tree model is stored in <code>dt_classifier</code></a></li>
+  <li><a href="#creating-and-training-a-random-forest-classifier" id="toc-creating-and-training-a-random-forest-classifier" class="nav-link" data-scroll-target="#creating-and-training-a-random-forest-classifier">Creating and training a Random Forest classifier</a></li>
+  <li><a href="#predicting-using-the-random-forest" id="toc-predicting-using-the-random-forest" class="nav-link" data-scroll-target="#predicting-using-the-random-forest">Predicting using the Random Forest</a></li>
+  <li><a href="#evaluating-the-random-forest" id="toc-evaluating-the-random-forest" class="nav-link" data-scroll-target="#evaluating-the-random-forest">Evaluating the Random Forest</a></li>
+  <li><a href="#print-the-evaluation-metrics-and-feature-importances" id="toc-print-the-evaluation-metrics-and-feature-importances" class="nav-link" data-scroll-target="#print-the-evaluation-metrics-and-feature-importances">Print the evaluation metrics and feature importances</a></li>
+  <li><a href="#visualizing-the-selected-tree" id="toc-visualizing-the-selected-tree" class="nav-link" data-scroll-target="#visualizing-the-selected-tree">Visualizing the selected tree</a></li>
+  <li><a href="#load-the-data" id="toc-load-the-data" class="nav-link" data-scroll-target="#load-the-data">Load the data</a></li>
+  <li><a href="#select-the-relevant-features-and-target-variable-1" id="toc-select-the-relevant-features-and-target-variable-1" class="nav-link" data-scroll-target="#select-the-relevant-features-and-target-variable-1">Select the relevant features and target variable</a></li>
+  <li><a href="#encoding-categorical-variables-1" id="toc-encoding-categorical-variables-1" class="nav-link" data-scroll-target="#encoding-categorical-variables-1">Encoding categorical variables</a></li>
+  <li><a href="#splitting-the-data-into-training-and-testing-sets-1" id="toc-splitting-the-data-into-training-and-testing-sets-1" class="nav-link" data-scroll-target="#splitting-the-data-into-training-and-testing-sets-1">Splitting the data into training and testing sets</a></li>
+  <li><a href="#parameter-grid-for-random-search" id="toc-parameter-grid-for-random-search" class="nav-link" data-scroll-target="#parameter-grid-for-random-search">Parameter grid for Random Search</a></li>
+  <li><a href="#setting-up-randomizedsearchcv" id="toc-setting-up-randomizedsearchcv" class="nav-link" data-scroll-target="#setting-up-randomizedsearchcv">Setting up RandomizedSearchCV</a></li>
+  <li><a href="#using-10-iterations-and-3-fold-cross-validation" id="toc-using-10-iterations-and-3-fold-cross-validation" class="nav-link" data-scroll-target="#using-10-iterations-and-3-fold-cross-validation">Using 10 iterations and 3-fold cross-validation</a></li>
+  <li><a href="#running-the-random-search" id="toc-running-the-random-search" class="nav-link" data-scroll-target="#running-the-random-search">Running the Random Search</a></li>
+  <li><a href="#best-parameters-found" id="toc-best-parameters-found" class="nav-link" data-scroll-target="#best-parameters-found">Best parameters found</a></li>
+  <li><a href="#evaluate-the-best-model-on-the-test-data" id="toc-evaluate-the-best-model-on-the-test-data" class="nav-link" data-scroll-target="#evaluate-the-best-model-on-the-test-data">Evaluate the best model on the test data</a></li>
+  <li><a href="#initialize-the-random-forest-classifier-with-the-best-parameters" id="toc-initialize-the-random-forest-classifier-with-the-best-parameters" class="nav-link" data-scroll-target="#initialize-the-random-forest-classifier-with-the-best-parameters">Initialize the Random Forest Classifier with the best parameters</a></li>
+  <li><a href="#train-the-model" id="toc-train-the-model" class="nav-link" data-scroll-target="#train-the-model">Train the model</a></li>
+  <li><a href="#predict-on-the-test-data" id="toc-predict-on-the-test-data" class="nav-link" data-scroll-target="#predict-on-the-test-data">Predict on the test data</a></li>
+  <li><a href="#evaluate-the-model" id="toc-evaluate-the-model" class="nav-link" data-scroll-target="#evaluate-the-model">Evaluate the model</a></li>
+  <li><a href="#assuming-tuned_rf-is-your-trained-random-forest-model" id="toc-assuming-tuned_rf-is-your-trained-random-forest-model" class="nav-link" data-scroll-target="#assuming-tuned_rf-is-your-trained-random-forest-model">Assuming ‘tuned_rf’ is your trained Random Forest model</a></li>
+  <li><a href="#extract-one-tree-from-the-random-forest" id="toc-extract-one-tree-from-the-random-forest" class="nav-link" data-scroll-target="#extract-one-tree-from-the-random-forest">Extract one tree from the Random Forest</a></li>
+  <li><a href="#set-the-figure-size" id="toc-set-the-figure-size" class="nav-link" data-scroll-target="#set-the-figure-size">Set the figure size</a></li>
+  <li><a href="#plot-the-decision-tree" id="toc-plot-the-decision-tree" class="nav-link" data-scroll-target="#plot-the-decision-tree">Plot the decision tree</a></li>
   </ul>
 </nav>
     </div>
@@ -663,7 +696,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> data[<span class="st">'sentiment_encoded'</span>]</span>
 <span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform a train-test split</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">74</span>)</span>
 <span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize TF-IDF Vectorizer</span></span>
 <span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>tfidf_vectorizer <span class="op">=</span> TfidfVectorizer(stop_words<span class="op">=</span><span class="st">'english'</span>, max_features<span class="op">=</span><span class="dv">5000</span>)</span>
@@ -877,7 +910,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">12</span>))  <span class="co"># Set the figure size for the subplot layout</span></span>
 <span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, perp <span class="kw">in</span> <span class="bu">enumerate</span>(perplexities, <span class="dv">1</span>):</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    tsne <span class="op">=</span> TSNE(n_components<span class="op">=</span><span class="dv">2</span>, perplexity<span class="op">=</span>perp, n_iter<span class="op">=</span><span class="dv">300</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    tsne <span class="op">=</span> TSNE(n_components<span class="op">=</span><span class="dv">2</span>, perplexity<span class="op">=</span>perp, n_iter<span class="op">=</span><span class="dv">300</span>, random_state<span class="op">=</span><span class="dv">74</span>)</span>
 <span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    tsne_results <span class="op">=</span> tsne.fit_transform(df_scaled)</span>
 <span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    plt.subplot(<span class="dv">1</span>, <span class="bu">len</span>(perplexities), i)</span>
@@ -977,7 +1010,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>range_n_clusters <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">10</span>))  <span class="co"># Example range from 2 to 9 clusters</span></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n_clusters <span class="kw">in</span> range_n_clusters:</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span>n_clusters, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span>n_clusters, random_state<span class="op">=</span><span class="dv">74</span>)</span>
 <span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    clusters <span class="op">=</span> kmeans.fit_predict(features)</span>
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    silhouette_avg <span class="op">=</span> silhouette_score(features, clusters)</span>
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    silhouette_scores.append(silhouette_avg)</span>
@@ -1143,9 +1176,154 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Principal Component 1'</span>)</span>
 <span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Principal Component 2'</span>)</span>
 <span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-
 </section>
+<section id="decision-tree" class="level2">
+<h2 class="anchored" data-anchor-id="decision-tree">Decision Tree</h2>
+<p>```{.python .hide} import pandas as pd</p>
+<p>data = pd.read_csv(“Data/clustering_data.csv”)</p>
+</section>
+</section>
+<section id="calculate-the-distribution-of-class-labels" class="level1">
+<h1>Calculate the distribution of class labels</h1>
+<p>class_distribution = data[‘FATALS’].value_counts(normalize=True) * 100</p>
+<p>print(class_distribution)</p>
+<p>import pandas as pd from sklearn.model_selection import train_test_split from sklearn.preprocessing import LabelEncoder from sklearn.tree import DecisionTreeClassifier from sklearn.metrics import classification_report, confusion_matrix</p>
+<p>data = pd.read_csv(“Data/clustering_data.csv”)</p>
+</section>
+<section id="select-the-relevant-features-and-target-variable" class="level1">
+<h1>Select the relevant features and target variable</h1>
+<p>features = data[[‘MAKENAME’, ‘MOD_YEAR’, ‘WEATHER’, ‘LGT_COND’, ‘DR_DRINK’, ‘HIT_RUN’]] target = data[‘FATALS’]</p>
+</section>
+<section id="encoding-categorical-variables" class="level1">
+<h1>Encoding categorical variables</h1>
+<p>label_encoders = {} for column in [‘MAKENAME’, ‘WEATHER’, ‘LGT_COND’]: le = LabelEncoder() features[column] = le.fit_transform(features[column]) label_encoders[column] = le</p>
+</section>
+<section id="splitting-the-data-into-training-and-testing-sets" class="level1">
+<h1>Splitting the data into training and testing sets</h1>
+<p>X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=74)</p>
+</section>
+<section id="creating-and-training-a-baseline-decision-tree-classifier" class="level1">
+<h1>Creating and training a baseline decision tree classifier</h1>
+<p>dt_classifier = DecisionTreeClassifier(random_state=74) dt_classifier.fit(X_train, y_train)</p>
+</section>
+<section id="predicting-using-the-baseline-decision-tree" class="level1">
+<h1>Predicting using the baseline decision tree</h1>
+<p>y_pred = dt_classifier.predict(X_test)</p>
+</section>
+<section id="evaluating-the-baseline-decision-tree" class="level1">
+<h1>Evaluating the baseline decision tree</h1>
+<p>class_report = classification_report(y_test, y_pred) conf_matrix = confusion_matrix(y_test, y_pred)</p>
+</section>
+<section id="print-the-classification-report-and-confusion-matrix" class="level1">
+<h1>Print the classification report and confusion matrix</h1>
+<p>print(“Classification Report:”, class_report) print(“Confusion Matrix:”, conf_matrix)</p>
+<p>import matplotlib.pyplot as plt from sklearn.tree import plot_tree</p>
+</section>
+<section id="assuming-the-decision-tree-model-is-stored-in-dt_classifier" class="level1">
+<h1>Assuming the decision tree model is stored in <code>dt_classifier</code></h1>
+<p>plt.figure(figsize=(20,10)) # Adjust the size as needed plot_tree(dt_classifier, filled=True, rounded=True, class_names=True, feature_names=[‘MAKENAME’, ‘MOD_YEAR’, ‘WEATHER’, ‘LGT_COND’, ‘DR_DRINK’, ‘HIT_RUN’], max_depth=5)<br>
+plt.show()</p>
+<p>from sklearn.ensemble import RandomForestClassifier from sklearn.metrics import classification_report, confusion_matrix</p>
+</section>
+<section id="creating-and-training-a-random-forest-classifier" class="level1">
+<h1>Creating and training a Random Forest classifier</h1>
+<p>rf_classifier = RandomForestClassifier(random_state=74, n_estimators=100) # You can adjust the number of trees with n_estimators rf_classifier.fit(X_train, y_train)</p>
+</section>
+<section id="predicting-using-the-random-forest" class="level1">
+<h1>Predicting using the Random Forest</h1>
+<p>rf_predictions = rf_classifier.predict(X_test)</p>
+</section>
+<section id="evaluating-the-random-forest" class="level1">
+<h1>Evaluating the Random Forest</h1>
+<p>rf_class_report = classification_report(y_test, rf_predictions) rf_conf_matrix = confusion_matrix(y_test, rf_predictions) rf_feature_importances = rf_classifier.feature_importances_</p>
+</section>
+<section id="print-the-evaluation-metrics-and-feature-importances" class="level1">
+<h1>Print the evaluation metrics and feature importances</h1>
+<p>print(“Random Forest Classification Report:”, rf_class_report) print(“Random Forest Confusion Matrix:”, rf_conf_matrix) print(“Feature Importances:”, rf_feature_importances)</p>
+<p>import matplotlib.pyplot as plt from sklearn.tree import plot_tree</p>
+<p>tree_in_rf = rf_classifier.estimators_[0]</p>
+</section>
+<section id="visualizing-the-selected-tree" class="level1">
+<h1>Visualizing the selected tree</h1>
+<p>plt.figure(figsize=(20,10)) # Adjust the size as needed plot_tree(tree_in_rf, filled=True, rounded=True, feature_names=[‘MAKENAME’, ‘MOD_YEAR’, ‘WEATHER’, ‘LGT_COND’, ‘DR_DRINK’, ‘HIT_RUN’], max_depth=5,<br>
+class_names=True) plt.show()</p>
+<p>import pandas as pd from sklearn.model_selection import train_test_split from sklearn.preprocessing import LabelEncoder from sklearn.ensemble import RandomForestClassifier from sklearn.model_selection import RandomizedSearchCV from scipy.stats import randint as sp_randint</p>
+</section>
+<section id="load-the-data" class="level1">
+<h1>Load the data</h1>
+<p>data = pd.read_csv(“Data/clustering_data.csv”)</p>
+</section>
+<section id="select-the-relevant-features-and-target-variable-1" class="level1">
+<h1>Select the relevant features and target variable</h1>
+<p>features = data[[‘MAKENAME’, ‘MOD_YEAR’, ‘WEATHER’, ‘LGT_COND’, ‘DR_DRINK’, ‘HIT_RUN’]] target = data[‘FATALS’]</p>
+</section>
+<section id="encoding-categorical-variables-1" class="level1">
+<h1>Encoding categorical variables</h1>
+<p>label_encoders = {} for column in [‘MAKENAME’, ‘WEATHER’, ‘LGT_COND’]: le = LabelEncoder() features[column] = le.fit_transform(features[column]) label_encoders[column] = le</p>
+</section>
+<section id="splitting-the-data-into-training-and-testing-sets-1" class="level1">
+<h1>Splitting the data into training and testing sets</h1>
+<p>X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=74)</p>
+</section>
+<section id="parameter-grid-for-random-search" class="level1">
+<h1>Parameter grid for Random Search</h1>
+<p>param_dist = { “n_estimators”: sp_randint(10, 200), “max_depth”: sp_randint(3, 20), “min_samples_split”: sp_randint(2, 11), “min_samples_leaf”: sp_randint(1, 11), “max_features”: sp_randint(1, X_train.shape[1]+1) }</p>
+</section>
+<section id="setting-up-randomizedsearchcv" class="level1">
+<h1>Setting up RandomizedSearchCV</h1>
+</section>
+<section id="using-10-iterations-and-3-fold-cross-validation" class="level1">
+<h1>Using 10 iterations and 3-fold cross-validation</h1>
+<p>random_search = RandomizedSearchCV( estimator=RandomForestClassifier(random_state=74), param_distributions=param_dist, n_iter=10, cv=3, random_state=74, n_jobs=-1 # Using all processors )</p>
+</section>
+<section id="running-the-random-search" class="level1">
+<h1>Running the Random Search</h1>
+<p>random_search.fit(X_train, y_train)</p>
+</section>
+<section id="best-parameters-found" class="level1">
+<h1>Best parameters found</h1>
+<p>best_params = random_search.best_params_ print(“Best Parameters:”, best_params)</p>
+</section>
+<section id="evaluate-the-best-model-on-the-test-data" class="level1">
+<h1>Evaluate the best model on the test data</h1>
+<p>best_model = random_search.best_estimator_ y_pred = best_model.predict(X_test)</p>
+<p>from sklearn.ensemble import RandomForestClassifier from sklearn.metrics import classification_report, confusion_matrix, accuracy_score</p>
+</section>
+<section id="initialize-the-random-forest-classifier-with-the-best-parameters" class="level1">
+<h1>Initialize the Random Forest Classifier with the best parameters</h1>
+<p>tuned_rf = RandomForestClassifier( n_estimators=112, max_depth=9, min_samples_split=6, min_samples_leaf=8, max_features=4, random_state=74 )</p>
+</section>
+<section id="train-the-model" class="level1">
+<h1>Train the model</h1>
+<p>tuned_rf.fit(X_train, y_train)</p>
+</section>
+<section id="predict-on-the-test-data" class="level1">
+<h1>Predict on the test data</h1>
+<p>y_pred = tuned_rf.predict(X_test)</p>
+</section>
+<section id="evaluate-the-model" class="level1">
+<h1>Evaluate the model</h1>
+<p>accuracy = accuracy_score(y_test, y_pred) class_report = classification_report(y_test, y_pred) conf_matrix = confusion_matrix(y_test, y_pred)</p>
+<p>print(f”Accuracy: {accuracy}“) print(”Classification Report:“, class_report) print(”Confusion Matrix:“, conf_matrix)</p>
+<p>import matplotlib.pyplot as plt from sklearn.tree import plot_tree</p>
+</section>
+<section id="assuming-tuned_rf-is-your-trained-random-forest-model" class="level1">
+<h1>Assuming ‘tuned_rf’ is your trained Random Forest model</h1>
+</section>
+<section id="extract-one-tree-from-the-random-forest" class="level1">
+<h1>Extract one tree from the Random Forest</h1>
+<p>chosen_tree = tuned_rf.estimators_[0]</p>
+</section>
+<section id="set-the-figure-size" class="level1">
+<h1>Set the figure size</h1>
+<p>plt.figure(figsize=(20,10))</p>
+</section>
+<section id="plot-the-decision-tree" class="level1">
+<h1>Plot the decision tree</h1>
+<p>plot_tree(chosen_tree, feature_names=features.columns, class_names=True, filled=True, rounded=True, max_depth = 3)</p>
+<p>plt.show()</p>
+
+
 </section>
 
 </main> <!-- /main -->
