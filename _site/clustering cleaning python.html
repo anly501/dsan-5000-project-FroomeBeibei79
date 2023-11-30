@@ -354,7 +354,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   warnings.warn(</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering cleaning python_files/figure-html/cell-6-output-2.png" class="img-fluid"></p>
+<p><img src="Clustering cleaning python_files/figure-html/cell-6-output-2.png" class="img-fluid"></p>
 </div>
 </div>
 <p>Here we define the number of k is 4</p>
@@ -413,7 +413,7 @@ For n_clusters = 8, the average silhouette_score is : 0.7242918837192516
 For n_clusters = 9, the average silhouette_score is : 0.8069782666170565</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering cleaning python_files/figure-html/cell-7-output-3.png" class="img-fluid"></p>
+<p><img src="Clustering cleaning python_files/figure-html/cell-7-output-3.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
@@ -488,7 +488,7 @@ Average Fatalities: 1.1527647610121836
 </code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering cleaning python_files/figure-html/cell-8-output-3.png" class="img-fluid"></p>
+<p><img src="Clustering cleaning python_files/figure-html/cell-8-output-3.png" class="img-fluid"></p>
 </div>
 </div>
 <p>Here, numbers in each features represent differnt conditions.</p>
@@ -636,7 +636,7 @@ Average Fatalities: 1.0806451612903225
 </code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering cleaning python_files/figure-html/cell-9-output-3.png" class="img-fluid"></p>
+<p><img src="Clustering cleaning python_files/figure-html/cell-9-output-3.png" class="img-fluid"></p>
 </div>
 </div>
 <p>The optimal number of clusters should be 2, but there was not much useful infomration we can get form that, so I used the second highest score, which is 9 clusters.</p>
@@ -708,7 +708,7 @@ Name: count, dtype: int64</code></pre>
 <span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'PCA Feature 2'</span>)</span>
 <span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering cleaning python_files/figure-html/cell-11-output-1.png" class="img-fluid"></p>
+<p><img src="Clustering cleaning python_files/figure-html/cell-11-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <p>This is a cluster result plotted without any noise points on. Clearly this plot cannot bring us any useful information, let’s try another way to see what will happen.</p>
@@ -745,7 +745,7 @@ Name: count, dtype: int64</code></pre>
 <span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'PCA Feature 2'</span>)</span>
 <span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering cleaning python_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
+<p><img src="Clustering cleaning python_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <p>The plot shows a variety of clusters, each represented by a different color. Some clusters appear more densely packed, while others are sparse. The densely packed clusters likely represent more common combinations of weather, light, and road surface conditions that frequently occur together, while sparser ones may represent less common or more unique conditions. This is not an ideal result for us to see, and probablt DBSCAN is not a good model for this dataset.</p>
@@ -794,13 +794,13 @@ Name: count, dtype: int64</code></pre>
 <span id="cb22-39"><a href="#cb22-39" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Principal Component 2'</span>)</span>
 <span id="cb22-40"><a href="#cb22-40" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering cleaning python_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
+<p><img src="Clustering cleaning python_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering cleaning python_files/figure-html/cell-13-output-3.png" class="img-fluid"></p>
+<p><img src="Clustering cleaning python_files/figure-html/cell-13-output-3.png" class="img-fluid"></p>
 </div>
 </div>
 <p>The plot shows PCA has been used to reduce the dimensionality of the data to two principal components, which are linear combinations of the original variables. The proximity of points within the same cluster (same color) suggests they are similar to each other based on the original features (weather, light, and road surface conditions).</p>

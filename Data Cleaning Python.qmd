@@ -1092,3 +1092,4 @@ plot_tree(chosen_tree,
           max_depth = 3)
 
 plt.show()
+```
