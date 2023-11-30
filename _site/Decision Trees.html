@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Xingrui’s Project - Untitled</title>
+<title>Xingrui’s Project - Decision Tree</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -204,14 +204,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-decision-tree" id="toc-what-is-decision-tree" class="nav-link active" data-scroll-target="#what-is-decision-tree">What is Decision Tree?</a>
+  <ul class="collapse">
+  <li><a href="#if-you-happened-to-watch-formula-1" id="toc-if-you-happened-to-watch-formula-1" class="nav-link" data-scroll-target="#if-you-happened-to-watch-formula-1">If you happened to watch Formula 1…</a></li>
+  </ul></li>
+  <li><a href="#baseline-decision-tree-analysis" id="toc-baseline-decision-tree-analysis" class="nav-link" data-scroll-target="#baseline-decision-tree-analysis">Baseline Decision Tree Analysis</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Untitled</h1>
+<h1 class="title">Decision Tree</h1>
 </div>
 
 
@@ -226,8 +236,89 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="what-is-decision-tree" class="level1">
+<h1>What is Decision Tree?</h1>
+<p>A decision tree is a flowchart-like structure used in decision making and data mining. It’s a popular tool in machine learning, statistics, and information theory for modeling decisions and their possible consequences.</p>
+<section id="if-you-happened-to-watch-formula-1" class="level3">
+<h3 class="anchored" data-anchor-id="if-you-happened-to-watch-formula-1">If you happened to watch Formula 1…</h3>
+<p><img src="images/f1 decision tree.jpeg" class="img-fluid" alt="Formula 1 meme"> <a href="https://www.reddit.com/r/formuladank/comments/12qhedw/made_this_for_my_biology_homework/">Source</a></p>
+<p>In this plot, each question helps you make a decision, and you follow the path that matches the answers you get. It’s like a flowchart of choices that leads you to a final decision. Decision trees work similarly in various fields, helping to make choices based on a series of yes-or-no questions and criteria.</p>
+<p><img src="images/decision tree.jpeg" class="img-fluid" alt="Decision Tree"> <a href="https://www.kaggle.com/code/ahmetburabua/decision-tree">Source</a></p>
+</section>
+</section>
+<section id="baseline-decision-tree-analysis" class="level1">
+<h1>Baseline Decision Tree Analysis</h1>
+<p>The baseline model returned as follows: Classification Report:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>precision</th>
+<th>recall</th>
+<th>f1-score</th>
+<th>support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0.91</td>
+<td>0.98</td>
+<td>0.94</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0.08</td>
+<td>0.02</td>
+<td>0.03</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>0.03</td>
+<td>0.01</td>
+<td>0.02</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>accuracy</td>
+<td></td>
+<td></td>
+<td>0.89</td>
+</tr>
+<tr class="even">
+<td>macro avg</td>
+<td>0.17</td>
+<td>0.17</td>
+<td>0.16</td>
+</tr>
+<tr class="odd">
+<td>weighted avg</td>
+<td>0.83</td>
+<td>0.89</td>
+<td>0.86</td>
+</tr>
+</tbody>
+</table>
+<p>Confusion Matrix: <img src="images/confusion matrix.jpg" class="img-fluid" alt="cm"></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

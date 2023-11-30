@@ -147,6 +147,7 @@ graph LR;
 This approach enables you to use the same bibliography with different citation
 styles without having to change anything about your document or the bibliography itself apart from the bibliography style when your paper is finally compiled
 for print.
+
 [@fenn_managing_2006]
 
 

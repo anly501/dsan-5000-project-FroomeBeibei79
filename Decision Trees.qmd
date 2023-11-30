@@ -1,5 +1,123 @@
 ---
-title: "Untitled"
+title: "Decision Tree"
 format: html
 ---
 
+
+# What is Decision Tree?
+
+## Introduction
+
+A decision tree is a flowchart-like structure used in decision making and data mining. It's a popular tool in machine learning, statistics, and information theory for modeling decisions and their possible consequences.
+
+
+If you happened to watch Formula 1...
+
+![Formula 1 meme](images/f1%20decision%20tree.jpeg)
+[Source](https://www.reddit.com/r/formuladank/comments/12qhedw/made_this_for_my_biology_homework/)
+
+In this plot, each question helps you make a decision, and you follow the path that matches the answers you get. It's like a flowchart of choices that leads you to a final decision. Decision trees work similarly in various fields, helping to make choices based on a series of yes-or-no questions and criteria.
+
+![Decision Tree](images/decision%20tree.jpeg)
+[Source](https://www.kaggle.com/code/ahmetburabua/decision-tree)
+
+
+# Baseline Decision Tree Analysis
+
+The baseline model returned as follows:
+Classification Report:
+
+|precision |   recall  | f1-score | support |
+|----------|-----------|----------|---------|
+|  1       |0.91  |    0.98      |0.94      |8865
+|  2       |0.08  |    0.02      |0.03       |739
+|  3       |0.03  |    0.01      |0.02       |103
+|  4       |0.00  |    0.00      |0.00        |26
+|  5       |0.00  |    0.00      |0.00        |11
+|  6       |0.00  |    0.00      |0.00         |1
+|accuracy   |            |     |0.89      |9745
+   macro avg|       0.17      |0.17      |0.16      |9745
+weighted avg|       0.83      |0.89      |0.86      |9745
+
+Confusion Matrix:
+![cm](images/confusion%20matrix.jpg)
+
+
+## Baseline Model Result
+
+## Baseline Tree
+
+![baseline](images/baseline%20tree.png)
+
+## Classification Report Analysis：
+
+1. Class '1' (Most Likely Single Fatality)
+    High precision (0.91) and recall (0.98), indicating good model performance for this class.
+    The model correctly predicts most of the single fatality cases.
+2. Class '2' and Beyond (Multiple Fatalities)
+    Significantly lower precision and recall, particularly for classes 3 to 6.
+    Indicates poor performance in predicting instances with more than one fatality.
+3. Overall Accuracy
+    The accuracy is 0.89, which seems high. However, this is largely due to the model's performance on the most common class (class 1).
+
+## Confusion Matrix Analysis
+1. Class '1'
+    The model correctly predicted 8664 out of 8866 cases.
+    Most errors involve class '1' being predicted when it's actually class '2'.
+2. Classes '2' to '6'
+    High misclassification rates, with the majority being incorrectly predicted as class '1'.
+    Very few correct predictions for these classes.
+
+The analysis shows that while the model performs well for the most common scenario, it struggles with less common, potentially more complex scenarios. Adjusting your approach to address these challenges will be key in developing a more robust model.
+
+
+# Random Forest Analysis
+
+The random forests returned as follows:
+
+Random Forest Classification Report:
+
+|precision |   recall  | f1-score | support |
+|----------|-----------|----------|---------|
+|  1       |0.91  |    0.99      |0.95      |8865
+|  2       |0.08  |    0.01      |0.02       |739
+|  3       |0.08  |    0.01      |0.02       |103
+|  4       |0.00  |    0.00      |0.00        |26
+|  5       |0.00  |    0.00      |0.00        |11
+|  6       |0.00  |    0.00      |0.00         |1
+|accuracy   |            |     |0.90      |9745
+   macro avg|       0.18      |0.17      |0.16      |9745
+weighted avg|       0.83      |0.90      |0.86      |9745
+
+![rf](images/random%20forest%20result.jpg)
+
+The tree looks almost the same...
+![rft](images/random%20forest%20tree.png)
+
+## Classification Report Analysis Based on Random Forest
+
+1. Class '1' (Most Likely Single Fatality):
+    High precision (0.91) and recall (0.99), indicating the model is very effective in predicting this class.
+2. Class '2' and Beyond (Multiple Fatalities):
+    Low precision and recall for these classes, similar to the baseline decision tree.
+    Indicates a struggle to correctly predict cases with multiple fatalities.
+3. Overall Accuracy:
+    The accuracy is 0.90, which is slightly better than the baseline decision tree. However, this is still largely due to the model's performance on the most common class (class 1).
+
+## Confusion Matrix Analysis
+1. Class '1':
+    High number of correct predictions (8734 out of 8865).
+    Relatively few misclassifications into other classes.
+2. Classes '2' to '6':
+    Majority are incorrectly predicted as class '1'.
+    Very few correct predictions for these classes, indicating that the model struggles with minority classes.
+
+## Feature Importances Analysis
+
+1. MAKENAME and MOD_YEAR:
+    These features have the highest importance scores (0.453 and 0.374 respectively), suggesting they are the most influential in the model's decisions.
+2. Other Features:
+    WEATHER, LGT_COND, DR_DRINK, and HIT_RUN have lower importance scores, indicating less influence on the model's predictions.
+
+
+The Random Forest model provides a slight improvement over the baseline decision tree, especially in overall accuracy, but still faces challenges with the less common classes. Addressing the data imbalance and exploring alternative models or features could lead to further improvements.
