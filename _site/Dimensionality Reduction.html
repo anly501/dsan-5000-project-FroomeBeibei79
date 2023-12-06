@@ -235,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#pca" id="toc-pca" class="nav-link" data-scroll-target="#pca">PCA</a></li>
   </ul></li>
   <li><a href="#t-sne" id="toc-t-sne" class="nav-link" data-scroll-target="#t-sne">t-SNE</a></li>
-  <li><a href="#comparsion" id="toc-comparsion" class="nav-link" data-scroll-target="#comparsion">Comparsion</a></li>
+  <li><a href="#conclusion-and-result-analysis" id="toc-conclusion-and-result-analysis" class="nav-link" data-scroll-target="#conclusion-and-result-analysis">Conclusion and Result Analysis</a></li>
   </ul>
 </nav>
     </div>
@@ -313,8 +313,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Compared to PCA, t-SNE us better at capturing the local structure of the data and can reveal clusters that might not be visible in PCA. PCA shows the overall structure and explains the variance in the data using fewer components, but might not reveal clusters as effectively as t-SNE.</p>
 </section>
-<section id="comparsion" class="level1">
-<h1>Comparsion</h1>
+<section id="conclusion-and-result-analysis" class="level1">
+<h1>Conclusion and Result Analysis</h1>
 <p>When working with these two different methods, I can tell that the PCA is much faster when it comes to generating plots in a global data structure scale. t-SNE, on the other hand, is better at identifying clusters and local patterns in high-dimensional data. And for my dataset, the visualization is very sensitive to parameter settings.</p>
 <p>PCA is effective at preserving global structure and linear relationships in the data. It’s good at capturing the directions in which the data varies the most, while t-SNE is excellent at preserving local structures and revealing clusters in the data.</p>
 <p>Overall, PCA is fast, scalable to large datasets, and provides a clear rank ordering of dimensions. However, it’s less effective for non-linear data. t-SNE is highly effective in revealing local structures and clusters, but it is computationally intensive, and cannot be scaled up to large datasets, like this one I’m working on, it even took 10 minutes to get results, and sometimes it’s inconsistent.</p>
