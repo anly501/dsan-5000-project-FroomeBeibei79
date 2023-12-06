@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Xingrui’s Project - Data Section</title>
+<title>Xingrui’s Project - Naïve Bayes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./DataMain.html">Everything About Data</a></li><li class="breadcrumb-item"><a href="./Data.html">Data</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./NB.html">Naïve Bayes</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./DataMain.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Everything About Data</span></a>
+ <span class="menu-text">Data Introduction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Data.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data</span></a>
   </div>
 </li>
@@ -140,12 +140,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./Data Exploration.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Exploration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Data Cleaning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Cleaning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -170,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./NB.html" class="sidebar-item-text sidebar-link">
+  <a href="./NB.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Naïve Bayes</span></a>
   </div>
 </li>
@@ -184,12 +178,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./Decision Trees.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Decision Trees</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./ARM.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ARM</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -208,12 +196,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data">Data</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#driver-side" id="toc-driver-side" class="nav-link" data-scroll-target="#driver-side">Driver Side</a>
+  <li><a href="#bayes-theorem-foundation" id="toc-bayes-theorem-foundation" class="nav-link" data-scroll-target="#bayes-theorem-foundation">Bayes’ Theorem Foundation:</a></li>
+  <li><a href="#probabilistic-nature" id="toc-probabilistic-nature" class="nav-link" data-scroll-target="#probabilistic-nature">Probabilistic Nature:</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives:</a>
   <ul class="collapse">
-  <li><a href="#gender" id="toc-gender" class="nav-link" data-scroll-target="#gender">Gender</a></li>
-  <li><a href="#young-driver" id="toc-young-driver" class="nav-link" data-scroll-target="#young-driver">Young driver</a></li>
+  <li><a href="#what-it-aims-to-achieve" id="toc-what-it-aims-to-achieve" class="nav-link" data-scroll-target="#what-it-aims-to-achieve">What it Aims to Achieve:</a></li>
+  <li><a href="#variants-of-naive-bayes" id="toc-variants-of-naive-bayes" class="nav-link" data-scroll-target="#variants-of-naive-bayes">Variants of Naive Bayes:</a></li>
+  <li><a href="#bernoulli-naive-bayes" id="toc-bernoulli-naive-bayes" class="nav-link" data-scroll-target="#bernoulli-naive-bayes">Bernoulli Naive Bayes:</a></li>
+  <li><a href="#when-to-use-each" id="toc-when-to-use-each" class="nav-link" data-scroll-target="#when-to-use-each">When to Use Each:</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#progress" id="toc-progress" class="nav-link" data-scroll-target="#progress">Progress</a>
+  <ul class="collapse">
+  <li><a href="#record-data-of-naïve-bayes" id="toc-record-data-of-naïve-bayes" class="nav-link" data-scroll-target="#record-data-of-naïve-bayes">Record Data of Naïve Bayes</a>
+  <ul class="collapse">
+  <li><a href="#the-result" id="toc-the-result" class="nav-link" data-scroll-target="#the-result">The result</a></li>
+  </ul></li>
+  <li><a href="#text-data-of-naïve-bayes" id="toc-text-data-of-naïve-bayes" class="nav-link" data-scroll-target="#text-data-of-naïve-bayes">Text Data of Naïve Bayes</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
+  <ul class="collapse">
+  <li><a href="#evaluation-metrics" id="toc-evaluation-metrics" class="nav-link" data-scroll-target="#evaluation-metrics">Evaluation Metrics</a></li>
+  <li><a href="#overfitting-and-underfitting" id="toc-overfitting-and-underfitting" class="nav-link" data-scroll-target="#overfitting-and-underfitting">Overfitting and Underfitting</a></li>
+  <li><a href="#model-performance" id="toc-model-performance" class="nav-link" data-scroll-target="#model-performance">Model Performance</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -224,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Section</h1>
+<h1 class="title">Naïve Bayes</h1>
 </div>
 
 
@@ -239,21 +245,139 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is a link to data in GitHub <a href="https://github.com/anly501/dsan-5000-project-FroomeBeibei79/tree/main/data">Click here</a></p>
-<section id="data" class="level1">
-<h1>Data</h1>
-<p>This project will primarily focus on driver behavior analysis. Specifically, we will dive into a different set of groups to learn about what kind of groups with specific characteristics have higher fatality rates in passenger vehicle accidents and look for possible reasons behind them.</p>
-<p>What kind of data is helpful in terms of driver behavior analysis?</p>
-<p>Basically, driver behavior is people driving cars. There will be different groups like gender, young drivers, older drivers, etc. We will elaborate on different groups one after another. We can also acquire analysis from the vehicle side, that is, how a vehicle behaves while the vehicle is in operation. However, data acquisition is hard to get as, nowadays, car motion data from individual drivers are considered private information and thus cannot be accessed by the public. We will leave this part for now and probably come back for more in the future.</p>
-<section id="driver-side" class="level2">
-<h2 class="anchored" data-anchor-id="driver-side">Driver Side</h2>
-<section id="gender" class="level3">
-<h3 class="anchored" data-anchor-id="gender">Gender</h3>
-<p>Gender is a significant factor that has an impact on driver behavior. When it comes to fatal injury odds in passenger vehicle accidents, “the fatal injury odds for females were lower than males.” <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813513">(p21)</a></p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Naive Bayes is a probabilistic machine learning algorithm based on Bayes’ theorem, which is used for classification tasks. In its essence, it involves using probability to make predictions.</p>
+<section id="bayes-theorem-foundation" class="level2">
+<h2 class="anchored" data-anchor-id="bayes-theorem-foundation">Bayes’ Theorem Foundation:</h2>
+<p>Naive Bayes relies on Bayes’ theorem, which describes the probability of an event based on prior knowledge of related conditions. In the context of classification, it’s used to find the probability that a given instance belongs to a particular category based on its features.</p>
 </section>
-<section id="young-driver" class="level3">
-<h3 class="anchored" data-anchor-id="young-driver">Young driver</h3>
-<p>Another publication focus on <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813492">young driver</a> affect driver behavior analysis, as statistics state that “The rate of drivers involved in fatal traffic crashes per 100,000 licensed drivers for young female drivers was 25.51 in 2021. For young male drivers in 2021 the involvement rate was 60.28, more than twice that of young female drivers.” (U.S. Department of Transportation, National Highway Traffic Safety Administration. (2022). Traffic Safety Facts 2021 Data (Report No.&nbsp;813492))</p>
+<section id="probabilistic-nature" class="level2">
+<h2 class="anchored" data-anchor-id="probabilistic-nature">Probabilistic Nature:</h2>
+<p>It calculates the probability of each class given the input features, and the class with the highest probability is considered as the output.</p>
+<p>Assumption of Independence: The “Naive” part of Naive Bayes comes from the assumption that all the features are independent of each other given the class label. While this is a strong and often unrealistic assumption, in practice, Naive Bayes classifiers perform surprisingly well even when this condition is not met.</p>
+</section>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives:</h2>
+<p>The main objective of Naive Bayes classification is to quickly and efficiently categorize new instances into predefined classes based on the statistical properties of the features of the training data.</p>
+<section id="what-it-aims-to-achieve" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-aims-to-achieve">What it Aims to Achieve:</h3>
+<section id="fast-and-efficient-classification" class="level4">
+<h4 class="anchored" data-anchor-id="fast-and-efficient-classification">Fast and Efficient Classification:</h4>
+<p>Due to its simplicity and the fact that it doesn’t require complex iterative optimization, it’s very fast and efficient, especially for high-dimensional datasets.</p>
+</section>
+<section id="handling-of-missing-values" class="level4">
+<h4 class="anchored" data-anchor-id="handling-of-missing-values">Handling of Missing Values:</h4>
+<p>It can handle missing values by ignoring the missing features during computation.</p>
+</section>
+<section id="good-baseline-model" class="level4">
+<h4 class="anchored" data-anchor-id="good-baseline-model">Good Baseline Model:</h4>
+<p>It provides a good baseline model for classification tasks, offering a point of comparison for more complex algorithms.</p>
+</section>
+</section>
+<section id="variants-of-naive-bayes" class="level3">
+<h3 class="anchored" data-anchor-id="variants-of-naive-bayes">Variants of Naive Bayes:</h3>
+<section id="gaussian-naive-bayes" class="level4">
+<h4 class="anchored" data-anchor-id="gaussian-naive-bayes">Gaussian Naive Bayes:</h4>
+<p>Assumes that the features follow a normal distribution. It’s useful when dealing with continuous data.</p>
+</section>
+<section id="multinomial-naive-bayes" class="level4">
+<h4 class="anchored" data-anchor-id="multinomial-naive-bayes">Multinomial Naive Bayes:</h4>
+<p>Useful for discrete counts, such as word counts in text classification.</p>
+</section>
+</section>
+<section id="bernoulli-naive-bayes" class="level3">
+<h3 class="anchored" data-anchor-id="bernoulli-naive-bayes">Bernoulli Naive Bayes:</h3>
+<p>Similar to Multinomial Naive Bayes, but it’s specifically designed for binary/boolean features.</p>
+</section>
+<section id="when-to-use-each" class="level3">
+<h3 class="anchored" data-anchor-id="when-to-use-each">When to Use Each:</h3>
+<section id="gaussian-naive-bayes-1" class="level4">
+<h4 class="anchored" data-anchor-id="gaussian-naive-bayes-1">Gaussian Naive Bayes:</h4>
+<p>Use when your features are continuous and you can assume a Gaussian distribution.</p>
+</section>
+<section id="multinomial-naive-bayes-1" class="level4">
+<h4 class="anchored" data-anchor-id="multinomial-naive-bayes-1">Multinomial Naive Bayes:</h4>
+<p>Ideal for text classification problems where you have counts of word occurrences.</p>
+</section>
+<section id="bernoulli-naive-bayes-1" class="level4">
+<h4 class="anchored" data-anchor-id="bernoulli-naive-bayes-1">Bernoulli Naive Bayes:</h4>
+<p>Use when you’re dealing with binary or boolean features.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="progress" class="level1">
+<h1>Progress</h1>
+<section id="record-data-of-naïve-bayes" class="level2">
+<h2 class="anchored" data-anchor-id="record-data-of-naïve-bayes">Record Data of Naïve Bayes</h2>
+<p>For the record data, we will focus on fatalties of accidents. We choose to predict the time for EMS took on the road. The time gap vary based on various conditions, we will use this time difference as our target variable for the Naive Bayes classification.</p>
+<p>Here in this dataset, there’s no specifc column that record the time EMS took on road, but there are columns that record when the EMS received the notification and the time EMS arrived at the scene. We will use this as the time gap, also our target variable.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/NB Record time gap.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">time gap</figcaption>
+</figure>
+</div>
+<p>For feature selection, there are many possible factors that affect the time EMS took on the road. In addition, there are many dynamic factors that could possibly affect the time as well, and as of current time, there is no way to record every single one of them. What we can do right now is to record those data that might affect the traffic flow, and applied those as features.</p>
+<p>The result is shown below: <img src="images/NB Record result.jpg" class="img-fluid" alt="Record result"></p>
+<p>The confusion matrix is shown below: <img src="images/NB Record confusion.png" class="img-fluid" alt="Record Confusion matrix"></p>
+<section id="the-result" class="level3">
+<h3 class="anchored" data-anchor-id="the-result">The result</h3>
+<p>Precision for class 0 (EMS took 10 minutes or less): 79%</p>
+<p>Recall for class 0: 31%</p>
+<p>F1-score for class 0: 45%</p>
+<p>Precision for class 1 (EMS took more than 10 minutes): 35%</p>
+<p>Recall for class 1: 82%</p>
+<p>F1-score for class 1: 49%</p>
+<p>From the confusion matrix, The high number of false positives (802) relative to true negatives (346) indicates that the model is overly pessimistic about the EMS response time, often predicting delays where there are none. The model has a better true positive rate, with 893 correctly predicted delays, but this comes at the cost of a high false-positive rate. The false-negative count (196) is lower than the false positives, which suggests that when the model predicts a quick response, it is somewhat more likely to be correct. However, in emergency response situations, even a small number of false negatives can be critical.</p>
+<p>our model is trying to predict whether an emergency medical service (EMS) will take more than 10 minutes to arrive at the scene of an accident.</p>
+<p>This accuracy tells us what portion of the total predictions made by the model were correct. Our model has an accuracy of approximately 47.06%, which means that about 47 out of every 100 predictions it makes about EMS arrival times are correct. It’s not very high, so the model is not very reliable in its current state.</p>
+<p>Precision tells us how often the model is correct when it predicts a certain event. For instance, when our model predicts that the EMS will take more than 10 minutes to arrive, it is correct 35% of the time. Conversely, when it predicts that EMS will take 10 minutes or less, it is correct 79% of the time. High precision for a category means that when the model predicts that category, it’s usually right.</p>
+<p>The F1-score is 49%, and for predictions of 10 minutes or less, it’s 45%. This suggests that the model is slightly better at predicting longer arrival times than shorter ones, but it still isn’t highly accurate in either case.</p>
+<p>Given the accuracy and the confusion matrix, we see that the model has an accuracy of approximately 47.06% on the test set, which is not very high and is close to random guessing. This could indicate that the model is underfitting. It is too simplistic and not capturing the underlying patterns in the data well enough to make accurate predictions on either the training or the test set.</p>
+<p>A PRC Curve for evaluating the performance of a classifier <img src="images/nb record prc .png" class="img-fluid" alt="PRC"></p>
+<p>A ROC Curve for evaluating the performance of classification models <img src="images/nb record roc.png" class="img-fluid" alt="ROC"></p>
+</section>
+</section>
+<section id="text-data-of-naïve-bayes" class="level2">
+<h2 class="anchored" data-anchor-id="text-data-of-naïve-bayes">Text Data of Naïve Bayes</h2>
+<p>The text data was extracted using News API, and I also precleaned to make sure it does not have noise for future use <img src="images/nb text raw.jpg" class="img-fluid" alt="text raw"></p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The confusion matrix for text is shown below: <img src="images/nb text confusion.png" class="img-fluid" alt="text confusion"></p>
+<p>The Multinomial Naive Bayes classifier has an overall accuracy of 50% on the test set. The classification report and confusion matrix give us a more detailed insight into the performance for each sentiment class:</p>
+<ol type="1">
+<li>Negative Sentiment: The model has a high precision of 100% but a very low recall of 20%, indicating that while the predictions made as negative are all correct, the model fails to identify most of the negative instances</li>
+<li>Neutral Sentiment: The model fails to correctly identify any neutral sentiments, as indicated by both precision and recall being 0%.</li>
+<li>Positive Sentiment: The model has a precision of 47% with a recall of 100%, suggesting that while it identifies all positive instances, it also incorrectly labels some non-positive instances as positive.</li>
+</ol>
+<p>The confusion matrix visualization shows the distribution of predictions across the actual sentiments. We can see that all negative and neutral sentiments are predominantly classified as positive, which is a sign of bias towards the positive class in the model’s predictions.</p>
+<section id="evaluation-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation-metrics">Evaluation Metrics</h3>
+<p>The accuracy metric alone is not sufficient to assess the performance of the Naive Bayes classifier. Precision, recall, and F1-score provide a more comprehensive evaluation. The precision tells us the accuracy of the positive predictions made, recall gives us a measure of the model’s ability to find all the positive instances, and the F1-score is a harmonic mean of precision and recall.</p>
+</section>
+<section id="overfitting-and-underfitting" class="level3">
+<h3 class="anchored" data-anchor-id="overfitting-and-underfitting">Overfitting and Underfitting</h3>
+<p>The model does not appear to be overfitting, as overfitting would typically present as a high accuracy on the training set but poor performance on the test set. However, the model might be underfitting since it is overly generalized, leading to poor performance across all metrics.</p>
+</section>
+<section id="model-performance" class="level3">
+<h3 class="anchored" data-anchor-id="model-performance">Model Performance</h3>
+<p>The model’s performance is not ideal, with a low F1-score for negative and neutral classes and a moderate F1-score for the positive class. This suggests that while the model can predict positive sentiments relatively well, it struggles to distinguish between negative and neutral sentiments.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/nb text prc .png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">prc text</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/nb text result.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">result text</figcaption>
+</figure>
+</div>
+<p>The visualizations confirm the earlier discussions about the model’s performance and suggest potential avenues for improvement, such as addressing the class imbalance or exploring more sophisticated models and features.​</p>
 
 
 </section>

@@ -81,7 +81,7 @@ The result is shown below:
 The confusion matrix is shown below:
 ![Record Confusion matrix](images/NB%20Record%20confusion.png)
 
-### The result
+### Result and Conclusion
 
 Precision for class 0 (EMS took 10 minutes or less): 79%
 

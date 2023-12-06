@@ -71,7 +71,7 @@ Let's proceed to t-SNE to see
 Compared to PCA, t-SNE us better at capturing the local structure of the data and can reveal clusters that might not be visible in PCA. PCA shows the overall structure and explains the variance in the data using fewer components, but might not reveal clusters as effectively as t-SNE.
 
 
-# Comparsion
+# Conclusion and Result Analysis
 
 When working with these two different methods, I can tell that the PCA is much faster when it comes to generating plots in a global data structure scale. t-SNE, on the other hand, is better at identifying clusters and local patterns in high-dimensional data. And for my dataset, the visualization is very sensitive to parameter settings.
 
