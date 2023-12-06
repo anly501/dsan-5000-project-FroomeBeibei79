@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./DataMain.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Everything About Data</span></a>
+ <span class="menu-text">Data Introduction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -140,12 +140,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./Data Exploration.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Exploration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Data Cleaning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Cleaning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -188,12 +182,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ARM.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ARM</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./Conclusions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Conclusions</span></a>
   </div>
@@ -226,9 +214,12 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#the-result" id="toc-the-result" class="nav-link" data-scroll-target="#the-result">The result</a></li>
   </ul></li>
-  <li><a href="#text-data-of-naïve-bayes" id="toc-text-data-of-naïve-bayes" class="nav-link" data-scroll-target="#text-data-of-naïve-bayes">Text Data of Naïve Bayes</a>
+  <li><a href="#text-data-of-naïve-bayes" id="toc-text-data-of-naïve-bayes" class="nav-link" data-scroll-target="#text-data-of-naïve-bayes">Text Data of Naïve Bayes</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
   <ul class="collapse">
-  <li><a href="#the-result-1" id="toc-the-result-1" class="nav-link" data-scroll-target="#the-result-1">The result</a></li>
+  <li><a href="#evaluation-metrics" id="toc-evaluation-metrics" class="nav-link" data-scroll-target="#evaluation-metrics">Evaluation Metrics</a></li>
+  <li><a href="#overfitting-and-underfitting" id="toc-overfitting-and-underfitting" class="nav-link" data-scroll-target="#overfitting-and-underfitting">Overfitting and Underfitting</a></li>
+  <li><a href="#model-performance" id="toc-model-performance" class="nav-link" data-scroll-target="#model-performance">Model Performance</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -352,8 +343,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="text-data-of-naïve-bayes" class="level2">
 <h2 class="anchored" data-anchor-id="text-data-of-naïve-bayes">Text Data of Naïve Bayes</h2>
 <p>The text data was extracted using News API, and I also precleaned to make sure it does not have noise for future use <img src="images/nb text raw.jpg" class="img-fluid" alt="text raw"></p>
-<section id="the-result-1" class="level3">
-<h3 class="anchored" data-anchor-id="the-result-1">The result</h3>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>The confusion matrix for text is shown below: <img src="images/nb text confusion.png" class="img-fluid" alt="text confusion"></p>
 <p>The Multinomial Naive Bayes classifier has an overall accuracy of 50% on the test set. The classification report and confusion matrix give us a more detailed insight into the performance for each sentiment class:</p>
 <ol type="1">
@@ -362,16 +354,16 @@ ul.task-list li input[type="checkbox"] {
 <li>Positive Sentiment: The model has a precision of 47% with a recall of 100%, suggesting that while it identifies all positive instances, it also incorrectly labels some non-positive instances as positive.</li>
 </ol>
 <p>The confusion matrix visualization shows the distribution of predictions across the actual sentiments. We can see that all negative and neutral sentiments are predominantly classified as positive, which is a sign of bias towards the positive class in the model’s predictions.</p>
-<section id="evaluation-metrics" class="level4">
-<h4 class="anchored" data-anchor-id="evaluation-metrics">Evaluation Metrics</h4>
+<section id="evaluation-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation-metrics">Evaluation Metrics</h3>
 <p>The accuracy metric alone is not sufficient to assess the performance of the Naive Bayes classifier. Precision, recall, and F1-score provide a more comprehensive evaluation. The precision tells us the accuracy of the positive predictions made, recall gives us a measure of the model’s ability to find all the positive instances, and the F1-score is a harmonic mean of precision and recall.</p>
 </section>
-<section id="overfitting-and-underfitting" class="level4">
-<h4 class="anchored" data-anchor-id="overfitting-and-underfitting">Overfitting and Underfitting</h4>
+<section id="overfitting-and-underfitting" class="level3">
+<h3 class="anchored" data-anchor-id="overfitting-and-underfitting">Overfitting and Underfitting</h3>
 <p>The model does not appear to be overfitting, as overfitting would typically present as a high accuracy on the training set but poor performance on the test set. However, the model might be underfitting since it is overly generalized, leading to poor performance across all metrics.</p>
 </section>
-<section id="model-performance" class="level4">
-<h4 class="anchored" data-anchor-id="model-performance">Model Performance</h4>
+<section id="model-performance" class="level3">
+<h3 class="anchored" data-anchor-id="model-performance">Model Performance</h3>
 <p>The model’s performance is not ideal, with a low F1-score for negative and neutral classes and a moderate F1-score for the positive class. This suggests that while the model can predict positive sentiments relatively well, it struggles to distinguish between negative and neutral sentiments.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -388,7 +380,6 @@ ul.task-list li input[type="checkbox"] {
 <p>The visualizations confirm the earlier discussions about the model’s performance and suggest potential avenues for improvement, such as addressing the class imbalance or exploring more sophisticated models and features.​</p>
 
 
-</section>
 </section>
 </section>
 </section>

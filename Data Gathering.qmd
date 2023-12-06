@@ -10,18 +10,23 @@ format: html
 The recod data I collected are mainly from NHTSA, the National Highway Traffic Safety Administration. The NHTSA have publications that contains many data that is quite useful for this research. However, some data are available in differnt kinds besides csv. So it will take quite a time to clean
 
 ### Gender
-Now the raw data looks like this,
+The dataset is used to analyze possible gender effects on fatal accidents rate. This dataset will be joined by other datasets together to be analyzed
 ![Raw Data Gender](images/Raw%20data%20gender.jpg)
-It's quite messy on the top. So, I will need to clean the column names to make it tidy. 
 
-After cleaning process, the data now looks like this, 
-![Cleaned Data Gender](images/Cleaned%20Data%20gender.jpg)
+### Accident
 
-Note this is not enough, I still need to further tidy the column names to make it better
+This data file contains information about crash characteristics and environmental conditions at the time of the crash. There is one record per crash.
+![Accident](images/Accidents.jpg)
 
-### Young Driver
+### Crash Event
 
-The data available about young driver information is mainly from NHTSA, and it's in PDF format, so I will need to first download the data, scrape them into csv file, and then do more analysis.
+This data file contains information for all of the qualifying events (i.e., both harmful and non-harmful) that occurred in the crash. It details the chronological sequence of events resulting from an unstabilized situation that constitutes a motor vehicle traffic crash. There is one record per event. Included in each record is a description of the event or object contacted (e.g., ran off road-right, crossed center line, guardrail, parked motor vehicle), the vehicles involved, and the vehicles' areas of impact.
+![Cevent](images/cevent.jpg)
+
+### Damage Report
+
+This data file contains information about all of the areas on this vehicle that were damaged in the crash. There is one record per damaged area.
+![damage](images/damage.jpg)
 
 
 ## Text Data 

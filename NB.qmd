@@ -123,7 +123,7 @@ A ROC Curve for evaluating the performance of classification models
 The text data was extracted using News API, and I also precleaned to make sure it does not have noise for future use
 ![text raw](images/nb%20text%20raw.jpg)
 
-### The result
+## Result and Conclusion
 
 The confusion matrix for text is shown below:
 ![text confusion](images/nb%20text%20confusion.png)
@@ -137,15 +137,15 @@ The Multinomial Naive Bayes classifier has an overall accuracy of 50% on the tes
 
 The confusion matrix visualization shows the distribution of predictions across the actual sentiments. We can see that all negative and neutral sentiments are predominantly classified as positive, which is a sign of bias towards the positive class in the model's predictions.
 
-#### Evaluation Metrics
+### Evaluation Metrics
 
 The accuracy metric alone is not sufficient to assess the performance of the Naive Bayes classifier. Precision, recall, and F1-score provide a more comprehensive evaluation. The precision tells us the accuracy of the positive predictions made, recall gives us a measure of the model's ability to find all the positive instances, and the F1-score is a harmonic mean of precision and recall.
 
-#### Overfitting and Underfitting
+### Overfitting and Underfitting
 
 The model does not appear to be overfitting, as overfitting would typically present as a high accuracy on the training set but poor performance on the test set. However, the model might be underfitting since it is overly generalized, leading to poor performance across all metrics.
 
-#### Model Performance
+### Model Performance
 
 The model's performance is not ideal, with a low F1-score for negative and neutral classes and a moderate F1-score for the positive class. This suggests that while the model can predict positive sentiments relatively well, it struggles to distinguish between negative and neutral sentiments.
 

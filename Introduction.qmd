@@ -7,20 +7,19 @@ bibliography: Web Citation.bib
 ---
 # Driver Behavior Analysis
 
-Written by Xingrui Huo Froome
+Written by Xingrui Huo
 
 GU ID: xh231
 
 ## Research Background
 As I moved to a new place for grad school, my car moved with me and so does the car insurance. However, as I requested for the new quote, I found out that the price went higher than expected. So I changed my insurance company and during the conversation with the new insurance company. I found out that there is one discount that can be added to my policy if I agree to let the insurance company to send me a device and put it in my vehicle to record my daily drive data. 
 
-I found that very interesting because the insurance staff told me that as I driving, the device will record data and send it back to the insurance company. As to every end of policy, I will receive discount based on my driving records.
-
-I start to become interested about this little device. How does it record the data? What kind of data does it record? What kind of result can it get based on the data it records? I feel like that I can do the same thing, collect the same data, and do some similar analysis on myself. So I can do driver behavior analysis on myself. Of course, the most important thing in here is, how to do driver behavior analysis?
+I found it interesting that the insurance company's device records data while I drive and sends it back to them. They informed me that at the end of each policy period, I could receive discounts based on my driving record. This made me wonder about road accidents. Specifically, what factors contribute to them? Is it the weather, poor lighting, speeding, or perhaps driver distraction, like using a phone while driving? These questions have prompted me to research further into the causes of road accidents. Specifcally, I want to study those fatal accidents.
 
 
 
 Below are two academic sources and some questions to start with:
+
 
 ## Driver Behavior Analysis for Safe Driving: A Survey
 [@kaplan_driver_2015]
@@ -59,21 +58,33 @@ The paper also explores potential solutions, such as integrating smartphone-base
 
 ### Driver Related Questions
 
-1. How can we accurately measure and quantify aggressive driving behavior using telematics data?
-2. What are the most effective strategies for detecting and reducing instances of distracted driving?
-3. Can machine learning algorithms predict the likelihood of a driver engaging in risky behaviors based on historical data?
-4. How does driver behavior vary across different age groups, genders, and experience levels, and what implications does this have for road safety?
-5. How can data analytics be used to design targeted driver training programs that address specific behavioral issues?
+1. **Speeding and Aggressive Driving**: How does speeding or aggressive driving behavior, such as tailgating and erratic lane changing, increase the risk of fatal accidents on the road?
+
+2. **Distracted Driving**: In what ways does distracted driving, especially the use of mobile phones for texting or calling, contribute to the likelihood of fatal road accidents?
+
+3. **Influence of Alcohol or Drugs**: How significantly does driving under the influence of alcohol or drugs affect a driver's reaction time and decision-making, leading to fatal accidents?
+
+4. **Driver Fatigue**: To what extent does driver fatigue, particularly in long-distance driving scenarios, play a role in causing fatal road accidents?
+
+5. **Lack of Experience or Training**: How do factors like lack of driving experience or inadequate driver training influence the occurrence of fatal accidents on the road?
    
 
 ### Road Safety Questions
-1. How do external factors like road conditions and traffic congestion influence driver behavior, and how can this information be used to improve road safety?
-2. How do weather conditions, such as rain, snow, and fog, affect road safety, and what strategies can be employed to mitigate their impact?
-3. How can data science be used to analyze the effectiveness of road safety policies, such as seat belt laws and speed limits, in reducing accidents?
-4. What role does human psychology play in road safety, and how can behavioral insights be used to design safer road systems?
-   
+
+1. **Road Design and Infrastructure**: How does the design and condition of the road infrastructure, including road layout, signage, and maintenance, contribute to road safety and reduce the risk of fatal accidents?
+
+2. **Weather Conditions**: What impact do adverse weather conditions, such as rain, snow, or fog, have on road safety, and what measures can be taken to mitigate their effects to prevent fatal accidents?
+
+3. **Vehicle Safety Features**: How do modern vehicle safety features, such as airbags, anti-lock brakes, and electronic stability control, contribute to reducing the severity of accidents and preventing fatalities on the road?
+
+4. **Traffic Laws and Enforcement**: How does strict enforcement of traffic laws, including speed limits, seat belt usage, and alcohol-related regulations, play a role in enhancing road safety and preventing fatal accidents?
+
+5. **Pedestrian and Cyclist Safety**: What measures can be implemented to improve the safety of pedestrians and cyclists on the road, reducing the likelihood of fatal accidents involving these vulnerable road users?
 
 ### Some Other Questions
-1. How does driver behavior impact fuel efficiency, and how can eco-driving habits be promoted to reduce emissions and fuel consumption?
-2. How can driver behavior analysis be used to optimize traffic flow and reduce congestion in urban areas?
-3. How can driver behavior data be anonymized and protected to ensure privacy while still extracting valuable insights for road safety?
+
+1. **Driver Education and Training**: How can comprehensive driver education and training programs contribute to safer road conditions and fewer fatal accidents?
+
+2. **Emergency Response and Medical Care**: What role does the efficiency of emergency response and medical care play in reducing fatalities in road accidents?
+
+3. **Technology and Innovation**: How are emerging technologies like autonomous vehicles and advanced driver-assistance systems (ADAS) shaping the future of road safety and preventing fatal accidents?

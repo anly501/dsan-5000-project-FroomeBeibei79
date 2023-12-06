@@ -20,8 +20,6 @@ website:
             text: Data Gathering
           - href: Data Exploration.qmd
             text: Data Exploration
-          - href: Data Cleaning.qmd
-            text: Data Cleaning
           - href: Data Cleaning R.ipynb
             text: Data Cleaning in R
           - href: Data Cleaning Python.qmd
@@ -34,8 +32,6 @@ website:
         text: Dimensionality Reduction
       - href: Decision Trees.qmd
         text: Decision Trees
-      - href: ARM.qmd
-        text: ARM
       - href: Conclusions.qmd
         text: Conclusions
 
