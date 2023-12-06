@@ -1,0 +1,157 @@
+---
+title: "Naïve Bayes"
+format: html
+---
+
+# Introduction
+
+Naive Bayes is a probabilistic machine learning algorithm based on Bayes’ theorem, which is used for classification tasks. In its essence, it involves using probability to make predictions.
+
+## Bayes' Theorem Foundation: 
+
+Naive Bayes relies on Bayes’ theorem, which describes the probability of an event based on prior knowledge of related conditions. In the context of classification, it’s used to find the probability that a given instance belongs to a particular category based on its features.
+
+## Probabilistic Nature: 
+
+It calculates the probability of each class given the input features, and the class with the highest probability is considered as the output.
+
+Assumption of Independence: The “Naive” part of Naive Bayes comes from the assumption that all the features are independent of each other given the class label. While this is a strong and often unrealistic assumption, in practice, Naive Bayes classifiers perform surprisingly well even when this condition is not met.
+
+## Objectives:
+
+The main objective of Naive Bayes classification is to quickly and efficiently categorize new instances into predefined classes based on the statistical properties of the features of the training data.
+
+### What it Aims to Achieve:
+
+#### Fast and Efficient Classification: 
+
+Due to its simplicity and the fact that it doesn’t require complex iterative optimization, it’s very fast and efficient, especially for high-dimensional datasets.
+
+#### Handling of Missing Values: 
+
+It can handle missing values by ignoring the missing features during computation.
+
+#### Good Baseline Model: 
+
+It provides a good baseline model for classification tasks, offering a point of comparison for more complex algorithms.
+
+### Variants of Naive Bayes:
+
+#### Gaussian Naive Bayes: 
+Assumes that the features follow a normal distribution. It’s useful when dealing with continuous data.
+
+#### Multinomial Naive Bayes: 
+
+Useful for discrete counts, such as word counts in text classification.
+
+### Bernoulli Naive Bayes: 
+
+Similar to Multinomial Naive Bayes, but it’s specifically designed for binary/boolean features.
+
+### When to Use Each:
+
+#### Gaussian Naive Bayes: 
+
+Use when your features are continuous and you can assume a Gaussian distribution.
+
+#### Multinomial Naive Bayes: 
+
+Ideal for text classification problems where you have counts of word occurrences.
+
+#### Bernoulli Naive Bayes: 
+
+Use when you’re dealing with binary or boolean features.
+
+
+# Progress
+
+## Record Data of Naïve Bayes
+
+For the record data, we will focus on fatalties of accidents. We choose to predict the time for EMS took on the road. The time gap vary based on various conditions, we will use this time difference as our target variable for the Naive Bayes classification.
+
+Here in this dataset, there's no specifc column that record the time EMS took on road, but there are columns that record when the EMS received the notification and the time EMS arrived at the scene. We will use this as the time gap, also our target variable.
+
+![time gap](images/NB%20Record%20time%20gap.jpg)
+
+For feature selection, there are many possible factors that affect the time EMS took on the road. In addition, there are many dynamic factors that could possibly affect the time as well, and as of current time, there is no way to record every single one of them. What we can do right now is to record those data that might affect the traffic flow, and applied those as features.
+
+The result is shown below:
+![Record result](images/NB%20Record%20result.jpg)
+
+The confusion matrix is shown below:
+![Record Confusion matrix](images/NB%20Record%20confusion.png)
+
+### Result and Conclusion
+
+Precision for class 0 (EMS took 10 minutes or less): 79%
+
+Recall for class 0: 31%
+
+F1-score for class 0: 45%
+
+Precision for class 1 (EMS took more than 10 minutes): 35%
+
+Recall for class 1: 82%
+
+F1-score for class 1: 49%
+
+From the confusion matrix, The high number of false positives (802) relative to true negatives (346) indicates that the model is overly pessimistic about the EMS response time, often predicting delays where there are none.
+The model has a better true positive rate, with 893 correctly predicted delays, but this comes at the cost of a high false-positive rate.
+The false-negative count (196) is lower than the false positives, which suggests that when the model predicts a quick response, it is somewhat more likely to be correct. However, in emergency response situations, even a small number of false negatives can be critical.
+
+our model is trying to predict whether an emergency medical service (EMS) will take more than 10 minutes to arrive at the scene of an accident.
+
+This accuracy tells us what portion of the total predictions made by the model were correct. Our model has an accuracy of approximately 47.06%, which means that about 47 out of every 100 predictions it makes about EMS arrival times are correct. It's not very high, so the model is not very reliable in its current state.
+
+Precision tells us how often the model is correct when it predicts a certain event. For instance, when our model predicts that the EMS will take more than 10 minutes to arrive, it is correct 35% of the time. Conversely, when it predicts that EMS will take 10 minutes or less, it is correct 79% of the time. High precision for a category means that when the model predicts that category, it's usually right.
+
+The F1-score is 49%, and for predictions of 10 minutes or less, it's 45%. This suggests that the model is slightly better at predicting longer arrival times than shorter ones, but it still isn't highly accurate in either case.
+
+
+Given the accuracy and the confusion matrix, we see that the model has an accuracy of approximately 47.06% on the test set, which is not very high and is close to random guessing. This could indicate that the model is underfitting. It is too simplistic and not capturing the underlying patterns in the data well enough to make accurate predictions on either the training or the test set.
+
+A PRC Curve for evaluating the performance of a classifier
+![PRC](images/nb%20record%20prc%20.png)
+
+A ROC Curve for evaluating the performance of classification models
+![ROC](images/nb%20record%20roc.png)
+
+
+
+## Text Data of Naïve Bayes
+
+The text data was extracted using News API, and I also precleaned to make sure it does not have noise for future use
+![text raw](images/nb%20text%20raw.jpg)
+
+## Result and Conclusion
+
+The confusion matrix for text is shown below:
+![text confusion](images/nb%20text%20confusion.png)
+
+
+The Multinomial Naive Bayes classifier has an overall accuracy of 50% on the test set. The classification report and confusion matrix give us a more detailed insight into the performance for each sentiment class:
+
+1. Negative Sentiment: The model has a high precision of 100% but a very low recall of 20%, indicating that while the predictions made as negative are all correct, the model fails to identify most of the negative instances
+2. Neutral Sentiment: The model fails to correctly identify any neutral sentiments, as indicated by both precision and recall being 0%.
+3. Positive Sentiment: The model has a precision of 47% with a recall of 100%, suggesting that while it identifies all positive instances, it also incorrectly labels some non-positive instances as positive.
+
+The confusion matrix visualization shows the distribution of predictions across the actual sentiments. We can see that all negative and neutral sentiments are predominantly classified as positive, which is a sign of bias towards the positive class in the model's predictions.
+
+### Evaluation Metrics
+
+The accuracy metric alone is not sufficient to assess the performance of the Naive Bayes classifier. Precision, recall, and F1-score provide a more comprehensive evaluation. The precision tells us the accuracy of the positive predictions made, recall gives us a measure of the model's ability to find all the positive instances, and the F1-score is a harmonic mean of precision and recall.
+
+### Overfitting and Underfitting
+
+The model does not appear to be overfitting, as overfitting would typically present as a high accuracy on the training set but poor performance on the test set. However, the model might be underfitting since it is overly generalized, leading to poor performance across all metrics.
+
+### Model Performance
+
+The model's performance is not ideal, with a low F1-score for negative and neutral classes and a moderate F1-score for the positive class. This suggests that while the model can predict positive sentiments relatively well, it struggles to distinguish between negative and neutral sentiments.
+
+
+![prc text](images/nb%20text%20prc%20.png)
+
+![result text](images/nb%20text%20result.png)
+
+The visualizations confirm the earlier discussions about the model's performance and suggest potential avenues for improvement, such as addressing the class imbalance or exploring more sophisticated models and features.​
