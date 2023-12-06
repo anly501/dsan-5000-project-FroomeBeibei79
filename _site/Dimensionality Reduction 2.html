@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Xingrui’s Project - Introduction</title>
+<title>Xingrui’s Project - Dimensionality Reduction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
 }
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -91,7 +106,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Introduction.html">Introduction</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Dimensionality Reduction.html">Dimensionality Reduction</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -118,7 +133,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Introduction.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -189,7 +204,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Dimensionality Reduction.html" class="sidebar-item-text sidebar-link">
+  <a href="./Dimensionality Reduction.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Dimensionality Reduction</span></a>
   </div>
 </li>
@@ -215,26 +230,12 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#driver-behavior-analysis" id="toc-driver-behavior-analysis" class="nav-link active" data-scroll-target="#driver-behavior-analysis"><span class="header-section-number">1</span> Driver Behavior Analysis</a>
+  <li><a href="#project-proposal" id="toc-project-proposal" class="nav-link active" data-scroll-target="#project-proposal">Project Proposal</a>
   <ul class="collapse">
-  <li><a href="#research-background" id="toc-research-background" class="nav-link" data-scroll-target="#research-background"><span class="header-section-number">1.1</span> Research Background</a></li>
-  <li><a href="#driver-behavior-analysis-for-safe-driving-a-survey" id="toc-driver-behavior-analysis-for-safe-driving-a-survey" class="nav-link" data-scroll-target="#driver-behavior-analysis-for-safe-driving-a-survey"><span class="header-section-number">1.2</span> Driver Behavior Analysis for Safe Driving: A Survey</a>
-  <ul class="collapse">
-  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract"><span class="header-section-number">1.2.1</span> Abstract:</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">1.2.2</span> Summary</a></li>
+  <li><a href="#pca" id="toc-pca" class="nav-link" data-scroll-target="#pca">PCA</a></li>
   </ul></li>
-  <li><a href="#a-comprehensive-review-of-driver-behavior-analysis-utilizing-smartphones" id="toc-a-comprehensive-review-of-driver-behavior-analysis-utilizing-smartphones" class="nav-link" data-scroll-target="#a-comprehensive-review-of-driver-behavior-analysis-utilizing-smartphones"><span class="header-section-number">1.3</span> A Comprehensive Review of Driver Behavior Analysis Utilizing Smartphones</a>
-  <ul class="collapse">
-  <li><a href="#abstract-1" id="toc-abstract-1" class="nav-link" data-scroll-target="#abstract-1"><span class="header-section-number">1.3.1</span> Abstract</a></li>
-  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1"><span class="header-section-number">1.3.2</span> Summary</a></li>
-  </ul></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions"><span class="header-section-number">1.4</span> Questions</a>
-  <ul class="collapse">
-  <li><a href="#driver-related-questions" id="toc-driver-related-questions" class="nav-link" data-scroll-target="#driver-related-questions"><span class="header-section-number">1.4.1</span> Driver Related Questions</a></li>
-  <li><a href="#road-safety-questions" id="toc-road-safety-questions" class="nav-link" data-scroll-target="#road-safety-questions"><span class="header-section-number">1.4.2</span> Road Safety Questions</a></li>
-  <li><a href="#some-other-questions" id="toc-some-other-questions" class="nav-link" data-scroll-target="#some-other-questions"><span class="header-section-number">1.4.3</span> Some Other Questions</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#t-sne" id="toc-t-sne" class="nav-link" data-scroll-target="#t-sne">t-SNE</a></li>
+  <li><a href="#conclusion-and-result-analysis" id="toc-conclusion-and-result-analysis" class="nav-link" data-scroll-target="#conclusion-and-result-analysis">Conclusion and Result Analysis</a></li>
   </ul>
 </nav>
     </div>
@@ -243,7 +244,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">Dimensionality Reduction</h1>
 </div>
 
 
@@ -258,88 +259,70 @@ div.csl-indent {
 
 </header>
 
-<section id="driver-behavior-analysis" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Driver Behavior Analysis</h1>
-<p>Written by Xingrui Huo</p>
-<p>GU ID: xh231</p>
-<section id="research-background" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="research-background"><span class="header-section-number">1.1</span> Research Background</h2>
-<p>As I moved to a new place for grad school, my car moved with me and so does the car insurance. However, as I requested for the new quote, I found out that the price went higher than expected. So I changed my insurance company and during the conversation with the new insurance company. I found out that there is one discount that can be added to my policy if I agree to let the insurance company to send me a device and put it in my vehicle to record my daily drive data.</p>
-<p>I found it interesting that the insurance company’s device records data while I drive and sends it back to them. They informed me that at the end of each policy period, I could receive discounts based on my driving record. This made me wonder about road accidents. Specifically, what factors contribute to them? Is it the weather, poor lighting, speeding, or perhaps driver distraction, like using a phone while driving? These questions have prompted me to research further into the causes of road accidents. Specifcally, I want to study those fatal accidents.</p>
-<p>Below are two academic sources and some questions to start with:</p>
-</section>
-<section id="driver-behavior-analysis-for-safe-driving-a-survey" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="driver-behavior-analysis-for-safe-driving-a-survey"><span class="header-section-number">1.2</span> Driver Behavior Analysis for Safe Driving: A Survey</h2>
-<p><span class="citation" data-cites="kaplan_driver_2015">(<a href="#ref-kaplan_driver_2015" role="doc-biblioref">Kaplan et al. 2015</a>)</span></p>
-<p>This is a link to <a href="https://ieeexplore.ieee.org/document/7225158">source</a></p>
-<section id="abstract" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">1.2.1</span> Abstract:</h3>
-<p>Driver drowsiness and distraction are two main reasons for traffic accidents and the related financial losses. Therefore, researchers have been working for more than a decade on designing driver inattention monitoring systems. As a result, several detection techniques for the detection of both drowsiness and distraction have been proposed in the literature. Some of these techniques were successfully adopted and implemented by the leading car companies. This paper discusses and provides a comprehensive insight into the well-established techniques for driver inattention monitoring and introduces the use of most recent and futuristic solutions exploiting mobile technologies such as smartphones and wearable devices. Then, a proposal is made for the active of such systems into car-to-car communication to support vehicular ad hoc network’s (VANET’s) primary aim of safe driving. We call this approach the dissemination of driver behavior via C2C communication. Throughout this paper, the most remarkable studies of the last five years were examined thoroughly in order to reveal the recent driver monitoring techniques and demonstrate the basic pros and cons. In addition, the studies were categorized into two groups: driver drowsiness and distraction. Then, research on the driver drowsiness was further divided into two main subgroups based on the exploitation of either visual features or nonvisual features. A comprehensive compilation, including used features, classification methods, accuracy rates, system parameters, and environmental details, was represented as tables to highlight the (dis)advantages and/or limitations of the aforementioned categories. A similar approach was also taken for the methods used for the detection of driver distraction.</p>
-</section>
-<section id="summary" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.2.2</span> Summary</h3>
-<p>the literature review highlighted the need for combining techniques, the importance of alerting mechanisms, and the potential of C2C communication for improving driver safety. Despite limitations, ongoing advancements indicate a promising future for driver monitoring and assistance systems.</p>
-</section>
-</section>
-<section id="a-comprehensive-review-of-driver-behavior-analysis-utilizing-smartphones" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="a-comprehensive-review-of-driver-behavior-analysis-utilizing-smartphones"><span class="header-section-number">1.3</span> A Comprehensive Review of Driver Behavior Analysis Utilizing Smartphones</h2>
-<p><span class="citation" data-cites="chan_comprehensive_2019">(<a href="#ref-chan_comprehensive_2019" role="doc-biblioref">Chan et al. 2019</a>)</span></p>
-<p>This is a link to <a href="https://ieeexplore.ieee.org/abstract/document/8844776">source</a></p>
-<section id="abstract-1" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="abstract-1"><span class="header-section-number">1.3.1</span> Abstract</h3>
-<p>Human factors are the primary catalyst for traffic accidents. Among different factors, fatigue, distraction, drunkenness, and/or recklessness are the most common types of abnormal driving behavior that leads to an accident. With technological advances, modern smartphones have the capabilities for driving behavior analysis. There has not yet been a comprehensive review on methodologies utilizing only a smartphone for drowsiness detection and abnormal driver behavior detection. In this paper, different methodologies proposed by different authors are discussed. It includes the sensing schemes, detection algorithms, and their corresponding accuracy and limitations. Challenges and possible solutions such as integration of the smartphone behavior classification system with the concept of context-aware, mobile crowdsensing, and active steering control are analyzed. The issue of model training and updating on the smartphone and cloud environment is also included.</p>
-</section>
-<section id="summary-1" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="summary-1"><span class="header-section-number">1.3.2</span> Summary</h3>
-<p>The paper discusses the use of smartphone data as a valuable resource for analyzing driver behavior. It reviews various methodologies proposed by different authors for detecting abnormal driving patterns. While smartphone-based systems offer advantages over telematics boxes, there are significant challenges to consider for accurate driver behavior classification.</p>
-<p>Key challenges include the impact of varying light conditions on vision-based methodologies and the need to eliminate noise and external factors in sensor-based approaches, such as road conditions and vehicle components. Future research should address these issues. Additionally, eliminating the requirement for mounting the smartphone in a fixed position would enhance flexibility and convenience for drivers.</p>
-<p>The paper also explores potential solutions, such as integrating smartphone-based driver behavior analysis with context-awareness, crowdsensing, and steering control, as well as mobile or cloud-based algorithm training and updates. While these solutions may not be perfect, they have the potential to address some of the challenges, suggesting that there is room for further improvement in smartphone-based behavior analysis systems.</p>
-</section>
-</section>
-<section id="questions" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="questions"><span class="header-section-number">1.4</span> Questions</h2>
-<section id="driver-related-questions" class="level3" data-number="1.4.1">
-<h3 data-number="1.4.1" class="anchored" data-anchor-id="driver-related-questions"><span class="header-section-number">1.4.1</span> Driver Related Questions</h3>
-<ol type="1">
-<li><p><strong>Speeding and Aggressive Driving</strong>: How does speeding or aggressive driving behavior, such as tailgating and erratic lane changing, increase the risk of fatal accidents on the road?</p></li>
-<li><p><strong>Distracted Driving</strong>: In what ways does distracted driving, especially the use of mobile phones for texting or calling, contribute to the likelihood of fatal road accidents?</p></li>
-<li><p><strong>Influence of Alcohol or Drugs</strong>: How significantly does driving under the influence of alcohol or drugs affect a driver’s reaction time and decision-making, leading to fatal accidents?</p></li>
-<li><p><strong>Driver Fatigue</strong>: To what extent does driver fatigue, particularly in long-distance driving scenarios, play a role in causing fatal road accidents?</p></li>
-<li><p><strong>Lack of Experience or Training</strong>: How do factors like lack of driving experience or inadequate driver training influence the occurrence of fatal accidents on the road?</p></li>
-</ol>
-</section>
-<section id="road-safety-questions" class="level3" data-number="1.4.2">
-<h3 data-number="1.4.2" class="anchored" data-anchor-id="road-safety-questions"><span class="header-section-number">1.4.2</span> Road Safety Questions</h3>
-<ol type="1">
-<li><p><strong>Road Design and Infrastructure</strong>: How does the design and condition of the road infrastructure, including road layout, signage, and maintenance, contribute to road safety and reduce the risk of fatal accidents?</p></li>
-<li><p><strong>Weather Conditions</strong>: What impact do adverse weather conditions, such as rain, snow, or fog, have on road safety, and what measures can be taken to mitigate their effects to prevent fatal accidents?</p></li>
-<li><p><strong>Vehicle Safety Features</strong>: How do modern vehicle safety features, such as airbags, anti-lock brakes, and electronic stability control, contribute to reducing the severity of accidents and preventing fatalities on the road?</p></li>
-<li><p><strong>Traffic Laws and Enforcement</strong>: How does strict enforcement of traffic laws, including speed limits, seat belt usage, and alcohol-related regulations, play a role in enhancing road safety and preventing fatal accidents?</p></li>
-<li><p><strong>Pedestrian and Cyclist Safety</strong>: What measures can be implemented to improve the safety of pedestrians and cyclists on the road, reducing the likelihood of fatal accidents involving these vulnerable road users?</p></li>
-</ol>
-</section>
-<section id="some-other-questions" class="level3" data-number="1.4.3">
-<h3 data-number="1.4.3" class="anchored" data-anchor-id="some-other-questions"><span class="header-section-number">1.4.3</span> Some Other Questions</h3>
-<ol type="1">
-<li><p><strong>Driver Education and Training</strong>: How can comprehensive driver education and training programs contribute to safer road conditions and fewer fatal accidents?</p></li>
-<li><p><strong>Emergency Response and Medical Care</strong>: What role does the efficiency of emergency response and medical care play in reducing fatalities in road accidents?</p></li>
-<li><p><strong>Technology and Innovation</strong>: How are emerging technologies like autonomous vehicles and advanced driver-assistance systems (ADAS) shaping the future of road safety and preventing fatal accidents?</p></li>
-</ol>
-
-
-
-</section>
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-chan_comprehensive_2019" class="csl-entry" role="listitem">
-Chan, Teck Kai, Cheng Siong Chin, Hao Chen, and Xionghu Zhong. 2019. <span>“A Comprehensive Review of Driver Behavior Analysis Utilizing Smartphones.”</span> <em>IEEE Transactions on Intelligent Transportation Systems</em> 21 (10): 4444–75.
+<section id="project-proposal" class="level1">
+<h1>Project Proposal</h1>
+<p>This tab aims to find out which factors could have a strong influence on fatal crashes. Does it have connections with drinking and drugs? Is it positively related to sex or age?</p>
+<p>On this page, we will discover two ways of doing dimensionality reduction. One is PCA, Principal Component Analysis, the other is t-Distributed Stochastic Neighbor Embedding (t-SNE). These techniques are applied to a dataset to understand their effectiveness in data visualization and pattern recognition.</p>
+<p>The data I used is the fatal accidents that happened in America in 2020. It contains detailed information about every accident police recorded, and we will this time focus on the people side, to see which factors have the most impact on driver behavior and lead to fatal crashes.</p>
+<p>Packages used in this project: 1. Scikit-Learn: For implementing PCA and t-SNE algorithms. This library offers efficient and easy-to-use tools for data analysis and machine learning. 2. Matplotlib: For data visualization, creating plots to visually compare the results obtained from PCA and t-SNE. 3. NumPy: For numerical computations, which might be necessary for data preprocessing or additional analysis. 4. Pandas: For data manipulation and extraction, especially useful if the dataset is in a tabular format.</p>
+<section id="pca" class="level2">
+<h2 class="anchored" data-anchor-id="pca">PCA</h2>
+<p>Before we proceed, we first rough clean the data, remove any non-human factors.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python hide code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>merge_df <span class="op">=</span> pd.merge(accident_df, person_df, on <span class="op">=</span> <span class="st">"ST_CASE"</span>, how <span class="op">=</span> <span class="st">'inner'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>columns_to_keep <span class="op">=</span> [</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Driver-Specific Information</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'AGE'</span>, <span class="st">'SEX'</span>, <span class="st">'DRINKING'</span>, <span class="st">'DRUGS'</span>, <span class="st">'ALC_DET'</span>, <span class="st">'ALC_STATUS'</span>, </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'DRUG_DET'</span>, <span class="st">'DSTATUS'</span>, <span class="st">'INJ_SEV'</span>, <span class="st">'PER_TYP'</span>, <span class="st">'DAY_WEEK'</span>, <span class="st">'HOUR_x'</span>, <span class="st">'WEATHER'</span>, <span class="st">'LGT_COND'</span>,<span class="st">'STATE_x'</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Keeping only the selected columns and dropping the rest</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>merge_df <span class="op">=</span> merge_df[columns_to_keep]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now let’s proceed.</p>
+<p>Using PCA, we are able to get a plot which is the cumulative explained variance by PCA Components. <img src="images/PCA pc counts.png" class="img-fluid" alt="PCA variance"></p>
+<p>So we select the first two components, and let’s see if we can get some information from these two</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PCA 2 PC.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">PCA components</figcaption>
+</figure>
 </div>
-<div id="ref-kaplan_driver_2015" class="csl-entry" role="listitem">
-Kaplan, Sinan, Mehmet Amac Guvensan, Ali Gokhan Yavuz, and Yasin Karalurt. 2015. <span>“Driver Behavior Analysis for Safe Driving: <span>A</span> Survey.”</span> <em>IEEE Transactions on Intelligent Transportation Systems</em> 16 (6): 3017–32.
+<p>There is no clear clustering of points, which suggests that there may not be distinct groups within the data based on these two principal components alone.</p>
+<p>Let’s try biplot to see what kinds of result will we get</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/PCA 2PC output.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">PCA output</figcaption>
+</figure>
 </div>
-</div></section></div></main> <!-- /main -->
+<p>Alright! Based on this plot, Variables like Drinking, drugs, and drug detection, are pointing in a similar way, this suggests that they are positively correlated with each other and contribute similarly to these components. Based on their direction, these factors have more influence on PC 1 than it has on PC 2.</p>
+<p>Sex and age are similar to drugs and drinking but with less influence than those components.</p>
+<p>ALC_STATUS has a strong loading on PC2 and some level of loading on PC1, indicating that this variable significantly differentiates the data along PC 2. Injury severity has a notable contribution to both PC1 and PC2, but more on PC2. This might be interpreted as injury severity varying along with alcohol status but also related to the other factors that align with PC1.</p>
+<p>The variables associated with substance use (DRINKING, DRUGS, DRUG_DET, ALC_STATUS) are significant in explaining the variance in the data. This suggests that substance use is a major factor in the nature and severity of crashes. So, no drugs, no drinking if you are going to drive.</p>
+<p>The positioning of INJ_SEV could indicate that crashes involving substance use or certain demographics (SEX) may result in different injury severities. Other variables like WEATHER, LGT_COND (light conditions), and HOUR have smaller angles with each other, suggesting they are somewhat correlated and may jointly influence the conditions under which accidents occur.</p>
+</section>
+</section>
+<section id="t-sne" class="level1">
+<h1>t-SNE</h1>
+<p>Let’s proceed to t-SNE to see</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/TSNE plot.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">TSNE</figcaption>
+</figure>
+</div>
+<p>Compared to PCA, t-SNE us better at capturing the local structure of the data and can reveal clusters that might not be visible in PCA. PCA shows the overall structure and explains the variance in the data using fewer components, but might not reveal clusters as effectively as t-SNE.</p>
+</section>
+<section id="conclusion-and-result-analysis" class="level1">
+<h1>Conclusion and Result Analysis</h1>
+<p>When working with these two different methods, I can tell that the PCA is much faster when it comes to generating plots in a global data structure scale. t-SNE, on the other hand, is better at identifying clusters and local patterns in high-dimensional data. And for my dataset, the visualization is very sensitive to parameter settings.</p>
+<p>PCA is effective at preserving global structure and linear relationships in the data. It’s good at capturing the directions in which the data varies the most, while t-SNE is excellent at preserving local structures and revealing clusters in the data.</p>
+<p>Overall, PCA is fast, scalable to large datasets, and provides a clear rank ordering of dimensions. However, it’s less effective for non-linear data. t-SNE is highly effective in revealing local structures and clusters, but it is computationally intensive, and cannot be scaled up to large datasets, like this one I’m working on, it even took 10 minutes to get results, and sometimes it’s inconsistent.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
