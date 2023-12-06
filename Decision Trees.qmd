@@ -175,12 +175,13 @@ This plot is hard to interpret, and it's probably overfitting, so let's set the 
 ![4 layer](images/4%20layer.png)
 
 
-## Result Analysis
+## Conclusion
 
 The model performs very well in predicting the majority class (labeled as "1"), with a precision of 0.91 and a recall of 1.00. This is indicated by the 8865 correct predictions in the confusion matrix for this class.
 
 The model fails to correctly predict any instances of the minority classes (labeled as "2", "3", "4", "5", and "6"). This could be due to imbalance datasets as fatal numbers of 1 is the most common and anything bigger than 1 is rarely seen in accidents. The model also tends to be overwhelmingly favor the majority class.
 
+This decision tree can only provide us with limited information, clearly it's not enough to deliver solid conclusion. However, this is a good start as the last tree already have some pretty good result and it also make sense in real life.
 
 
 
