@@ -1,7 +1,0 @@
----
-title: "Data Introduction"
-format: html
----
-
-# Data
-Data is the foundation of every data analysis, with more data, the more information we will get. On those sub-tab, you will find different steps of data analysis. It includes how I collected the data, how to clean those data, and in what ways I can explore them and elaborate based on those data.
